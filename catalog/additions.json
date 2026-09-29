@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "source_commit": "1b7bb929f28bf1c47e32514b732bed7709e36f25",
+  "skills": {
+    "engineering-quality": {
+      "path": "skills/engineering-quality",
+      "status": "available",
+      "host_runtime": "NOT_RUN",
+      "files_git_blob": {
+        "LICENSE": "e1bbc714f4150d16b9990d69ea29d85337873eda",
+        "SKILL.md": "9ba8ca124dfac1a9be64fc021174d69a9febbdf3",
+        "agents/openai.yaml": "9781dc6fd73ec7d087bfd462354b23428887f4c8",
+        "references/change-review.md": "d9a42a53ac98533e2b16994c5cd6367c9a895e2a",
+        "references/change-impact.md": "943735c62434343771589e95a820fa320c9cba03",
+        "references/architecture-consistency.md": "16ba9e6405b94382f1049b18d03d587a2c7fbd85",
+        "references/completion-verification.md": "52fc70b686ad118aab5c30ec7de4a2553c96b7ad"
+      },
+      "limitations": [
+        "Locally authored opt-in review/evidence guidance; not a workflow engine or runtime certification. Actual OpenCode/OMO activation and model-output evaluation are NOT_RUN."
+      ],
+      "origin": {
+        "repository": "unofficialmmon/veyrix",
+        "commit": "1b7bb929f28bf1c47e32514b732bed7709e36f25",
+        "path": "skills/engineering-quality"
+      },
+      "adapted_from": {
+        "repository": "unofficialmmon/agent-reference",
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "paths": [
+          "global/ENGINEERING.md",
+          "prompts/CHANGE_AUDIT.md"
+        ]
+      }
+    },
+    "regression-proof": {
+      "path": "skills/regression-proof",
+      "status": "available",
+      "host_runtime": "NOT_RUN",
+      "files_git_blob": {
+        "LICENSE": "e1bbc714f4150d16b9990d69ea29d85337873eda",
+        "SKILL.md": "a20d7dc16fd9dac4757d9376c1aa1ddb1adf86f4",
+        "agents/openai.yaml": "e138c5465407d3c0ea502fe6d7ee9a764b6b8a64"
+      },
+      "limitations": [
+        "Locally authored opt-in regression evidence criteria; no forced TDD or unsafe working-tree reversal. Model-output evaluation is NOT_RUN."
+      ],
+      "origin": {
+        "repository": "unofficialmmon/veyrix",
+        "commit": "1b7bb929f28bf1c47e32514b732bed7709e36f25",
+        "path": "skills/regression-proof"
+      },
+      "adapted_from": {
+        "repository": "unofficialmmon/agent-reference",
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "paths": [
+          "global/ENGINEERING.md",
+          "skills/engineering/verification-before-completion/SKILL.md"
+        ]
+      }
+    },
+    "security-review": {
+      "path": "skills/security-review",
+      "status": "available",
+      "host_runtime": "NOT_RUN",
+      "files_git_blob": {
+        "LICENSE": "e1bbc714f4150d16b9990d69ea29d85337873eda",
+        "SKILL.md": "3f042f38d6833770ed5f4cd19771782850c752ad",
+        "agents/openai.yaml": "9f54bc6fe31c5639fb367a75e578a02327c07825",
+        "references/review-checks.md": "f354ef72c408c7099e1bbda89dfce899b8358137"
+      },
+      "limitations": [
+        "Locally authored scoped security review guidance; not scanner installation, hardening execution, compliance or security certification. Model-output evaluation is NOT_RUN."
+      ],
+      "origin": {
+        "repository": "unofficialmmon/veyrix",
+        "commit": "1b7bb929f28bf1c47e32514b732bed7709e36f25",
+        "path": "skills/security-review"
+      },
+      "adapted_from": {
+        "repository": "unofficialmmon/agent-reference",
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "paths": [
+          "global/ENGINEERING.md",
+          "skills/operational/security-and-hardening/SKILL.md"
+        ]
+      }
+    }
+  }
+}
