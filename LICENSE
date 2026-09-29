@@ -1,10 +1,6 @@
-Repository-authored content in agent-reference is licensed under the MIT License unless a file states otherwise.
-
-Third-party Skill snapshots retain their upstream licenses and copyright notices. They are not relicensed by this repository. See NOTICE, catalog/SOURCES.md, catalog/skills.lock.json, catalog/LICENSES/, and license files preserved inside individual Skill snapshots.
-
 MIT License
 
-Copyright (c) 2026 agent-reference contributors
+Copyright (c) 2026 Veyrix contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

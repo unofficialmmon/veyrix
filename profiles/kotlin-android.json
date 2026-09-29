@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "roles": {
+    "fixer": [
+      "android-clean-architecture",
+      "edge-to-edge",
+      "kotlin-patterns"
+    ],
+    "designer": [
+      "mobile-android-design"
+    ]
+  }
+}

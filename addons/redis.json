@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "roles": {
+    "fixer": [
+      "redis-connections",
+      "redis-core"
+    ]
+  }
+}

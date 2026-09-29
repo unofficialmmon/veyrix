@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "veyrix-cli"
+version = "0.1.0"
+description = "Explicit, pinned Skill profiles for OpenCode and OMO Slim"
+requires-python = ">=3.11"
+dependencies = ["PyYAML==6.0.3"]
+license = "MIT"
+
+[project.scripts]
+veyrix = "veyrix.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

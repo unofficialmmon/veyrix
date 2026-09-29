@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "roles": {
+    "designer": [
+      "animate",
+      "design-taste-frontend",
+      "emil-design-eng",
+      "redesign-existing-projects",
+      "review-animations",
+      "web-design-guidelines"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "roles": {
+    "fixer": [
+      "compose-multiplatform-patterns",
+      "kotlin-patterns"
+    ]
+  }
+}

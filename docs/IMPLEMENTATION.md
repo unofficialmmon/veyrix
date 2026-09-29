@@ -1,26 +1,41 @@
-# Veyrix v0.1.0 implementation checkpoint
+# Implementation decisions and recovery
 
 ## Recovered basis
 
-- Main: `ab7bc60394a6d9154bbb7770492f745095e97ed4` (bootstrap README).
-- Preserved seed: `8a262981fd4f3a746c428e1669d504de4a03ecf7`.
-- Independently reconstructed seed tree: `356d38a4b0e4722882aa00e2a3e565cacc13fe7f`.
-- 44 complete selected Skill directories with origin hashes and license supplements.
-- The previous report of 50 passing tests is NOT reused: the corresponding CLI/test files were not recovered.
+Main began at `ab7bc60394a6d9154bbb7770492f745095e97ed4` (README only).
+`feat/v0.1.0` preserved seed `8a262981fd4f3a746c428e1669d504de4a03ecf7`, whose
+independently reconstructed tree was `356d38a4b0e4722882aa00e2a3e565cacc13fe7f`.
+It had 44 complete Skill directories and provenance, but no recoverable CLI/tests.
+The earlier reported 50-test pass is not reused as evidence for this delivery.
 
-## Delivery scope
+## v0.1 decisions
 
-Implement an explicitly invoked project configurator, not an agent runtime:
+| Decision | Reason |
+| --- | --- |
+| Python 3.11+ CLI, PyYAML pinned | Small cross-language configurator, no daemon or native build toolchain. |
+| Bare Git cache, exact SHA apply | No developer checkout/pull management; independent project pins. |
+| Explicit profiles/add-ons | Same declared selection yields the same managed IDs, without model stack guessing. |
+| Three installed wrapper prompts | Bounded lifecycle entry points, not inherited 12-command orchestration. |
+| Skills copied in full | Keep licenses/resources and per-project revision isolation; no moving symlink targets. |
+| OMO skills_add contributions | Preserve global/user capability rather than overwrite an effective allowlist. |
+| Existing .json OMO blocks | Avoid creating a .jsonc that silently shadows user config. |
+| Existing AGENTS never generated/rewritten | Project facts need repository-specific authoring, not generic guesses. |
+| No APM owner adoption in this release | Copying over APM files would create two deployment owners. |
+| Conditional entries opt-in | Preserve original defects/limits honestly without making them defaults. |
+| No new local coding guidelines | Carry only previously selected originals, with local/adapted provenance retained. |
 
-1. Bare Git object cache; exact-commit source reads, no user working checkout and no executing cached scripts.
-2. Explicit versioned profiles/add-ons; stable selected IDs and role-specific OMO `skills_add`.
-3. `.agents/skills` copies with a pin/lock and ownership ledger; preview, changed-file protection, bounded removal, rollback evidence and repeated-sync NOOP.
-4. Surgical JSONC changes preserving user models, MCPs, permissions, comments and unrelated grants. Do not silently shadow an existing `.json` with a generated `.jsonc`.
-5. Source integrity/license validation, all 95 agent-reference migration decisions with reasons, and focused tests.
-6. PR and merge only after tests/CI and final-tree verification. No edits to agent-reference or user projects; no repository visibility changes.
+The initial design mentioned ~30 Skills and later reports mentioned 42. The
+recoverable pinned seed contains **44**; this delivery preserves that concrete
+reviewable inventory rather than inventing a lost subset. Of 95 old entries,
+43 are kept, 49 excluded and 3 deferred; Emil design-engineering is the 44th.
 
-## Evidence boundaries
+## Completion boundaries
 
-CLI fixtures are not OpenCode/OMO runtime tests. Installing/discovering a Skill is not evidence that a model invoked it or produced a better result. Preserved upstream limitations remain visible and conditional Skills require explicit acceptance. Authenticated private-Git, native macOS host use and runtime discovery will remain NOT RUN unless actually exercised.
+The implemented surface is init/sync/update/audit/info, explicit selection,
+complete source verification, managed-file protection, surgical JSONC additions,
+collision checks, private recovery and focused regression tests. No user project,
+agent-reference repository, repository visibility or global environment is changed
+by this repository delivery. Actual target-host activation stays NOT RUN.
 
-Status: recovery checkpoint. Completion results will replace this status before release.
+Durable implementation and CI results are attached to the recovery pull request;
+[VALIDATION.md](VALIDATION.md) describes their scope and remaining limitations.

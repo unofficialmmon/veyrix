@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "roles": {
+    "fixer": [
+      "mariadb-features",
+      "mariadb-query-optimization"
+    ]
+  }
+}

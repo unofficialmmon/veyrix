@@ -2,383 +2,478 @@
   "decisions": {
     "android-clean-architecture": {
       "decision": "KEEP",
-      "old_path": "skills/mobile/android-clean-architecture"
+      "old_path": "skills/mobile/android-clean-architecture",
+      "reason": "KEEP as a matching explicit language/framework profile or add-on; install only selected IDs and preserve project conventions."
     },
     "android-cli": {
       "decision": "EXCLUDE",
-      "old_path": "skills/operational/android-cli"
+      "old_path": "skills/operational/android-cli",
+      "reason": "EXCLUDE: external operational tools, deployments and migrations remain outside Veyrix core."
     },
     "animate": {
       "decision": "KEEP",
-      "old_path": "skills/frontend/animate"
+      "old_path": "skills/frontend/animate",
+      "reason": "KEEP frontend-craft add-on: motion implementation; no implicit component-library installation."
     },
     "api-contract": {
       "decision": "KEEP",
-      "old_path": "skills/core/api-contract"
+      "old_path": "skills/core/api-contract",
+      "reason": "KEEP optional API-contract reference, explicitly local-derived rather than an official external Skill."
     },
     "browser-tools": {
       "decision": "EXCLUDE",
-      "old_path": "skills/operational/browser-tools"
+      "old_path": "skills/operational/browser-tools",
+      "reason": "EXCLUDE: external operational tools, deployments and migrations remain outside Veyrix core."
     },
     "bug-reproduction-brief": {
       "decision": "EXCLUDE",
-      "old_path": "skills/engineering/bug-reproduction-brief"
+      "old_path": "skills/engineering/bug-reproduction-brief",
+      "reason": "EXCLUDE: no separate lifecycle/reproduction control plane in Veyrix."
     },
     "compose-multiplatform-patterns": {
       "decision": "KEEP",
-      "old_path": "skills/mobile/compose-multiplatform-patterns"
+      "old_path": "skills/mobile/compose-multiplatform-patterns",
+      "reason": "KEEP as a matching explicit language/framework profile or add-on; install only selected IDs and preserve project conventions."
     },
     "deprecation-and-migration": {
       "decision": "EXCLUDE",
-      "old_path": "skills/operational/deprecation-and-migration"
+      "old_path": "skills/operational/deprecation-and-migration",
+      "reason": "EXCLUDE: external operational tools, deployments and migrations remain outside Veyrix core."
     },
     "design-taste-frontend": {
       "decision": "KEEP",
-      "old_path": "skills/frontend/design-taste-frontend"
+      "old_path": "skills/frontend/design-taste-frontend",
+      "reason": "KEEP frontend-craft add-on: marketing/landing art direction, not a universal dashboard workflow."
     },
     "durable-objects": {
       "decision": "EXCLUDE",
-      "old_path": "skills/operational/durable-objects"
+      "old_path": "skills/operational/durable-objects",
+      "reason": "EXCLUDE: external operational tools, deployments and migrations remain outside Veyrix core."
     },
     "eas-workflows": {
       "decision": "EXCLUDE",
-      "old_path": "skills/operational/eas-workflows"
+      "old_path": "skills/operational/eas-workflows",
+      "reason": "EXCLUDE: external operational tools, deployments and migrations remain outside Veyrix core."
     },
     "edge-to-edge": {
       "decision": "KEEP",
-      "old_path": "skills/mobile/edge-to-edge"
+      "old_path": "skills/mobile/edge-to-edge",
+      "reason": "KEEP as a matching explicit language/framework profile or add-on; install only selected IDs and preserve project conventions."
     },
     "expo-api-routes": {
       "decision": "EXCLUDE",
-      "old_path": "skills/operational/expo-api-routes"
+      "old_path": "skills/operational/expo-api-routes",
+      "reason": "EXCLUDE: external operational tools, deployments and migrations remain outside Veyrix core."
     },
     "expo-data-fetching": {
       "decision": "EXCLUDE",
-      "old_path": "skills/mobile/expo-data-fetching"
+      "old_path": "skills/mobile/expo-data-fetching",
+      "reason": "EXCLUDE: Expo/React Native is outside the initial web/native language profiles."
     },
     "expo-deployment": {
       "decision": "EXCLUDE",
-      "old_path": "skills/operational/expo-deployment"
+      "old_path": "skills/operational/expo-deployment",
+      "reason": "EXCLUDE: external operational tools, deployments and migrations remain outside Veyrix core."
     },
     "expo-dev-client": {
       "decision": "EXCLUDE",
-      "old_path": "skills/operational/expo-dev-client"
+      "old_path": "skills/operational/expo-dev-client",
+      "reason": "EXCLUDE: external operational tools, deployments and migrations remain outside Veyrix core."
     },
     "expo-dom": {
       "decision": "EXCLUDE",
-      "old_path": "skills/mobile/expo-dom"
+      "old_path": "skills/mobile/expo-dom",
+      "reason": "EXCLUDE: Expo/React Native is outside the initial web/native language profiles."
     },
     "expo-module": {
       "decision": "EXCLUDE",
-      "old_path": "skills/mobile/expo-module"
+      "old_path": "skills/mobile/expo-module",
+      "reason": "EXCLUDE: Expo/React Native is outside the initial web/native language profiles."
     },
     "expo-native-ui": {
       "decision": "EXCLUDE",
-      "old_path": "skills/mobile/expo-native-ui"
+      "old_path": "skills/mobile/expo-native-ui",
+      "reason": "EXCLUDE: Expo/React Native is outside the initial web/native language profiles."
     },
     "expo-tailwind-setup": {
       "decision": "EXCLUDE",
-      "old_path": "skills/mobile/expo-tailwind-setup"
+      "old_path": "skills/mobile/expo-tailwind-setup",
+      "reason": "EXCLUDE: Expo/React Native is outside the initial web/native language profiles."
     },
     "expo-upgrade": {
       "decision": "EXCLUDE",
-      "old_path": "skills/operational/expo-upgrade"
+      "old_path": "skills/operational/expo-upgrade",
+      "reason": "EXCLUDE: external operational tools, deployments and migrations remain outside Veyrix core."
     },
     "find-animation-opportunities": {
       "decision": "KEEP",
-      "old_path": "skills/frontend/find-animation-opportunities"
+      "old_path": "skills/frontend/find-animation-opportunities",
+      "reason": "KEEP optional motion-discovery add-on, not ambient animation on every UI."
     },
     "flutter-add-widget-test": {
       "decision": "KEEP",
-      "old_path": "skills/mobile/flutter-add-widget-test"
+      "old_path": "skills/mobile/flutter-add-widget-test",
+      "reason": "KEEP as a matching explicit language/framework profile or add-on; install only selected IDs and preserve project conventions."
     },
     "flutter-apply-architecture-best-practices": {
       "decision": "DEFER",
-      "old_path": "skills/mobile/flutter-apply-architecture-best-practices"
+      "old_path": "skills/mobile/flutter-apply-architecture-best-practices",
+      "reason": "DEFER: unkeyed user cache example can return a different requested user; architecture choice is also opinionated."
     },
     "flutter-build-responsive-layout": {
       "decision": "KEEP",
-      "old_path": "skills/mobile/flutter-build-responsive-layout"
+      "old_path": "skills/mobile/flutter-build-responsive-layout",
+      "reason": "KEEP as a matching explicit language/framework profile or add-on; install only selected IDs and preserve project conventions."
     },
     "flutter-fix-layout-issues": {
       "decision": "EXCLUDE",
-      "old_path": "skills/operational/flutter-fix-layout-issues"
+      "old_path": "skills/operational/flutter-fix-layout-issues",
+      "reason": "EXCLUDE: external operational tools, deployments and migrations remain outside Veyrix core."
     },
     "flutter-setup-declarative-routing": {
       "decision": "KEEP",
-      "old_path": "skills/mobile/flutter-setup-declarative-routing"
+      "old_path": "skills/mobile/flutter-setup-declarative-routing",
+      "reason": "KEEP as a matching explicit language/framework profile or add-on; install only selected IDs and preserve project conventions."
     },
     "frontend-design": {
       "decision": "EXCLUDE",
-      "old_path": "skills/frontend/frontend-design"
+      "old_path": "skills/frontend/frontend-design",
+      "reason": "EXCLUDE: selected Taste art direction and Emil component craft instead; not a claim of inferior output."
     },
     "generated-code": {
       "decision": "KEEP",
-      "old_path": "skills/core/generated-code"
+      "old_path": "skills/core/generated-code",
+      "reason": "KEEP optional generated-source ownership reference; preserve original local provenance."
     },
     "java-coding-standards": {
       "decision": "EXCLUDE",
-      "old_path": "skills/java-spring/java-coding-standards"
+      "old_path": "skills/java-spring/java-coding-standards",
+      "reason": "EXCLUDE v0.1: broad overlap and version-sensitive examples; java-style is only a local style guide, not a complete replacement for Java expertise."
     },
     "java-style": {
       "decision": "KEEP",
-      "old_path": "skills/java-spring/java-style"
+      "old_path": "skills/java-spring/java-style",
+      "reason": "KEEP: bounded handwritten-Java style and generator boundaries; original user-specific preferences remain subordinate to the project."
     },
     "jpa-patterns": {
       "decision": "KEEP",
-      "old_path": "skills/java-spring/jpa-patterns"
+      "old_path": "skills/java-spring/jpa-patterns",
+      "reason": "KEEP as a matching explicit language/framework profile or add-on; install only selected IDs and preserve project conventions."
     },
     "kotlin-coroutines-flows": {
       "decision": "DEFER",
-      "old_path": "skills/mobile/kotlin-coroutines-flows"
+      "old_path": "skills/mobile/kotlin-coroutines-flows",
+      "reason": "DEFER: preserved dispatcher platform guidance requires upstream correctness review; do not mask it with another Skill."
     },
     "kotlin-patterns": {
       "decision": "KEEP",
-      "old_path": "skills/mobile/kotlin-patterns"
+      "old_path": "skills/mobile/kotlin-patterns",
+      "reason": "KEEP as a matching explicit language/framework profile or add-on; install only selected IDs and preserve project conventions."
     },
     "mariadb-features": {
       "decision": "KEEP",
-      "old_path": "skills/database/mariadb-features"
+      "old_path": "skills/database/mariadb-features",
+      "reason": "KEEP as a matching explicit language/framework profile or add-on; install only selected IDs and preserve project conventions."
     },
     "mariadb-query-optimization": {
       "decision": "KEEP",
-      "old_path": "skills/database/mariadb-query-optimization"
+      "old_path": "skills/database/mariadb-query-optimization",
+      "reason": "KEEP as a matching explicit language/framework profile or add-on; install only selected IDs and preserve project conventions."
     },
     "maven-build": {
       "decision": "KEEP",
-      "old_path": "skills/java-spring/maven-build"
+      "old_path": "skills/java-spring/maven-build",
+      "reason": "KEEP as a matching explicit language/framework profile or add-on; install only selected IDs and preserve project conventions."
     },
     "mcp-builder": {
       "decision": "EXCLUDE",
-      "old_path": "skills/operational/mcp-builder"
+      "old_path": "skills/operational/mcp-builder",
+      "reason": "EXCLUDE: external operational tools, deployments and migrations remain outside Veyrix core."
     },
     "mobile-android-design": {
       "decision": "KEEP",
-      "old_path": "skills/mobile/mobile-android-design"
+      "old_path": "skills/mobile/mobile-android-design",
+      "reason": "KEEP as a matching explicit language/framework profile or add-on; install only selected IDs and preserve project conventions."
     },
     "mobile-ios-design": {
       "decision": "KEEP",
-      "old_path": "skills/mobile/mobile-ios-design"
+      "old_path": "skills/mobile/mobile-ios-design",
+      "reason": "KEEP as a matching explicit language/framework profile or add-on; install only selected IDs and preserve project conventions."
     },
     "mobile-native": {
       "decision": "KEEP",
-      "old_path": "skills/frontend/mobile-native"
+      "old_path": "skills/frontend/mobile-native",
+      "reason": "KEEP optional mobile-web add-on: touch/viewport polish, not native mobile implementation."
     },
     "mybatis": {
       "decision": "KEEP",
-      "old_path": "skills/java-spring/mybatis"
+      "old_path": "skills/java-spring/mybatis",
+      "reason": "KEEP as a matching explicit language/framework profile or add-on; install only selected IDs and preserve project conventions."
     },
     "mybatis-dynamic-sql": {
       "decision": "KEEP",
-      "old_path": "skills/java-spring/mybatis-dynamic-sql"
+      "old_path": "skills/java-spring/mybatis-dynamic-sql",
+      "reason": "KEEP as a matching explicit language/framework profile or add-on; install only selected IDs and preserve project conventions."
     },
     "mybatis-generator": {
       "decision": "KEEP",
-      "old_path": "skills/java-spring/mybatis-generator"
+      "old_path": "skills/java-spring/mybatis-generator",
+      "reason": "KEEP as a matching explicit language/framework profile or add-on; install only selected IDs and preserve project conventions."
     },
     "navigation-3": {
       "decision": "EXCLUDE",
-      "old_path": "skills/mobile/navigation-3"
+      "old_path": "skills/mobile/navigation-3",
+      "reason": "EXCLUDE v0.1: specialized Navigation 3 adoption is not required by the initial Android profile."
     },
     "nestjs-best-practices": {
       "decision": "KEEP",
-      "old_path": "skills/infrastructure/nestjs-best-practices"
+      "old_path": "skills/infrastructure/nestjs-best-practices",
+      "reason": "KEEP conditional NestJS add-on: retained original limitations require explicit acceptance."
     },
     "next-cache-components-adoption": {
       "decision": "EXCLUDE",
-      "old_path": "skills/operational/next-cache-components-adoption"
+      "old_path": "skills/operational/next-cache-components-adoption",
+      "reason": "EXCLUDE: external operational tools, deployments and migrations remain outside Veyrix core."
     },
     "next-cache-components-optimizer": {
       "decision": "EXCLUDE",
-      "old_path": "skills/operational/next-cache-components-optimizer"
+      "old_path": "skills/operational/next-cache-components-optimizer",
+      "reason": "EXCLUDE: external operational tools, deployments and migrations remain outside Veyrix core."
     },
     "nodejs-backend-patterns": {
       "decision": "KEEP",
-      "old_path": "skills/infrastructure/nodejs-backend-patterns"
+      "old_path": "skills/infrastructure/nodejs-backend-patterns",
+      "reason": "KEEP as a matching explicit language/framework profile or add-on; install only selected IDs and preserve project conventions."
     },
     "nuxt": {
       "decision": "EXCLUDE",
-      "old_path": "skills/vue-nuxt/nuxt"
+      "old_path": "skills/vue-nuxt/nuxt",
+      "reason": "EXCLUDE: Vue/Nuxt/Pinia/VueUse are explicitly outside the requested Veyrix scope."
     },
     "performance-optimization": {
       "decision": "EXCLUDE",
-      "old_path": "skills/operational/performance-optimization"
+      "old_path": "skills/operational/performance-optimization",
+      "reason": "EXCLUDE: external operational tools, deployments and migrations remain outside Veyrix core."
     },
     "pinia": {
       "decision": "EXCLUDE",
-      "old_path": "skills/vue-nuxt/pinia"
+      "old_path": "skills/vue-nuxt/pinia",
+      "reason": "EXCLUDE: Vue/Nuxt/Pinia/VueUse are explicitly outside the requested Veyrix scope."
     },
     "pnpm": {
       "decision": "KEEP",
-      "old_path": "skills/frontend/pnpm"
+      "old_path": "skills/frontend/pnpm",
+      "reason": "KEEP as a matching explicit language/framework profile or add-on; install only selected IDs and preserve project conventions."
     },
     "python-code-style": {
       "decision": "KEEP",
-      "old_path": "skills/python/python-code-style"
+      "old_path": "skills/python/python-code-style",
+      "reason": "KEEP Python profile: concrete style/tooling reference with original preferences, no automatic whole-project formatting."
     },
     "python-testing-patterns": {
       "decision": "KEEP",
-      "old_path": "skills/python/python-testing-patterns"
+      "old_path": "skills/python/python-testing-patterns",
+      "reason": "KEEP conditional testing add-on: failing email example and strict async fixture limitations are retained; explicit acceptance required."
     },
     "python-type-safety": {
       "decision": "KEEP",
-      "old_path": "skills/python/python-type-safety"
+      "old_path": "skills/python/python-type-safety",
+      "reason": "KEEP Python profile: types/generics/protocols; retained non-null Result example limitation."
     },
     "r8-analyzer": {
       "decision": "EXCLUDE",
-      "old_path": "skills/operational/r8-analyzer"
+      "old_path": "skills/operational/r8-analyzer",
+      "reason": "EXCLUDE: external operational tools, deployments and migrations remain outside Veyrix core."
     },
     "react-testing": {
       "decision": "KEEP",
-      "old_path": "skills/react/react-testing"
+      "old_path": "skills/react/react-testing",
+      "reason": "KEEP conditional testing add-on: JSDOM contrast and unavailable ECC companions remain documented; explicit acceptance required."
     },
     "receiving-code-review": {
       "decision": "EXCLUDE",
-      "old_path": "skills/engineering/receiving-code-review"
+      "old_path": "skills/engineering/receiving-code-review",
+      "reason": "EXCLUDE v0.1: focus the initial catalog on language/framework craft; keep review workflow outside profile defaults."
     },
     "redesign-existing-projects": {
       "decision": "KEEP",
-      "old_path": "skills/frontend/redesign-existing-projects"
+      "old_path": "skills/frontend/redesign-existing-projects",
+      "reason": "KEEP frontend-craft add-on: explicitly requested existing-UI redesign, preserve the current stack."
     },
     "redis-connections": {
       "decision": "KEEP",
-      "old_path": "skills/database/redis-connections"
+      "old_path": "skills/database/redis-connections",
+      "reason": "KEEP as a matching explicit language/framework profile or add-on; install only selected IDs and preserve project conventions."
     },
     "redis-core": {
       "decision": "KEEP",
-      "old_path": "skills/database/redis-core"
+      "old_path": "skills/database/redis-core",
+      "reason": "KEEP as a matching explicit language/framework profile or add-on; install only selected IDs and preserve project conventions."
     },
     "refactor-plan": {
       "decision": "EXCLUDE",
-      "old_path": "skills/engineering/refactor-plan"
+      "old_path": "skills/engineering/refactor-plan",
+      "reason": "EXCLUDE: planning/delegation remains OMO-owned."
     },
     "review-animations": {
       "decision": "KEEP",
-      "old_path": "skills/frontend/review-animations"
+      "old_path": "skills/frontend/review-animations",
+      "reason": "KEEP frontend-craft add-on: motion review, not automatic fixes."
     },
     "security-and-hardening": {
       "decision": "EXCLUDE",
-      "old_path": "skills/operational/security-and-hardening"
+      "old_path": "skills/operational/security-and-hardening",
+      "reason": "EXCLUDE: external operational tools, deployments and migrations remain outside Veyrix core."
     },
     "source-driven-development": {
       "decision": "KEEP",
-      "old_path": "skills/engineering/source-driven-development"
+      "old_path": "skills/engineering/source-driven-development",
+      "reason": "KEEP optional source-verification add-on: version-sensitive official API evidence, not a mandatory step on every task."
     },
     "spring-boot": {
       "decision": "KEEP",
-      "old_path": "skills/java-spring/spring-boot"
+      "old_path": "skills/java-spring/spring-boot",
+      "reason": "KEEP as a matching explicit language/framework profile or add-on; install only selected IDs and preserve project conventions."
     },
     "spring-security": {
       "decision": "KEEP",
-      "old_path": "skills/java-spring/spring-security"
+      "old_path": "skills/java-spring/spring-security",
+      "reason": "KEEP as a matching explicit language/framework profile or add-on; install only selected IDs and preserve project conventions."
     },
     "springboot-patterns": {
       "decision": "EXCLUDE",
-      "old_path": "skills/java-spring/springboot-patterns"
+      "old_path": "skills/java-spring/springboot-patterns",
+      "reason": "EXCLUDE v0.1: keep the narrower Boot/configuration and explicit persistence add-ons; broader application patterns can be reviewed later."
     },
     "springboot-tdd": {
       "decision": "EXCLUDE",
-      "old_path": "skills/java-spring/springboot-tdd"
+      "old_path": "skills/java-spring/springboot-tdd",
+      "reason": "EXCLUDE: mandatory TDD/coverage methodology is not an ambient stack default."
     },
     "sql-optimization-patterns": {
       "decision": "EXCLUDE",
-      "old_path": "skills/database/sql-optimization-patterns"
+      "old_path": "skills/database/sql-optimization-patterns",
+      "reason": "EXCLUDE: a preserved aggregate optimization changes query semantics; prefer selected engine-specific references."
     },
     "supabase-postgres-best-practices": {
       "decision": "EXCLUDE",
-      "old_path": "skills/database/supabase-postgres-best-practices"
+      "old_path": "skills/database/supabase-postgres-best-practices",
+      "reason": "EXCLUDE v0.1: PostgreSQL/Supabase is not part of the initial selected DB add-ons; file count alone is not a quality verdict."
     },
     "swift-concurrency": {
       "decision": "DEFER",
-      "old_path": "skills/mobile/swift-concurrency"
+      "old_path": "skills/mobile/swift-concurrency",
+      "reason": "DEFER: preserved task-group cancellation guidance requires upstream correctness review."
     },
     "swift-testing-expert": {
       "decision": "KEEP",
-      "old_path": "skills/mobile/swift-testing-expert"
+      "old_path": "skills/mobile/swift-testing-expert",
+      "reason": "KEEP conditional testing add-on: retain the documented invalid seconds-based time limit example; explicit acceptance required."
     },
     "swiftui-expert-skill": {
       "decision": "EXCLUDE",
-      "old_path": "skills/operational/swiftui-expert-skill"
+      "old_path": "skills/operational/swiftui-expert-skill",
+      "reason": "EXCLUDE: external operational tools, deployments and migrations remain outside Veyrix core."
     },
     "terraform-style-guide": {
       "decision": "EXCLUDE",
-      "old_path": "skills/infrastructure/terraform-style-guide"
+      "old_path": "skills/infrastructure/terraform-style-guide",
+      "reason": "EXCLUDE v0.1: outside the selected language/framework scope; not a judgment that the upstream is low quality."
     },
     "terraform-test": {
       "decision": "EXCLUDE",
-      "old_path": "skills/operational/terraform-test"
+      "old_path": "skills/operational/terraform-test",
+      "reason": "EXCLUDE: external operational tools, deployments and migrations remain outside Veyrix core."
     },
     "testing-setup": {
       "decision": "EXCLUDE",
-      "old_path": "skills/operational/testing-setup"
+      "old_path": "skills/operational/testing-setup",
+      "reason": "EXCLUDE: external operational tools, deployments and migrations remain outside Veyrix core."
     },
     "translation-review": {
       "decision": "EXCLUDE",
-      "old_path": "skills/core/translation-review"
+      "old_path": "skills/core/translation-review",
+      "reason": "EXCLUDE v0.1: outside the selected language/framework scope; not a judgment that the upstream is low quality."
     },
     "vercel-composition-patterns": {
       "decision": "KEEP",
-      "old_path": "skills/react/vercel-composition-patterns"
+      "old_path": "skills/react/vercel-composition-patterns",
+      "reason": "KEEP as a matching explicit language/framework profile or add-on; install only selected IDs and preserve project conventions."
     },
     "vercel-react-best-practices": {
       "decision": "KEEP",
-      "old_path": "skills/react/vercel-react-best-practices"
+      "old_path": "skills/react/vercel-react-best-practices",
+      "reason": "KEEP as a matching explicit language/framework profile or add-on; install only selected IDs and preserve project conventions."
     },
     "vercel-react-native-skills": {
       "decision": "EXCLUDE",
-      "old_path": "skills/mobile/vercel-react-native-skills"
+      "old_path": "skills/mobile/vercel-react-native-skills",
+      "reason": "EXCLUDE: React Native is separate from React web and outside this initial language/application scope."
     },
     "vercel-react-view-transitions": {
       "decision": "EXCLUDE",
-      "old_path": "skills/react/vercel-react-view-transitions"
+      "old_path": "skills/react/vercel-react-view-transitions",
+      "reason": "EXCLUDE v0.1: specialized transition surface; motion craft is separately selected."
     },
     "verification-before-completion": {
       "decision": "EXCLUDE",
-      "old_path": "skills/engineering/verification-before-completion"
+      "old_path": "skills/engineering/verification-before-completion",
+      "reason": "EXCLUDE: avoid an additional completion workflow; CLI evidence and OMO remain distinct owners."
     },
     "vite": {
       "decision": "KEEP",
-      "old_path": "skills/frontend/vite"
+      "old_path": "skills/frontend/vite",
+      "reason": "KEEP as a matching explicit language/framework profile or add-on; install only selected IDs and preserve project conventions."
     },
     "vitest": {
       "decision": "KEEP",
-      "old_path": "skills/frontend/vitest"
+      "old_path": "skills/frontend/vitest",
+      "reason": "KEEP as a matching explicit language/framework profile or add-on; install only selected IDs and preserve project conventions."
     },
     "vue": {
       "decision": "EXCLUDE",
-      "old_path": "skills/vue-nuxt/vue"
+      "old_path": "skills/vue-nuxt/vue",
+      "reason": "EXCLUDE: Vue/Nuxt/Pinia/VueUse are explicitly outside the requested Veyrix scope."
     },
     "vue-best-practices": {
       "decision": "EXCLUDE",
-      "old_path": "skills/vue-nuxt/vue-best-practices"
+      "old_path": "skills/vue-nuxt/vue-best-practices",
+      "reason": "EXCLUDE: Vue/Nuxt/Pinia/VueUse are explicitly outside the requested Veyrix scope."
     },
     "vue-router-best-practices": {
       "decision": "EXCLUDE",
-      "old_path": "skills/vue-nuxt/vue-router-best-practices"
+      "old_path": "skills/vue-nuxt/vue-router-best-practices",
+      "reason": "EXCLUDE: Vue/Nuxt/Pinia/VueUse are explicitly outside the requested Veyrix scope."
     },
     "vue-testing-best-practices": {
       "decision": "EXCLUDE",
-      "old_path": "skills/vue-nuxt/vue-testing-best-practices"
+      "old_path": "skills/vue-nuxt/vue-testing-best-practices",
+      "reason": "EXCLUDE: Vue/Nuxt/Pinia/VueUse are explicitly outside the requested Veyrix scope."
     },
     "vueuse-functions": {
       "decision": "EXCLUDE",
-      "old_path": "skills/vue-nuxt/vueuse-functions"
+      "old_path": "skills/vue-nuxt/vueuse-functions",
+      "reason": "EXCLUDE: Vue/Nuxt/Pinia/VueUse are explicitly outside the requested Veyrix scope."
     },
     "web-design-guidelines": {
       "decision": "KEEP",
-      "old_path": "skills/frontend/web-design-guidelines"
+      "old_path": "skills/frontend/web-design-guidelines",
+      "reason": "KEEP frontend-craft add-on: separate web-quality review from art direction."
     },
     "web-perf": {
       "decision": "EXCLUDE",
-      "old_path": "skills/operational/web-perf"
+      "old_path": "skills/operational/web-perf",
+      "reason": "EXCLUDE: external operational tools, deployments and migrations remain outside Veyrix core."
     },
     "webapp-testing": {
       "decision": "EXCLUDE",
-      "old_path": "skills/operational/webapp-testing"
+      "old_path": "skills/operational/webapp-testing",
+      "reason": "EXCLUDE: external operational tools, deployments and migrations remain outside Veyrix core."
     },
     "wrangler": {
       "decision": "EXCLUDE",
-      "old_path": "skills/operational/wrangler"
+      "old_path": "skills/operational/wrangler",
+      "reason": "EXCLUDE: external operational tools, deployments and migrations remain outside Veyrix core."
     }
   },
   "schema": 1,
