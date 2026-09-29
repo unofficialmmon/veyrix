@@ -1,0 +1,386 @@
+{
+  "decisions": {
+    "android-clean-architecture": {
+      "decision": "KEEP",
+      "old_path": "skills/mobile/android-clean-architecture"
+    },
+    "android-cli": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/operational/android-cli"
+    },
+    "animate": {
+      "decision": "KEEP",
+      "old_path": "skills/frontend/animate"
+    },
+    "api-contract": {
+      "decision": "KEEP",
+      "old_path": "skills/core/api-contract"
+    },
+    "browser-tools": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/operational/browser-tools"
+    },
+    "bug-reproduction-brief": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/engineering/bug-reproduction-brief"
+    },
+    "compose-multiplatform-patterns": {
+      "decision": "KEEP",
+      "old_path": "skills/mobile/compose-multiplatform-patterns"
+    },
+    "deprecation-and-migration": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/operational/deprecation-and-migration"
+    },
+    "design-taste-frontend": {
+      "decision": "KEEP",
+      "old_path": "skills/frontend/design-taste-frontend"
+    },
+    "durable-objects": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/operational/durable-objects"
+    },
+    "eas-workflows": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/operational/eas-workflows"
+    },
+    "edge-to-edge": {
+      "decision": "KEEP",
+      "old_path": "skills/mobile/edge-to-edge"
+    },
+    "expo-api-routes": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/operational/expo-api-routes"
+    },
+    "expo-data-fetching": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/mobile/expo-data-fetching"
+    },
+    "expo-deployment": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/operational/expo-deployment"
+    },
+    "expo-dev-client": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/operational/expo-dev-client"
+    },
+    "expo-dom": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/mobile/expo-dom"
+    },
+    "expo-module": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/mobile/expo-module"
+    },
+    "expo-native-ui": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/mobile/expo-native-ui"
+    },
+    "expo-tailwind-setup": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/mobile/expo-tailwind-setup"
+    },
+    "expo-upgrade": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/operational/expo-upgrade"
+    },
+    "find-animation-opportunities": {
+      "decision": "KEEP",
+      "old_path": "skills/frontend/find-animation-opportunities"
+    },
+    "flutter-add-widget-test": {
+      "decision": "KEEP",
+      "old_path": "skills/mobile/flutter-add-widget-test"
+    },
+    "flutter-apply-architecture-best-practices": {
+      "decision": "DEFER",
+      "old_path": "skills/mobile/flutter-apply-architecture-best-practices"
+    },
+    "flutter-build-responsive-layout": {
+      "decision": "KEEP",
+      "old_path": "skills/mobile/flutter-build-responsive-layout"
+    },
+    "flutter-fix-layout-issues": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/operational/flutter-fix-layout-issues"
+    },
+    "flutter-setup-declarative-routing": {
+      "decision": "KEEP",
+      "old_path": "skills/mobile/flutter-setup-declarative-routing"
+    },
+    "frontend-design": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/frontend/frontend-design"
+    },
+    "generated-code": {
+      "decision": "KEEP",
+      "old_path": "skills/core/generated-code"
+    },
+    "java-coding-standards": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/java-spring/java-coding-standards"
+    },
+    "java-style": {
+      "decision": "KEEP",
+      "old_path": "skills/java-spring/java-style"
+    },
+    "jpa-patterns": {
+      "decision": "KEEP",
+      "old_path": "skills/java-spring/jpa-patterns"
+    },
+    "kotlin-coroutines-flows": {
+      "decision": "DEFER",
+      "old_path": "skills/mobile/kotlin-coroutines-flows"
+    },
+    "kotlin-patterns": {
+      "decision": "KEEP",
+      "old_path": "skills/mobile/kotlin-patterns"
+    },
+    "mariadb-features": {
+      "decision": "KEEP",
+      "old_path": "skills/database/mariadb-features"
+    },
+    "mariadb-query-optimization": {
+      "decision": "KEEP",
+      "old_path": "skills/database/mariadb-query-optimization"
+    },
+    "maven-build": {
+      "decision": "KEEP",
+      "old_path": "skills/java-spring/maven-build"
+    },
+    "mcp-builder": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/operational/mcp-builder"
+    },
+    "mobile-android-design": {
+      "decision": "KEEP",
+      "old_path": "skills/mobile/mobile-android-design"
+    },
+    "mobile-ios-design": {
+      "decision": "KEEP",
+      "old_path": "skills/mobile/mobile-ios-design"
+    },
+    "mobile-native": {
+      "decision": "KEEP",
+      "old_path": "skills/frontend/mobile-native"
+    },
+    "mybatis": {
+      "decision": "KEEP",
+      "old_path": "skills/java-spring/mybatis"
+    },
+    "mybatis-dynamic-sql": {
+      "decision": "KEEP",
+      "old_path": "skills/java-spring/mybatis-dynamic-sql"
+    },
+    "mybatis-generator": {
+      "decision": "KEEP",
+      "old_path": "skills/java-spring/mybatis-generator"
+    },
+    "navigation-3": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/mobile/navigation-3"
+    },
+    "nestjs-best-practices": {
+      "decision": "KEEP",
+      "old_path": "skills/infrastructure/nestjs-best-practices"
+    },
+    "next-cache-components-adoption": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/operational/next-cache-components-adoption"
+    },
+    "next-cache-components-optimizer": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/operational/next-cache-components-optimizer"
+    },
+    "nodejs-backend-patterns": {
+      "decision": "KEEP",
+      "old_path": "skills/infrastructure/nodejs-backend-patterns"
+    },
+    "nuxt": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/vue-nuxt/nuxt"
+    },
+    "performance-optimization": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/operational/performance-optimization"
+    },
+    "pinia": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/vue-nuxt/pinia"
+    },
+    "pnpm": {
+      "decision": "KEEP",
+      "old_path": "skills/frontend/pnpm"
+    },
+    "python-code-style": {
+      "decision": "KEEP",
+      "old_path": "skills/python/python-code-style"
+    },
+    "python-testing-patterns": {
+      "decision": "KEEP",
+      "old_path": "skills/python/python-testing-patterns"
+    },
+    "python-type-safety": {
+      "decision": "KEEP",
+      "old_path": "skills/python/python-type-safety"
+    },
+    "r8-analyzer": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/operational/r8-analyzer"
+    },
+    "react-testing": {
+      "decision": "KEEP",
+      "old_path": "skills/react/react-testing"
+    },
+    "receiving-code-review": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/engineering/receiving-code-review"
+    },
+    "redesign-existing-projects": {
+      "decision": "KEEP",
+      "old_path": "skills/frontend/redesign-existing-projects"
+    },
+    "redis-connections": {
+      "decision": "KEEP",
+      "old_path": "skills/database/redis-connections"
+    },
+    "redis-core": {
+      "decision": "KEEP",
+      "old_path": "skills/database/redis-core"
+    },
+    "refactor-plan": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/engineering/refactor-plan"
+    },
+    "review-animations": {
+      "decision": "KEEP",
+      "old_path": "skills/frontend/review-animations"
+    },
+    "security-and-hardening": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/operational/security-and-hardening"
+    },
+    "source-driven-development": {
+      "decision": "KEEP",
+      "old_path": "skills/engineering/source-driven-development"
+    },
+    "spring-boot": {
+      "decision": "KEEP",
+      "old_path": "skills/java-spring/spring-boot"
+    },
+    "spring-security": {
+      "decision": "KEEP",
+      "old_path": "skills/java-spring/spring-security"
+    },
+    "springboot-patterns": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/java-spring/springboot-patterns"
+    },
+    "springboot-tdd": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/java-spring/springboot-tdd"
+    },
+    "sql-optimization-patterns": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/database/sql-optimization-patterns"
+    },
+    "supabase-postgres-best-practices": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/database/supabase-postgres-best-practices"
+    },
+    "swift-concurrency": {
+      "decision": "DEFER",
+      "old_path": "skills/mobile/swift-concurrency"
+    },
+    "swift-testing-expert": {
+      "decision": "KEEP",
+      "old_path": "skills/mobile/swift-testing-expert"
+    },
+    "swiftui-expert-skill": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/operational/swiftui-expert-skill"
+    },
+    "terraform-style-guide": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/infrastructure/terraform-style-guide"
+    },
+    "terraform-test": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/operational/terraform-test"
+    },
+    "testing-setup": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/operational/testing-setup"
+    },
+    "translation-review": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/core/translation-review"
+    },
+    "vercel-composition-patterns": {
+      "decision": "KEEP",
+      "old_path": "skills/react/vercel-composition-patterns"
+    },
+    "vercel-react-best-practices": {
+      "decision": "KEEP",
+      "old_path": "skills/react/vercel-react-best-practices"
+    },
+    "vercel-react-native-skills": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/mobile/vercel-react-native-skills"
+    },
+    "vercel-react-view-transitions": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/react/vercel-react-view-transitions"
+    },
+    "verification-before-completion": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/engineering/verification-before-completion"
+    },
+    "vite": {
+      "decision": "KEEP",
+      "old_path": "skills/frontend/vite"
+    },
+    "vitest": {
+      "decision": "KEEP",
+      "old_path": "skills/frontend/vitest"
+    },
+    "vue": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/vue-nuxt/vue"
+    },
+    "vue-best-practices": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/vue-nuxt/vue-best-practices"
+    },
+    "vue-router-best-practices": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/vue-nuxt/vue-router-best-practices"
+    },
+    "vue-testing-best-practices": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/vue-nuxt/vue-testing-best-practices"
+    },
+    "vueuse-functions": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/vue-nuxt/vueuse-functions"
+    },
+    "web-design-guidelines": {
+      "decision": "KEEP",
+      "old_path": "skills/frontend/web-design-guidelines"
+    },
+    "web-perf": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/operational/web-perf"
+    },
+    "webapp-testing": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/operational/webapp-testing"
+    },
+    "wrangler": {
+      "decision": "EXCLUDE",
+      "old_path": "skills/operational/wrangler"
+    }
+  },
+  "schema": 1,
+  "source_commit": "2053b47cd291db5d00d7c9df9932764aca7b3859"
+}
