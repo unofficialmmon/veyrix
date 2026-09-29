@@ -1,0 +1,105 @@
+name: temporary-catalog-acquisition
+on:
+  push:
+    branches: [work/pinned-catalog-acquisition-20260929]
+    paths: [.github/workflows/temporary-catalog-acquisition.yml]
+permissions:
+  contents: write
+jobs:
+  acquire:
+    if: github.repository == 'unofficialmmon/veyrix' && github.ref == 'refs/heads/work/pinned-catalog-acquisition-20260929'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 2
+      - name: Copy reviewed Git blobs, never execute imported code
+        shell: python
+        run: |
+          import hashlib, json, os, pathlib, re, subprocess, tempfile
+          BASE = 'ab7bc60394a6d9154bbb7770492f745095e97ed4'
+          PIN = '2053b47cd291db5d00d7c9df9932764aca7b3859'
+          IDS = 'api-contract generated-code source-driven-development java-style maven-build spring-boot spring-security jpa-patterns mybatis mybatis-dynamic-sql mybatis-generator nodejs-backend-patterns nestjs-best-practices pnpm vitest vite vercel-react-best-practices vercel-composition-patterns react-testing design-taste-frontend redesign-existing-projects animate review-animations web-design-guidelines mobile-native find-animation-opportunities kotlin-patterns android-clean-architecture mobile-android-design compose-multiplatform-patterns edge-to-edge mobile-ios-design swift-testing-expert flutter-build-responsive-layout flutter-add-widget-test flutter-setup-declarative-routing mariadb-features mariadb-query-optimization redis-core redis-connections python-code-style python-type-safety python-testing-patterns'.split()
+          root = pathlib.Path.cwd()
+          out = pathlib.Path(os.environ['RUNNER_TEMP']) / 'veyrix-catalog'
+          out.mkdir()
+          def git(*args, directory=None):
+              prefix = ['git', '-c', 'core.hooksPath=/dev/null']
+              if directory: prefix += ['--git-dir', str(directory)]
+              return subprocess.check_output(prefix + list(args))
+          def get_tree(directory, pin):
+              rows = git('ls-tree', '-rz', '--full-tree', pin, directory=directory)
+              result = {}
+              for row in filter(None, rows.split(b'\0')):
+                  meta, name = row.split(b'\t', 1)
+                  mode, kind, sha = meta.decode().split()
+                  result[name.decode()] = (mode, kind, sha)
+              return result
+          def copy_blob(directory, tree, source, dest):
+              mode, kind, sha = tree[source]
+              if mode != '100644' or kind != 'blob': raise RuntimeError('Unsupported imported file type')
+              data = git('cat-file', 'blob', sha, directory=directory)
+              if hashlib.sha1(b'blob ' + str(len(data)).encode() + b'\0' + data).hexdigest() != sha: raise RuntimeError('Blob mismatch')
+              data.decode('utf-8')
+              target = root / dest
+              if target.exists(): raise RuntimeError('Refusing existing path: ' + dest)
+              target.parent.mkdir(parents=True, exist_ok=True)
+              target.write_bytes(data)
+              return {'gitBlob': sha, 'sha256': hashlib.sha256(data).hexdigest(), 'sourcePath': source}
+          git('read-tree', BASE)
+          records = {}
+          with tempfile.TemporaryDirectory() as td:
+              objects = pathlib.Path(td) / 'source.git'
+              git('init', '--bare', '-q', str(objects))
+              git('fetch', '--no-tags', '--depth=1', 'https://github.com/unofficialmmon/agent-reference.git', PIN, directory=objects)
+              if git('rev-parse', 'FETCH_HEAD', directory=objects).decode().strip() != PIN: raise RuntimeError('Source pin mismatch')
+              tree = get_tree(objects, PIN)
+              lock = json.loads(git('show', PIN + ':catalog/skills.lock.json', directory=objects))['skills']
+              licenses = set()
+              for id in IDS:
+                  entrypoint = next(p for p in tree if p.startswith('skills/') and p.endswith('/' + id + '/SKILL.md'))
+                  prefix = entrypoint[:-8]
+                  files = {}
+                  for path in sorted(p for p in tree if p.startswith(prefix)):
+                      rel = path[len(prefix):]
+                      if '..' in pathlib.PurePosixPath(rel).parts: raise RuntimeError('Unsafe path')
+                      files[rel] = copy_blob(objects, tree, path, 'skills/' + id + '/' + rel)
+                      if 'sha256:' + files[rel]['sha256'] != lock[id]['files'][rel]: raise RuntimeError('Recorded source hash mismatch')
+                  records[id] = {'sourcePath': prefix[:-1], 'files': files}
+                  for text in (str(lock[id].get('licenseEvidence', '')), str(lock[id].get('knownIssues', []))):
+                      for name in re.findall(r'catalog/LICENSES/([\w.-]+)', text):
+                          if 'catalog/LICENSES/' + name in tree: licenses.add(name)
+              licenses.update(['pi-dev-kit-derived-MIT.txt', 'antfu-skills-MIT.txt', 'mariadb-skills-MIT.txt', 'redis-agent-skills-MIT.txt', 'emilkowalski-skills-MIT.txt', 'addyosmani-agent-skills-MIT.txt', 'vercel-labs-agent-skills-LICENSE-EVIDENCE.md'])
+              for name in sorted(licenses): copy_blob(objects, tree, 'catalog/LICENSES/' + name, 'licenses/' + name)
+              copy_blob(objects, tree, 'LICENSE', 'licenses/agent-reference-MIT.txt')
+          with tempfile.TemporaryDirectory() as td:
+              objects = pathlib.Path(td) / 'emil.git'
+              pin = 'd16ebe60d09a5ba2afcb7054ede9d0a10c9f6128'
+              git('init', '--bare', '-q', str(objects))
+              git('fetch', '--no-tags', '--depth=1', 'https://github.com/emilkowalski/skills.git', pin, directory=objects)
+              if git('rev-parse', 'FETCH_HEAD', directory=objects).decode().strip() != pin: raise RuntimeError('Emil pin mismatch')
+              tree = get_tree(objects, pin)
+              prefix = 'skills/emil-design-eng/'
+              files = {}
+              for path in sorted(p for p in tree if p.startswith(prefix)):
+                  rel = path[len(prefix):]
+                  files[rel] = copy_blob(objects, tree, path, 'skills/emil-design-eng/' + rel)
+              files['LICENSE'] = copy_blob(objects, tree, 'LICENSE', 'skills/emil-design-eng/LICENSE')
+              records['emil-design-eng'] = {'repository': 'emilkowalski/skills', 'revision': pin, 'files': files}
+          git('add', '--', 'skills', 'licenses')
+          paths = git('diff', '--cached', '--name-only', BASE).decode().splitlines()
+          if any(not p.startswith(('skills/', 'licenses/')) for p in paths): raise RuntimeError('Out of scope staged file')
+          git('config', 'user.name', 'github-actions[bot]')
+          git('config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com')
+          tree = git('write-tree').decode().strip()
+          commit = git('commit-tree', tree, '-p', BASE, '-m', 'chore: stage selected original skill snapshots for Veyrix review').decode().strip()
+          git('push', 'origin', commit + ':refs/heads/work/veyrix-catalog-20260929')
+          (out / 'source.tar.gz').write_bytes(git('archive', '--format=tar.gz', commit))
+          (out / 'provenance.json').write_text(json.dumps({'base': BASE, 'source': PIN, 'commit': commit, 'tree': tree, 'records': records}, indent=2) + '\n')
+          print(json.dumps({'commit': commit, 'tree': tree, 'skills': len(records)}))
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: veyrix-original-catalog
+          path: ${{ runner.temp }}/veyrix-catalog
+          retention-days: 7
