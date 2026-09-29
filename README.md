@@ -28,21 +28,35 @@ in `veyrix.yml`. Authenticated private-Git and macOS host smoke remain NOT RUN.
 
 ## First project
 
-Work at the Git project root. Review the profile and any upstream limitations.
-For a Maven Spring project using MyBatis:
+Work at the Git project root. Inspect the available catalog before selecting a
+profile or add-on:
+
+```sh
+veyrix profiles
+veyrix profile show java-spring-maven
+veyrix addons
+```
+
+When the CLI was installed from the same reviewed Git repository/commit, `init`
+can reuse that immutable installed commit. For a Maven Spring project using MyBatis:
+
+```sh
+veyrix init --profile java-spring-maven --addon mybatis --dry-run
+veyrix init --profile java-spring-maven --addon mybatis
+```
+
+If installed-source provenance is unavailable or the selected repository differs,
+Veyrix fails with `PIN_REQUIRED`; provide the reviewed full SHA explicitly:
 
 ```sh
 veyrix init --profile java-spring-maven --addon mybatis \
   --ref <FULL_VEYRIX_COMMIT> --dry-run
-veyrix init --profile java-spring-maven --addon mybatis \
-  --ref <FULL_VEYRIX_COMMIT>
 ```
 
 For frontend implementation plus Taste/Emil craft:
 
 ```sh
-veyrix init --profile react-vite --addon frontend-craft \
-  --ref <FULL_VEYRIX_COMMIT> --dry-run
+veyrix init --profile react-vite --addon frontend-craft --dry-run
 ```
 
 Remove `--dry-run` only after reviewing the intended changes. No unrelated Skill
@@ -53,11 +67,15 @@ partial: known-problem concurrency snapshots are deferred, not silently replaced
 ## Day-to-day
 
 ```sh
+veyrix profiles                    # list profiles at the current/installed pin
+veyrix profile show <PROFILE_ID>   # inspect one profile
+veyrix addons                      # list add-ons and limitations
+veyrix doctor                      # cache-only static diagnostics; never repairs
 veyrix sync --dry-run              # current manifest, existing commit
-veyrix sync                       # materialize only planned owned changes
-veyrix --offline sync             # same operation from a warm cache
-veyrix audit                      # project read-only; may populate source cache
-veyrix info                       # selected IDs and upstream limitations
+veyrix sync                        # materialize only planned owned changes
+veyrix --offline sync              # same operation from a warm cache
+veyrix audit                       # project read-only; may populate source cache
+veyrix info                        # selected IDs and upstream limitations
 veyrix update --ref <TAG_OR_SHA>   # preview only; does not change the project
 veyrix update --ref <FULL_SHA> --apply
 ```
@@ -66,9 +84,10 @@ Apply requires a full SHA; named refs are supported only in previews. `sync`
 never chooses a newer commit. Edit add-ons/profile in `veyrix.yml`, preview, then
 sync at the same pin. Updating source and changing selection are distinct actions.
 
-The five CLI commands return JSON. Exit codes: `0` success/preview, `1` audit drift,
-`2` blocked/error. `NOOP` means no project content changed, not that OpenCode loaded
-or used a Skill. `STATIC_MATCH` is not a security audit or runtime certification.
+CLI results are JSON. Exit codes: `0` success/preview, `1` audit/doctor drift,
+`2` blocked/error. `NOOP` means no project content changed, not that OpenCode
+loaded or used a Skill. `STATIC_MATCH` and doctor `HEALTHY` are static
+configuration/disk results, not runtime or security certification.
 
 ## Files and ownership
 
@@ -77,7 +96,7 @@ or used a Skill. `STATIC_MATCH` is not a security audit or runtime certification
 | `veyrix.yml` | User's explicit desired profile/add-ons/source |
 | `veyrix.lock.json` | Veyrix's resolved commit, IDs, source hashes and limitations |
 | `.veyrix/managed.json` | Veyrix's deployed file hashes and only its OMO additions |
-| `.agents/skills/<id>/` | Complete byte-preserved copies selected by Veyrix |
+| `.agents/skills/<id>/` | Complete selected Skill copies managed per Veyrix receipt |
 | `.opencode/oh-my-opencode-slim.jsonc` | Shared file; Veyrix changes only owned `skills_add` values |
 | `.opencode/commands/veyrix-{setup,sync,audit}.md` | Three thin prompts calling the installed CLI |
 | `AGENTS.md`, application files, global OpenCode/OMO, MCPs, plugins, memory | User / existing tools; never rewritten by sync |
@@ -90,18 +109,30 @@ Skills to test their existence. See [ownership and recovery](docs/ARCHITECTURE.m
 
 ## Catalog and quality
 
-44 available/conditional Skill directories (43 selected from agent-reference
-0.6.0 plus Emil `emil-design-eng`). The full 95-entry migration inventory has
-KEEP/EXCLUDE/DEFER reasons. There are 11 explicit profiles and 20 optional add-ons;
-these are not 44 always-loaded instructions. No Vue/Nuxt or operational suites.
+There are **47 available/conditional Skill directories**: the preserved 44-Skill
+seed plus three Veyrix-authored common-quality Skills
+(`engineering-quality`, `regression-proof`, `security-review`). The historical
+95-entry migration inventory remains unchanged; the three later additions are
+tracked separately with exact source identities.
 
-External and previously adapted snapshots keep their original bytes. Three
-existing local-derived references and six official-document-derived references
-retain those labels; they are **not** advertised as official external Skills.
-Four conditional Skills require explicit `accept_limitations` in the manifest.
-This acknowledges limitations, not a waiver for broken recipes or evidence claims.
+There are **11 explicit profiles and 21 optional add-ons**. These are availability
+and routing choices, not 47 always-loaded instructions. The
+`engineering-quality` add-on exposes the three common-quality Skills to fixer and
+oracle without creating another orchestration layer. No Vue/Nuxt or operational
+suite is added.
+
+External and previously adapted snapshots keep their original bytes. The original
+three local-derived references and six official-document-derived references retain
+those labels; the three new quality Skills are separately identified as Veyrix
+local additions. Four conditional Skills require explicit `accept_limitations`
+in the manifest. This acknowledges limitations, not a waiver for broken recipes
+or evidence claims.
 
 - [Profiles and add-ons](docs/PROFILES.md)
+- [Essential UX](docs/UX.md)
+- [Common quality layer](docs/QUALITY.md)
+- [Global AGENTS baseline](docs/agents/GLOBAL_AGENTS.md)
+- [Project AGENTS authoring prompt](docs/agents/PROJECT_AGENTS_AUTHORING_PROMPT.md)
 - [Catalog quality, provenance and frontend selection](docs/CATALOG.md)
 - [Migration decisions and existing-project migration](docs/MIGRATION.md)
 - [External tools stay external](docs/EXTERNAL_TOOLS.md)

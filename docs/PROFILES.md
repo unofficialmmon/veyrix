@@ -25,6 +25,7 @@ A profile name alone does not prove runtime or complete language expertise.
 | Add-on | OMO role and selected IDs |
 | --- | --- |
 | `api` | fixer: `api-contract` |
+| `engineering-quality` | fixer/oracle: `engineering-quality`, `regression-proof`, `security-review` |
 | `frontend-craft` | designer: `animate`, `design-taste-frontend`, `emil-design-eng`, `redesign-existing-projects`, `review-animations`, `web-design-guidelines` |
 | `generated` | fixer: `generated-code` |
 | `jpa` | fixer: `jpa-patterns` |
@@ -45,6 +46,11 @@ A profile name alone does not prove runtime or complete language expertise.
 | `swift-testing` | fixer: `swift-testing-expert` |
 | `vitest` | fixer: `vitest` |
 
+The `engineering-quality` add-on is opt-in and does not create an additional
+agent or workflow layer. It makes reusable review/evidence guidance available to
+OMO Slim's existing fixer/oracle roles. Actual host loading remains distinct from
+catalog selection and deployment.
+
 Example conventional YAML:
 
 ```yaml
@@ -53,6 +59,16 @@ repository: https://github.com/unofficialmmon/veyrix.git
 profile: python
 addons: [python-testing]
 accept_limitations: [python-testing-patterns]
+```
+
+For a project that explicitly wants the common quality layer:
+
+```yaml
+schema: 1
+repository: https://github.com/unofficialmmon/veyrix.git
+profile: java-spring-maven
+addons: [engineering-quality]
+accept_limitations: []
 ```
 
 Read the catalog limitations before accepting an ID. Changing this manifest
