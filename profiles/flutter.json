@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "roles": {
+    "fixer": [
+      "flutter-add-widget-test",
+      "flutter-build-responsive-layout",
+      "flutter-setup-declarative-routing"
+    ]
+  }
+}

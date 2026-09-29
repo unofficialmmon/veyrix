@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "roles": {
+    "fixer": [
+      "vercel-composition-patterns",
+      "vercel-react-best-practices",
+      "vite"
+    ]
+  }
+}

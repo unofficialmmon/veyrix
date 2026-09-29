@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "roles": {
+    "fixer": [
+      "java-style",
+      "spring-boot"
+    ]
+  }
+}

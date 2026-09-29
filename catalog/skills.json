@@ -1,0 +1,1902 @@
+{
+  "origin": {
+    "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+    "repository": "unofficialmmon/agent-reference"
+  },
+  "schema": 1,
+  "skills": {
+    "android-clean-architecture": {
+      "files": {
+        "LICENSE.source.txt": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
+        "SKILL.md": "c3525cd030b46c56f3bca4953527a97c2d4ff71ce3875193bf303c43c4526423"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/mobile/android-clean-architecture",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "SKILL.md": "c3525cd030b46c56f3bca4953527a97c2d4ff71ce3875193bf303c43c4526423"
+      },
+      "path": "skills/android-clean-architecture",
+      "status": "available",
+      "supplements": {
+        "LICENSE.source.txt": {
+          "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+          "path": "catalog/LICENSES/android-clean-architecture-UPSTREAM-LICENSE.txt",
+          "repository": "unofficialmmon/agent-reference",
+          "sha256": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2"
+        }
+      },
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "catalog/LICENSES/android-clean-architecture-UPSTREAM-LICENSE.txt",
+        "revision": "9b081280bc52ee6f22a2e0463761b318936dd980",
+        "source": "https://github.com/affaan-m/ECC",
+        "sourceType": "external-adapted",
+        "upstreamPath": "skills/android-clean-architecture"
+      }
+    },
+    "animate": {
+      "files": {
+        "LICENSE.source.txt": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+        "RECIPES.md": "21ff63d84391db8d96ecdf9170095f55a42c836ccc36fd3269c4772bab031ba2",
+        "SKILL.md": "b8ede161270458e6ae2e45e8a1985373515d4c63de5568ddb0f9012d7634356c"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [
+        "The upstream Skill references companion Skills pick-ui-library, review-animations, improve-animations, find-animation-opportunities and animate-expo. review-animations and find-animation-opportunities are now cataloged but are not automatically selected or loaded. The other companion Skills remain unavailable unless separately reviewed and installed.",
+        "Performance claims and library-specific advice are retained upstream text and have not been locally behavior-tested across Motion/browser versions; verify against the project version when material."
+      ],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/frontend/animate",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "RECIPES.md": "21ff63d84391db8d96ecdf9170095f55a42c836ccc36fd3269c4772bab031ba2",
+        "SKILL.md": "b8ede161270458e6ae2e45e8a1985373515d4c63de5568ddb0f9012d7634356c"
+      },
+      "path": "skills/animate",
+      "status": "available",
+      "supplements": {
+        "LICENSE.source.txt": {
+          "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+          "path": "catalog/LICENSES/emilkowalski-skills-MIT.txt",
+          "repository": "unofficialmmon/agent-reference",
+          "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b"
+        }
+      },
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "repository LICENSE and catalog/LICENSES/emilkowalski-skills-MIT.txt",
+        "revision": "d16ebe60d09a5ba2afcb7054ede9d0a10c9f6128",
+        "source": "https://github.com/emilkowalski/skills",
+        "sourceType": "external",
+        "upstreamPath": "skills/animate"
+      }
+    },
+    "api-contract": {
+      "files": {
+        "LICENSE.source.txt": "03e02ff3327fa7008197e846bb2c61165bdb33caab49f6648885cad2da3a8f58",
+        "SKILL.md": "b7edfa62441ff137d91704a8bda6b59dc3b0b3ad6b68d575952fb9b18a6ccef9"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/core/api-contract",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "SKILL.md": "b7edfa62441ff137d91704a8bda6b59dc3b0b3ad6b68d575952fb9b18a6ccef9"
+      },
+      "path": "skills/api-contract",
+      "status": "available",
+      "supplements": {
+        "LICENSE.source.txt": {
+          "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+          "path": "LICENSE",
+          "repository": "unofficialmmon/agent-reference",
+          "sha256": "03e02ff3327fa7008197e846bb2c61165bdb33caab49f6648885cad2da3a8f58"
+        }
+      },
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "local authored content derived from user-owned project materials",
+        "revision": "agent-reference-2026-08-28",
+        "source": "OMP/CODEGEN-derived",
+        "sourceType": "local-derived",
+        "upstreamPath": null
+      }
+    },
+    "compose-multiplatform-patterns": {
+      "files": {
+        "LICENSE.source.txt": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
+        "SKILL.md": "9bbcaa427be7146ff979e812901eed5d03570bb6fbfe9b39384bd873b5b3a252"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/mobile/compose-multiplatform-patterns",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "SKILL.md": "9bbcaa427be7146ff979e812901eed5d03570bb6fbfe9b39384bd873b5b3a252"
+      },
+      "path": "skills/compose-multiplatform-patterns",
+      "status": "available",
+      "supplements": {
+        "LICENSE.source.txt": {
+          "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+          "path": "catalog/LICENSES/compose-multiplatform-patterns-UPSTREAM-LICENSE.txt",
+          "repository": "unofficialmmon/agent-reference",
+          "sha256": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2"
+        }
+      },
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "catalog/LICENSES/compose-multiplatform-patterns-UPSTREAM-LICENSE.txt",
+        "revision": "9b081280bc52ee6f22a2e0463761b318936dd980",
+        "source": "https://github.com/affaan-m/ECC",
+        "sourceType": "external-adapted",
+        "upstreamPath": "skills/compose-multiplatform-patterns"
+      }
+    },
+    "design-taste-frontend": {
+      "files": {
+        "LICENSE": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df",
+        "SKILL.md": "aa194351b246b8b4799099d4ed7b033d29eab6e6e3d58d8d2172978be7b3ec89"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [
+        "taste-experimental: This pinned upstream v2 is experimental and its 1206-line entrypoint is loaded in full when selected. No quality/cost improvement is certified by static tests.",
+        "taste-scope: Marketing/landing/portfolio direction, not a dashboard or general product-UI default. Choose it OR frontend-design OR redesign-existing-projects as the primary design method, not all three.",
+        "taste-assets-and-packages: The source asks to use image generation when available and recommends official component packages. Catalog inclusion supplies neither image tools nor authorization to install dependencies, fetch assets, add remote scripts, or change the project stack.",
+        "taste-truth: Examples encourage organic-looking metrics, identities and dates. Preserve real project facts; use clearly labeled fictional fixtures only when authorized. Never invent customer endorsements, legal compliance or production evidence.",
+        "taste-blocks: The blocks directory is described as a future library contract but is absent at this pin. Do not invent those files or fetch an unreviewed replacement."
+      ],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/frontend/design-taste-frontend",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "LICENSE": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df",
+        "SKILL.md": "aa194351b246b8b4799099d4ed7b033d29eab6e6e3d58d8d2172978be7b3ec89"
+      },
+      "path": "skills/design-taste-frontend",
+      "status": "available",
+      "supplements": {},
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "upstream root LICENSE preserved in the Skill and catalog/LICENSES/Leonxlnx-taste-skill-MIT.txt",
+        "revision": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+        "source": "https://github.com/Leonxlnx/taste-skill",
+        "sourceType": "external",
+        "upstreamPath": "skills/taste-skill"
+      }
+    },
+    "edge-to-edge": {
+      "files": {
+        "LICENSE.source.txt": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+        "SKILL.md": "308cf1d89ff63eeb176fbf1f5d315043f9eacb2d3cfe4a4e3e606159aca9aae8"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/mobile/edge-to-edge",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "SKILL.md": "308cf1d89ff63eeb176fbf1f5d315043f9eacb2d3cfe4a4e3e606159aca9aae8"
+      },
+      "path": "skills/edge-to-edge",
+      "status": "available",
+      "supplements": {
+        "LICENSE.source.txt": {
+          "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+          "path": "catalog/LICENSES/edge-to-edge-UPSTREAM-LICENSE.txt",
+          "repository": "unofficialmmon/agent-reference",
+          "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+        }
+      },
+      "upstream": {
+        "license": "Apache-2.0",
+        "licenseEvidence": "catalog/LICENSES/edge-to-edge-UPSTREAM-LICENSE.txt",
+        "revision": "1e5e7ae6138bebd0835d0d5854b0b9adfeed3181",
+        "source": "https://github.com/android/skills",
+        "sourceType": "external-adapted",
+        "upstreamPath": "system/edge-to-edge"
+      }
+    },
+    "emil-design-eng": {
+      "files": {
+        "LICENSE": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+        "SKILL.md": "ffbe68e6007fb42cb8149f089b400a1ca007d59ba23e8948e2be4476f3175939"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [
+        "Opinionated interaction and motion guidance, not a complete dashboard information architecture. Library performance claims and examples require version-specific verification. Bare invocation can stop at an acknowledgement; provide the concrete task. No measured OpenCode/OMO quality improvement is claimed."
+      ],
+      "origin": {
+        "commit": "d16ebe60d09a5ba2afcb7054ede9d0a10c9f6128",
+        "path": "skills/emil-design-eng",
+        "repository": "emilkowalski/skills"
+      },
+      "original_files": {
+        "SKILL.md": "ffbe68e6007fb42cb8149f089b400a1ca007d59ba23e8948e2be4476f3175939"
+      },
+      "path": "skills/emil-design-eng",
+      "status": "available",
+      "supplements": {
+        "LICENSE": {
+          "commit": "d16ebe60d09a5ba2afcb7054ede9d0a10c9f6128",
+          "path": "LICENSE",
+          "repository": "emilkowalski/skills",
+          "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b"
+        }
+      },
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "Original root LICENSE included",
+        "revision": "d16ebe60d09a5ba2afcb7054ede9d0a10c9f6128",
+        "source": "https://github.com/emilkowalski/skills",
+        "sourceType": "external",
+        "upstreamPath": "skills/emil-design-eng"
+      }
+    },
+    "find-animation-opportunities": {
+      "files": {
+        "LICENSE": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+        "SKILL.md": "d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [
+        "motion-handoff: The source names improve-animations, which is intentionally not included. Its planned handoff is unavailable unless independently reviewed and installed; do not fabricate a command or auto-install it. Report proposals without implementation.",
+        "motion-evidence: Frequency tiers, duration examples and pure-transform performance advice are preserved upstream opinions. Confirm the actual product/device requirements and flag uncertainty rather than claiming measured smoothness."
+      ],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/frontend/find-animation-opportunities",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "LICENSE": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+        "SKILL.md": "d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2"
+      },
+      "path": "skills/find-animation-opportunities",
+      "status": "available",
+      "supplements": {},
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "upstream root LICENSE preserved in the Skill and catalog/LICENSES/emilkowalski-skills-MIT.txt",
+        "revision": "d16ebe60d09a5ba2afcb7054ede9d0a10c9f6128",
+        "source": "https://github.com/emilkowalski/skills",
+        "sourceType": "external",
+        "upstreamPath": "skills/find-animation-opportunities"
+      }
+    },
+    "flutter-add-widget-test": {
+      "files": {
+        "LICENSE.source.txt": "5b95696b504e162bcf775060ec416005df9969a95cda6f7d4ddb57327dd74d35",
+        "SKILL.md": "a26ef4c37077419c8e5f715cd7191b1e60a78d910da91b90bccda1f3aaeb0016"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/mobile/flutter-add-widget-test",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "SKILL.md": "a26ef4c37077419c8e5f715cd7191b1e60a78d910da91b90bccda1f3aaeb0016"
+      },
+      "path": "skills/flutter-add-widget-test",
+      "status": "available",
+      "supplements": {
+        "LICENSE.source.txt": {
+          "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+          "path": "catalog/LICENSES/flutter-add-widget-test-UPSTREAM-LICENSE.txt",
+          "repository": "unofficialmmon/agent-reference",
+          "sha256": "5b95696b504e162bcf775060ec416005df9969a95cda6f7d4ddb57327dd74d35"
+        }
+      },
+      "upstream": {
+        "license": "BSD-3-Clause",
+        "licenseEvidence": "catalog/LICENSES/flutter-add-widget-test-UPSTREAM-LICENSE.txt",
+        "revision": "66b6d25a38a4bd2affc8f125562330c41bd46555",
+        "source": "https://github.com/flutter/agent-plugins",
+        "sourceType": "external-adapted",
+        "upstreamPath": "skills/flutter-add-widget-test"
+      }
+    },
+    "flutter-build-responsive-layout": {
+      "files": {
+        "LICENSE.source.txt": "5b95696b504e162bcf775060ec416005df9969a95cda6f7d4ddb57327dd74d35",
+        "SKILL.md": "871d951b7f603214dab45af81a33cfa14e863ffdbbda0fd579b90cfa43081e4b"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/mobile/flutter-build-responsive-layout",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "SKILL.md": "871d951b7f603214dab45af81a33cfa14e863ffdbbda0fd579b90cfa43081e4b"
+      },
+      "path": "skills/flutter-build-responsive-layout",
+      "status": "available",
+      "supplements": {
+        "LICENSE.source.txt": {
+          "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+          "path": "catalog/LICENSES/flutter-build-responsive-layout-UPSTREAM-LICENSE.txt",
+          "repository": "unofficialmmon/agent-reference",
+          "sha256": "5b95696b504e162bcf775060ec416005df9969a95cda6f7d4ddb57327dd74d35"
+        }
+      },
+      "upstream": {
+        "license": "BSD-3-Clause",
+        "licenseEvidence": "catalog/LICENSES/flutter-build-responsive-layout-UPSTREAM-LICENSE.txt",
+        "revision": "66b6d25a38a4bd2affc8f125562330c41bd46555",
+        "source": "https://github.com/flutter/agent-plugins",
+        "sourceType": "external-adapted",
+        "upstreamPath": "skills/flutter-build-responsive-layout"
+      }
+    },
+    "flutter-setup-declarative-routing": {
+      "files": {
+        "LICENSE.source.txt": "5b95696b504e162bcf775060ec416005df9969a95cda6f7d4ddb57327dd74d35",
+        "SKILL.md": "891dcd9d08653b0d663ff47841cf26a05c71dfdb20c230b50c7944e31aeb44c7"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/mobile/flutter-setup-declarative-routing",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "SKILL.md": "891dcd9d08653b0d663ff47841cf26a05c71dfdb20c230b50c7944e31aeb44c7"
+      },
+      "path": "skills/flutter-setup-declarative-routing",
+      "status": "available",
+      "supplements": {
+        "LICENSE.source.txt": {
+          "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+          "path": "catalog/LICENSES/flutter-setup-declarative-routing-UPSTREAM-LICENSE.txt",
+          "repository": "unofficialmmon/agent-reference",
+          "sha256": "5b95696b504e162bcf775060ec416005df9969a95cda6f7d4ddb57327dd74d35"
+        }
+      },
+      "upstream": {
+        "license": "BSD-3-Clause",
+        "licenseEvidence": "catalog/LICENSES/flutter-setup-declarative-routing-UPSTREAM-LICENSE.txt",
+        "revision": "66b6d25a38a4bd2affc8f125562330c41bd46555",
+        "source": "https://github.com/flutter/agent-plugins",
+        "sourceType": "external-adapted",
+        "upstreamPath": "skills/flutter-setup-declarative-routing"
+      }
+    },
+    "generated-code": {
+      "files": {
+        "LICENSE.source.txt": "03e02ff3327fa7008197e846bb2c61165bdb33caab49f6648885cad2da3a8f58",
+        "SKILL.md": "eb60cc6c1cfaf4ede31fa822085d7a5bfa38add9057e84d00431fd8e2c620475"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/core/generated-code",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "SKILL.md": "eb60cc6c1cfaf4ede31fa822085d7a5bfa38add9057e84d00431fd8e2c620475"
+      },
+      "path": "skills/generated-code",
+      "status": "available",
+      "supplements": {
+        "LICENSE.source.txt": {
+          "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+          "path": "LICENSE",
+          "repository": "unofficialmmon/agent-reference",
+          "sha256": "03e02ff3327fa7008197e846bb2c61165bdb33caab49f6648885cad2da3a8f58"
+        }
+      },
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "local authored content derived from user-owned project materials",
+        "revision": "agent-reference-2026-08-28",
+        "source": "CODEGEN-derived",
+        "sourceType": "local-derived",
+        "upstreamPath": null
+      }
+    },
+    "java-style": {
+      "files": {
+        "LICENSE.source.txt": "03e02ff3327fa7008197e846bb2c61165bdb33caab49f6648885cad2da3a8f58",
+        "SKILL.md": "fee8b6662c2e983c7b88d8072b5b07e0b65f6946bd585c4ad76fb7701a3a51e9"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [
+        "Runtime discovery was observed once in OpenCode 1.18.24 with OMO Slim 2.2.17; this is a discovery/non-interference smoke, not comprehensive style-behavior certification."
+      ],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/java-spring/java-style",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "SKILL.md": "fee8b6662c2e983c7b88d8072b5b07e0b65f6946bd585c4ad76fb7701a3a51e9"
+      },
+      "path": "skills/java-style",
+      "status": "available",
+      "supplements": {
+        "LICENSE.source.txt": {
+          "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+          "path": "LICENSE",
+          "repository": "unofficialmmon/agent-reference",
+          "sha256": "03e02ff3327fa7008197e846bb2c61165bdb33caab49f6648885cad2da3a8f58"
+        }
+      },
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "local authored content derived from user-owned project materials",
+        "revision": "agent-reference-2026-08-31",
+        "source": "user Development Formatting and Linting Guide",
+        "sourceType": "local-derived",
+        "upstreamPath": null
+      }
+    },
+    "jpa-patterns": {
+      "files": {
+        "LICENSE.source.txt": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
+        "SKILL.md": "bd6538ca8c64d3976c7205ba192d5cdcc1dad54eb54845fe42fb29016b632920"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/java-spring/jpa-patterns",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "SKILL.md": "bd6538ca8c64d3976c7205ba192d5cdcc1dad54eb54845fe42fb29016b632920"
+      },
+      "path": "skills/jpa-patterns",
+      "status": "available",
+      "supplements": {
+        "LICENSE.source.txt": {
+          "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+          "path": "catalog/LICENSES/jpa-patterns-UPSTREAM-LICENSE.txt",
+          "repository": "unofficialmmon/agent-reference",
+          "sha256": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2"
+        }
+      },
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "catalog/LICENSES/jpa-patterns-UPSTREAM-LICENSE.txt",
+        "revision": "4da6deac1888690e7fb8572d097ee23db630f7a0",
+        "source": "https://github.com/affaan-m/ECC",
+        "sourceType": "external-adapted",
+        "upstreamPath": "skills/jpa-patterns"
+      }
+    },
+    "kotlin-patterns": {
+      "files": {
+        "LICENSE.source.txt": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
+        "SKILL.md": "4df813d5d486e7105a18c99c95da8ad4dc3d34bdf2b149f3b23deb7b843755d9"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/mobile/kotlin-patterns",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "SKILL.md": "4df813d5d486e7105a18c99c95da8ad4dc3d34bdf2b149f3b23deb7b843755d9"
+      },
+      "path": "skills/kotlin-patterns",
+      "status": "available",
+      "supplements": {
+        "LICENSE.source.txt": {
+          "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+          "path": "catalog/LICENSES/kotlin-patterns-UPSTREAM-LICENSE.txt",
+          "repository": "unofficialmmon/agent-reference",
+          "sha256": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2"
+        }
+      },
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "catalog/LICENSES/kotlin-patterns-UPSTREAM-LICENSE.txt",
+        "revision": "9b081280bc52ee6f22a2e0463761b318936dd980",
+        "source": "https://github.com/affaan-m/ECC",
+        "sourceType": "external-adapted",
+        "upstreamPath": "skills/kotlin-patterns"
+      }
+    },
+    "mariadb-features": {
+      "files": {
+        "LICENSE": "a5d33d21342e76834096b1949637478b2138c3e462eb0a1982dc01d1c51d9206",
+        "SKILL.md": "370580acce088fc39a36d5bb187f5a5dc3c9d741f15ffd4c353b5ea72bd4e0f3"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/database/mariadb-features",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "LICENSE": "a5d33d21342e76834096b1949637478b2138c3e462eb0a1982dc01d1c51d9206",
+        "SKILL.md": "370580acce088fc39a36d5bb187f5a5dc3c9d741f15ffd4c353b5ea72bd4e0f3"
+      },
+      "path": "skills/mariadb-features",
+      "status": "available",
+      "supplements": {},
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "repository LICENSE",
+        "revision": "86623494f8051e766c973d35c1f07368c3b4c267",
+        "source": "https://github.com/MariaDB/skills",
+        "sourceType": "external",
+        "upstreamPath": "mariadb-features"
+      }
+    },
+    "mariadb-query-optimization": {
+      "files": {
+        "LICENSE": "a5d33d21342e76834096b1949637478b2138c3e462eb0a1982dc01d1c51d9206",
+        "SKILL.md": "b4f5239088df9835c0f8c42852ec24f85a36101d77c8c2f95be1c978f5398b48"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/database/mariadb-query-optimization",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "LICENSE": "a5d33d21342e76834096b1949637478b2138c3e462eb0a1982dc01d1c51d9206",
+        "SKILL.md": "b4f5239088df9835c0f8c42852ec24f85a36101d77c8c2f95be1c978f5398b48"
+      },
+      "path": "skills/mariadb-query-optimization",
+      "status": "available",
+      "supplements": {},
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "repository LICENSE",
+        "revision": "86623494f8051e766c973d35c1f07368c3b4c267",
+        "source": "https://github.com/MariaDB/skills",
+        "sourceType": "external",
+        "upstreamPath": "mariadb-query-optimization"
+      }
+    },
+    "maven-build": {
+      "files": {
+        "LICENSE": "c0e3867aa53647e810c6776e1c5a89b616be99c0aebec142a4bc981a8a6e7305",
+        "SKILL.md": "3ad42a41d55f81aa20bba3b98af2633d26188d17c03163988dd87db55e5e7db8"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/java-spring/maven-build",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "LICENSE": "c0e3867aa53647e810c6776e1c5a89b616be99c0aebec142a4bc981a8a6e7305",
+        "SKILL.md": "3ad42a41d55f81aa20bba3b98af2633d26188d17c03163988dd87db55e5e7db8"
+      },
+      "path": "skills/maven-build",
+      "status": "available",
+      "supplements": {},
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "snapshot LICENSE; original pi-dev-kit summary",
+        "revision": "curated-2026-08-21",
+        "source": "pi-dev-kit:official-doc-derived",
+        "sourceType": "official-doc-derived",
+        "upstreamPath": null
+      }
+    },
+    "mobile-android-design": {
+      "files": {
+        "LICENSE.source.txt": "f89abb55d9f073f38f1703e4518f0613c788c6174be7f13b8dfe48a1c076c746",
+        "SKILL.md": "0a209a1c45585ce0056548cc2f0fd352b7fde5980a3b5dd397a9daf5dff19fe7",
+        "references/android-navigation.md": "6a28f9a113c4af16f9f8581d9d494ed7b278de8c6258cef58e3ecb822707d190",
+        "references/compose-components.md": "22d9a47cc8ec4c4bbec36f15cb7a5eea33d5a0b5b6c3ba29378fc37197a8a8a0",
+        "references/details.md": "854f692ebe2b6adbf42f1406d0e7e1f7bc895ee34baa4ceff1ef1afc9f2dd962",
+        "references/material3-theming.md": "72ba4c1ef77fba5740b039b3f8b3676902967495141e3f40e0b800df3e85da7c"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/mobile/mobile-android-design",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "SKILL.md": "0a209a1c45585ce0056548cc2f0fd352b7fde5980a3b5dd397a9daf5dff19fe7",
+        "references/android-navigation.md": "6a28f9a113c4af16f9f8581d9d494ed7b278de8c6258cef58e3ecb822707d190",
+        "references/compose-components.md": "22d9a47cc8ec4c4bbec36f15cb7a5eea33d5a0b5b6c3ba29378fc37197a8a8a0",
+        "references/details.md": "854f692ebe2b6adbf42f1406d0e7e1f7bc895ee34baa4ceff1ef1afc9f2dd962",
+        "references/material3-theming.md": "72ba4c1ef77fba5740b039b3f8b3676902967495141e3f40e0b800df3e85da7c"
+      },
+      "path": "skills/mobile-android-design",
+      "status": "available",
+      "supplements": {
+        "LICENSE.source.txt": {
+          "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+          "path": "catalog/LICENSES/mobile-android-design-UPSTREAM-LICENSE.txt",
+          "repository": "unofficialmmon/agent-reference",
+          "sha256": "f89abb55d9f073f38f1703e4518f0613c788c6174be7f13b8dfe48a1c076c746"
+        }
+      },
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "catalog/LICENSES/mobile-android-design-UPSTREAM-LICENSE.txt",
+        "revision": "c4b82b0ad771190355eb8e204b1329732a18449a",
+        "source": "https://github.com/wshobson/agents",
+        "sourceType": "external-adapted",
+        "upstreamPath": "plugins/ui-design/skills/mobile-android-design"
+      }
+    },
+    "mobile-ios-design": {
+      "files": {
+        "LICENSE.source.txt": "f89abb55d9f073f38f1703e4518f0613c788c6174be7f13b8dfe48a1c076c746",
+        "SKILL.md": "2b3b2405aee645a345d137ce93bd86bac65d33da4ad40c4b6f007bf4a51b6c96",
+        "references/hig-patterns.md": "1d893427552da55887ed14a344532f40f736d5cc6d153ce385b9cc8c73c55302",
+        "references/ios-navigation.md": "8d6ab13ad2f6bf13b6555b2137f8861d4af374322f85fa3b06f10a6c0b70ef82",
+        "references/swiftui-components.md": "3eb82e50121d529ee664685da10f42f59aa8dee4cc14acaca4c5d377d8cd8700"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/mobile/mobile-ios-design",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "SKILL.md": "2b3b2405aee645a345d137ce93bd86bac65d33da4ad40c4b6f007bf4a51b6c96",
+        "references/hig-patterns.md": "1d893427552da55887ed14a344532f40f736d5cc6d153ce385b9cc8c73c55302",
+        "references/ios-navigation.md": "8d6ab13ad2f6bf13b6555b2137f8861d4af374322f85fa3b06f10a6c0b70ef82",
+        "references/swiftui-components.md": "3eb82e50121d529ee664685da10f42f59aa8dee4cc14acaca4c5d377d8cd8700"
+      },
+      "path": "skills/mobile-ios-design",
+      "status": "available",
+      "supplements": {
+        "LICENSE.source.txt": {
+          "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+          "path": "catalog/LICENSES/mobile-ios-design-UPSTREAM-LICENSE.txt",
+          "repository": "unofficialmmon/agent-reference",
+          "sha256": "f89abb55d9f073f38f1703e4518f0613c788c6174be7f13b8dfe48a1c076c746"
+        }
+      },
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "catalog/LICENSES/mobile-ios-design-UPSTREAM-LICENSE.txt",
+        "revision": "c4b82b0ad771190355eb8e204b1329732a18449a",
+        "source": "https://github.com/wshobson/agents",
+        "sourceType": "external-adapted",
+        "upstreamPath": "plugins/ui-design/skills/mobile-ios-design"
+      }
+    },
+    "mobile-native": {
+      "files": {
+        "LICENSE": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+        "SKILL.md": "888b7651d66d66dbac4e72b7c554638eb19bd971d686d6cbdf030a5ef3788f55"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [
+        "mobile-platform: Mobile web/PWA guidance is not a React Native or Expo replacement. Real-device checks remain NOT RUN until exercised on the relevant devices; desktop emulation is not equivalent evidence.",
+        "mobile-companions: animate-expo is not included. Do not invent or automatically install that handoff; preserve the existing mobile platform and project accessibility requirements."
+      ],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/frontend/mobile-native",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "LICENSE": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+        "SKILL.md": "888b7651d66d66dbac4e72b7c554638eb19bd971d686d6cbdf030a5ef3788f55"
+      },
+      "path": "skills/mobile-native",
+      "status": "available",
+      "supplements": {},
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "upstream root LICENSE preserved in the Skill and catalog/LICENSES/emilkowalski-skills-MIT.txt",
+        "revision": "d16ebe60d09a5ba2afcb7054ede9d0a10c9f6128",
+        "source": "https://github.com/emilkowalski/skills",
+        "sourceType": "external",
+        "upstreamPath": "skills/mobile-native"
+      }
+    },
+    "mybatis": {
+      "files": {
+        "LICENSE": "c0e3867aa53647e810c6776e1c5a89b616be99c0aebec142a4bc981a8a6e7305",
+        "SKILL.md": "2051a2438967bdd91ba2f7ca6f62f4916b064697e5e9d8910ccb9a6f10626826"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/java-spring/mybatis",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "LICENSE": "c0e3867aa53647e810c6776e1c5a89b616be99c0aebec142a4bc981a8a6e7305",
+        "SKILL.md": "2051a2438967bdd91ba2f7ca6f62f4916b064697e5e9d8910ccb9a6f10626826"
+      },
+      "path": "skills/mybatis",
+      "status": "available",
+      "supplements": {},
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "snapshot LICENSE; original pi-dev-kit summary",
+        "revision": "curated-2026-08-21",
+        "source": "pi-dev-kit:official-doc-derived",
+        "sourceType": "official-doc-derived",
+        "upstreamPath": null
+      }
+    },
+    "mybatis-dynamic-sql": {
+      "files": {
+        "LICENSE": "c0e3867aa53647e810c6776e1c5a89b616be99c0aebec142a4bc981a8a6e7305",
+        "SKILL.md": "005ddc8bffb12b6a10ce322495c59cdb360bb21c71aa1227c349990f169cdb43"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/java-spring/mybatis-dynamic-sql",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "LICENSE": "c0e3867aa53647e810c6776e1c5a89b616be99c0aebec142a4bc981a8a6e7305",
+        "SKILL.md": "005ddc8bffb12b6a10ce322495c59cdb360bb21c71aa1227c349990f169cdb43"
+      },
+      "path": "skills/mybatis-dynamic-sql",
+      "status": "available",
+      "supplements": {},
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "snapshot LICENSE; original pi-dev-kit summary",
+        "revision": "curated-2026-08-21",
+        "source": "pi-dev-kit:official-doc-derived",
+        "sourceType": "official-doc-derived",
+        "upstreamPath": null
+      }
+    },
+    "mybatis-generator": {
+      "files": {
+        "LICENSE": "c0e3867aa53647e810c6776e1c5a89b616be99c0aebec142a4bc981a8a6e7305",
+        "SKILL.md": "228db2e8e6675f66ac6809f899c303d55350341791a4d56a7b2166681b234e56"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/java-spring/mybatis-generator",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "LICENSE": "c0e3867aa53647e810c6776e1c5a89b616be99c0aebec142a4bc981a8a6e7305",
+        "SKILL.md": "228db2e8e6675f66ac6809f899c303d55350341791a4d56a7b2166681b234e56"
+      },
+      "path": "skills/mybatis-generator",
+      "status": "available",
+      "supplements": {},
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "snapshot LICENSE; original pi-dev-kit summary",
+        "revision": "curated-2026-08-21",
+        "source": "pi-dev-kit:official-doc-derived",
+        "sourceType": "official-doc-derived",
+        "upstreamPath": null
+      }
+    },
+    "nestjs-best-practices": {
+      "files": {
+        "LICENSE.source.txt": "f3a36bcff8e12ab33d07136a35ad152368f7537cccbc1d4c8256da1225cd7f17",
+        "SKILL.md": "be8cec84b8d91a940a0b5f2f26cb6d2167e413d271646b18f8432a173fd9937f",
+        "rules/_sections.md": "b0ce3647f56728f94bc78e466d4c48fd4952590fc2cc1eaba9613cc0c1c23e1c",
+        "rules/_template.md": "99df2a3ea088c6c22de2484ddc7e964d0e9923846f44c63380343ecc64455442",
+        "rules/api-use-dto-serialization.md": "fa8706438f88be871270110c05288c6236d7c94d691304763cbe839cbd94d2a3",
+        "rules/api-use-interceptors.md": "61d2a31067becca20236822389c1b086d157156f5ab7279c40b94c74b81a9016",
+        "rules/api-use-pipes.md": "42c48d2d321afd67acfd8ccccf554df7711058c942098fa42689fe8347aea372",
+        "rules/api-versioning.md": "efe9241b688f118d9550d0ff42a19aab54eafd55f38c4a3184c8e29e4e463226",
+        "rules/arch-avoid-circular-deps.md": "b74da7754d695a35375acab013ecb79cb35d199c2a4ec57bd2c0083e3d222c22",
+        "rules/arch-feature-modules.md": "672ef1a9b10230c3437f5c1ec27ff78a8a49263667f6240e300adf474ff0ec6a",
+        "rules/arch-module-sharing.md": "dd25df677a7af6b37d5311342da8019e6e2d389ce97310eb2602f34912eab82d",
+        "rules/arch-single-responsibility.md": "50764d431fc0db6cf320e772f94236a48f3beed851bb5b3f4820e05be52b2aeb",
+        "rules/arch-use-events.md": "9a0626942e70989d29485c5db7657bf77ac4728d24585b38badda8ebfddfe8d6",
+        "rules/arch-use-repository-pattern.md": "e0c3fea3968b721cd414f492c0a16667a2bc994d3795aabd8bde7bec99a3e224",
+        "rules/db-avoid-n-plus-one.md": "1bd61b7502c9b35fd62fcb1c5292805a4f449888fe99666ff004edd11cabf67c",
+        "rules/db-use-migrations.md": "7297818a30f903079b1d0fc51de8520e616bc696c3168bad9bf9f23a896cca45",
+        "rules/db-use-transactions.md": "a70711f2a03ce762185950cc5e9d5949b227501891f8e3b6e327b692b1a96e69",
+        "rules/devops-graceful-shutdown.md": "ed3bd5be2fd4a66b7b126e0562b7abfc09740ee1dc53d185038b9c97bc2aeddb",
+        "rules/devops-use-config-module.md": "2aeff867082a807aa7247f0629ece8d0e6045bf563db013a53ffd64879011979",
+        "rules/devops-use-logging.md": "890c8f7aafe3e04e1107adbcdede5ef48b04977c302eb58a342f1ad0c5308a9f",
+        "rules/di-avoid-service-locator.md": "c8c2358cf5c65117c829bb223a28cab598fa95aacd052519323e9f114536bd50",
+        "rules/di-interface-segregation.md": "05c02b87f76df2372b237a097c364dc502faf158b64582f3b6740de4d1da8d8f",
+        "rules/di-liskov-substitution.md": "658178d263af65eb96656f2af4b66382c8139f09a3c352a9ce25b5bd671b46b2",
+        "rules/di-prefer-constructor-injection.md": "8b990dc7c913fd65ed1afb5125ffccb8c92929499ab05e6f3f7d8c0161078362",
+        "rules/di-scope-awareness.md": "9948e533005b098e9adfd8c9fd21b576bc67b222811e49abe512b9a0c610f205",
+        "rules/di-use-interfaces-tokens.md": "5080cf42104af01844e7fc70f46e0753934fd110fec1a10def7622753493d318",
+        "rules/error-handle-async-errors.md": "9eb6feaa977710875edeabc282eba0b151199ac21bec55a54b890718b424b4d5",
+        "rules/error-throw-http-exceptions.md": "e19bf1ecbb47081a48a7ba962e67471b748a355815494a386d8bd820f588818b",
+        "rules/error-use-exception-filters.md": "7c6333cab06f74126b393451f79e760a36eabd8959b74a1a86bdf966362c6906",
+        "rules/micro-use-health-checks.md": "a8fdb7f5b1410ed8a2f6b3e0148d910dde5518905f4bdc856d9434faf20e9774",
+        "rules/micro-use-patterns.md": "6d9d2c6cfdce3d6dac99532b83df359116c8590fc06d62d40f13f453bc473391",
+        "rules/micro-use-queues.md": "eec777ed1f9970a5650d85868fff585d02bed9a2e7c06165c98d64b82753d920",
+        "rules/perf-async-hooks.md": "b6e38415f872d6018f64f4f8e3242c25748df6b41e09f04609bd50201b4a08b0",
+        "rules/perf-lazy-loading.md": "02ac0de2bfdc96fbc09feaee6792ca13930e75137d7cc90bf25bfe7d1b62e4b4",
+        "rules/perf-optimize-database.md": "07176139c7a3c3d6298e64e184d9d6329c96367aa1cafab8ccab2b3f27564869",
+        "rules/perf-use-caching.md": "be16b266eaa8c7e04cd96c2b32d65c49ac35f0f1e363960cb1c4e77ed5bd72dd",
+        "rules/security-auth-jwt.md": "dfb8d6cab734831c4fb5504052d93e30440d397dd7af3a60c2b3132fd260af90",
+        "rules/security-rate-limiting.md": "b4f8f99b0591043e7b7d191f3312e04f4455441721031a8535a458ea4177ab20",
+        "rules/security-sanitize-output.md": "fa270c76d9a8ef5fb80ff005f005f9b713e7ebfdec9edbd998390917a515f1a4",
+        "rules/security-use-guards.md": "1ae2bfde0e84264a7656951161e4cd2d1c4388b5baba9ec8c9f15baf34c4c5f9",
+        "rules/security-validate-all-input.md": "801ac35f2273286be1b92bce0ddb440d12af25330b6b9c0f36f8971c96680997",
+        "rules/test-e2e-supertest.md": "cacf92d8b874e48c4fe6380d977bcbb441b40d8d785497ebd055db035aa21bb8",
+        "rules/test-mock-external-services.md": "905ee22160ebfb58c6ee46e73138c11d3fd46bcb5cb07307434677be02d29673",
+        "rules/test-use-testing-module.md": "3954bb46a3c0d44123523b719d455ebbe012ee007203c6a7cc5f71f96cccb775"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [
+        "The upstream repository has no LICENSE file; MIT is declared only in SKILL.md frontmatter and retained as a provenance notice."
+      ],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/infrastructure/nestjs-best-practices",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "SKILL.md": "be8cec84b8d91a940a0b5f2f26cb6d2167e413d271646b18f8432a173fd9937f",
+        "rules/_sections.md": "b0ce3647f56728f94bc78e466d4c48fd4952590fc2cc1eaba9613cc0c1c23e1c",
+        "rules/_template.md": "99df2a3ea088c6c22de2484ddc7e964d0e9923846f44c63380343ecc64455442",
+        "rules/api-use-dto-serialization.md": "fa8706438f88be871270110c05288c6236d7c94d691304763cbe839cbd94d2a3",
+        "rules/api-use-interceptors.md": "61d2a31067becca20236822389c1b086d157156f5ab7279c40b94c74b81a9016",
+        "rules/api-use-pipes.md": "42c48d2d321afd67acfd8ccccf554df7711058c942098fa42689fe8347aea372",
+        "rules/api-versioning.md": "efe9241b688f118d9550d0ff42a19aab54eafd55f38c4a3184c8e29e4e463226",
+        "rules/arch-avoid-circular-deps.md": "b74da7754d695a35375acab013ecb79cb35d199c2a4ec57bd2c0083e3d222c22",
+        "rules/arch-feature-modules.md": "672ef1a9b10230c3437f5c1ec27ff78a8a49263667f6240e300adf474ff0ec6a",
+        "rules/arch-module-sharing.md": "dd25df677a7af6b37d5311342da8019e6e2d389ce97310eb2602f34912eab82d",
+        "rules/arch-single-responsibility.md": "50764d431fc0db6cf320e772f94236a48f3beed851bb5b3f4820e05be52b2aeb",
+        "rules/arch-use-events.md": "9a0626942e70989d29485c5db7657bf77ac4728d24585b38badda8ebfddfe8d6",
+        "rules/arch-use-repository-pattern.md": "e0c3fea3968b721cd414f492c0a16667a2bc994d3795aabd8bde7bec99a3e224",
+        "rules/db-avoid-n-plus-one.md": "1bd61b7502c9b35fd62fcb1c5292805a4f449888fe99666ff004edd11cabf67c",
+        "rules/db-use-migrations.md": "7297818a30f903079b1d0fc51de8520e616bc696c3168bad9bf9f23a896cca45",
+        "rules/db-use-transactions.md": "a70711f2a03ce762185950cc5e9d5949b227501891f8e3b6e327b692b1a96e69",
+        "rules/devops-graceful-shutdown.md": "ed3bd5be2fd4a66b7b126e0562b7abfc09740ee1dc53d185038b9c97bc2aeddb",
+        "rules/devops-use-config-module.md": "2aeff867082a807aa7247f0629ece8d0e6045bf563db013a53ffd64879011979",
+        "rules/devops-use-logging.md": "890c8f7aafe3e04e1107adbcdede5ef48b04977c302eb58a342f1ad0c5308a9f",
+        "rules/di-avoid-service-locator.md": "c8c2358cf5c65117c829bb223a28cab598fa95aacd052519323e9f114536bd50",
+        "rules/di-interface-segregation.md": "05c02b87f76df2372b237a097c364dc502faf158b64582f3b6740de4d1da8d8f",
+        "rules/di-liskov-substitution.md": "658178d263af65eb96656f2af4b66382c8139f09a3c352a9ce25b5bd671b46b2",
+        "rules/di-prefer-constructor-injection.md": "8b990dc7c913fd65ed1afb5125ffccb8c92929499ab05e6f3f7d8c0161078362",
+        "rules/di-scope-awareness.md": "9948e533005b098e9adfd8c9fd21b576bc67b222811e49abe512b9a0c610f205",
+        "rules/di-use-interfaces-tokens.md": "5080cf42104af01844e7fc70f46e0753934fd110fec1a10def7622753493d318",
+        "rules/error-handle-async-errors.md": "9eb6feaa977710875edeabc282eba0b151199ac21bec55a54b890718b424b4d5",
+        "rules/error-throw-http-exceptions.md": "e19bf1ecbb47081a48a7ba962e67471b748a355815494a386d8bd820f588818b",
+        "rules/error-use-exception-filters.md": "7c6333cab06f74126b393451f79e760a36eabd8959b74a1a86bdf966362c6906",
+        "rules/micro-use-health-checks.md": "a8fdb7f5b1410ed8a2f6b3e0148d910dde5518905f4bdc856d9434faf20e9774",
+        "rules/micro-use-patterns.md": "6d9d2c6cfdce3d6dac99532b83df359116c8590fc06d62d40f13f453bc473391",
+        "rules/micro-use-queues.md": "eec777ed1f9970a5650d85868fff585d02bed9a2e7c06165c98d64b82753d920",
+        "rules/perf-async-hooks.md": "b6e38415f872d6018f64f4f8e3242c25748df6b41e09f04609bd50201b4a08b0",
+        "rules/perf-lazy-loading.md": "02ac0de2bfdc96fbc09feaee6792ca13930e75137d7cc90bf25bfe7d1b62e4b4",
+        "rules/perf-optimize-database.md": "07176139c7a3c3d6298e64e184d9d6329c96367aa1cafab8ccab2b3f27564869",
+        "rules/perf-use-caching.md": "be16b266eaa8c7e04cd96c2b32d65c49ac35f0f1e363960cb1c4e77ed5bd72dd",
+        "rules/security-auth-jwt.md": "dfb8d6cab734831c4fb5504052d93e30440d397dd7af3a60c2b3132fd260af90",
+        "rules/security-rate-limiting.md": "b4f8f99b0591043e7b7d191f3312e04f4455441721031a8535a458ea4177ab20",
+        "rules/security-sanitize-output.md": "fa270c76d9a8ef5fb80ff005f005f9b713e7ebfdec9edbd998390917a515f1a4",
+        "rules/security-use-guards.md": "1ae2bfde0e84264a7656951161e4cd2d1c4388b5baba9ec8c9f15baf34c4c5f9",
+        "rules/security-validate-all-input.md": "801ac35f2273286be1b92bce0ddb440d12af25330b6b9c0f36f8971c96680997",
+        "rules/test-e2e-supertest.md": "cacf92d8b874e48c4fe6380d977bcbb441b40d8d785497ebd055db035aa21bb8",
+        "rules/test-mock-external-services.md": "905ee22160ebfb58c6ee46e73138c11d3fd46bcb5cb07307434677be02d29673",
+        "rules/test-use-testing-module.md": "3954bb46a3c0d44123523b719d455ebbe012ee007203c6a7cc5f71f96cccb775"
+      },
+      "path": "skills/nestjs-best-practices",
+      "status": "conditional",
+      "supplements": {
+        "LICENSE.source.txt": {
+          "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+          "path": "catalog/LICENSES/nestjs-best-practices-LICENSE-NOTICE.md",
+          "repository": "unofficialmmon/agent-reference",
+          "sha256": "f3a36bcff8e12ab33d07136a35ad152368f7537cccbc1d4c8256da1225cd7f17"
+        }
+      },
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "catalog/LICENSES/nestjs-best-practices-LICENSE-NOTICE.md",
+        "revision": "3986e0cede33958e000f959031cbee0cd83c2941",
+        "source": "https://github.com/Kadajett/agent-nestjs-skills",
+        "sourceType": "external-adapted",
+        "upstreamPath": "skills/nestjs-best-practices"
+      }
+    },
+    "nodejs-backend-patterns": {
+      "files": {
+        "LICENSE.source.txt": "af98370a7edc0f00ec46979d049517833c9a7fa2ba74e3cf8cc42f7db557299d",
+        "SKILL.md": "c5fd6b73aad3743ffda34c2d71b69b033396ab4f451bf36e3d057be20fddb91b",
+        "resources/implementation-playbook.md": "9a375eed368e0e1d8ba4e575415ecc528fe7c0883001b7c83dfee6643d1b8e71"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/infrastructure/nodejs-backend-patterns",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "SKILL.md": "c5fd6b73aad3743ffda34c2d71b69b033396ab4f451bf36e3d057be20fddb91b",
+        "resources/implementation-playbook.md": "9a375eed368e0e1d8ba4e575415ecc528fe7c0883001b7c83dfee6643d1b8e71"
+      },
+      "path": "skills/nodejs-backend-patterns",
+      "status": "available",
+      "supplements": {
+        "LICENSE.source.txt": {
+          "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+          "path": "catalog/LICENSES/nodejs-backend-patterns-UPSTREAM-LICENSE.txt",
+          "repository": "unofficialmmon/agent-reference",
+          "sha256": "af98370a7edc0f00ec46979d049517833c9a7fa2ba74e3cf8cc42f7db557299d"
+        }
+      },
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "catalog/LICENSES/nodejs-backend-patterns-UPSTREAM-LICENSE.txt",
+        "revision": "a71166d97698d91aae29e943af2bbb7bb15add2c",
+        "source": "https://github.com/sickn33/agentic-awesome-skills",
+        "sourceType": "external-adapted",
+        "upstreamPath": "skills/nodejs-backend-patterns"
+      }
+    },
+    "pnpm": {
+      "files": {
+        "GENERATION.md": "ea0b4108d31f967be39e42282d9cd97d55f3a3e4900bd0be5834f90ef6005266",
+        "LICENSE.md": "2a596f697b619094b6f4067936e0f385027a393bce32211383db0478774c1cb2",
+        "SKILL.md": "e7f6c224184cb125e7dce8f1562c3c76a4cd6afd6326958ea1c75f92eca413dc",
+        "references/best-practices-ci.md": "51105aafda72159c7130bb3af1cc5cd8f79b95ba6b8c2b653550348f2424fdca",
+        "references/best-practices-migration.md": "d4fdee694fd80c2db2a53a08fbbab2c4d556b30db6e67369fa397e1073f12668",
+        "references/best-practices-performance.md": "25ef647e5cc8df5432a86f69502a3a4101b022208ea5392a6d25475ecc60ff69",
+        "references/core-cli.md": "b315a23c83606baf70814f7fb021a7cbc000a5f2106833ae7899d40277d83a73",
+        "references/core-config.md": "fde08642de233986b5700fae436ba4d9a12d80daa488da0c3b193d8719f9baba",
+        "references/core-store.md": "9348b4c72945a1f97b2b49e0017336bc8497b2e2f2092d9d53c6f842a9ac5225",
+        "references/core-workspaces.md": "42d28109235b03bfc9a5c74e89ab83779086b3d19c1e8c78af58c37a4e15357a",
+        "references/features-aliases.md": "39a967a7c65f2287f5aea1166f900a000fd31431ff799f23c86553b062c79058",
+        "references/features-catalogs.md": "45496d9e236a0cb59f97be228378353f92369ae574c756ba9f27dc9b88ac9d0a",
+        "references/features-config-dependencies.md": "52baeb9628523a9acda1a93c8adfbbdfa1e9bf900011ed07d3640826c3e7d813",
+        "references/features-global-virtual-store.md": "697bb5bde881252d5f3d252e02e25799cbb985da70435564349bea52c61fb662",
+        "references/features-hooks.md": "3d6e2e3410aecd16bbe01be8bbbdbd84b700aa74094b402bbcb1ebb984318a6f",
+        "references/features-overrides.md": "a375afb519c967fbb83be1d85091048e7c5b3d0ed6bb4da0d726b582276cd5df",
+        "references/features-patches.md": "2b1146c3f1e33abb7e18bdaa413753719e96dd47a564f4a922468a0f85e98cca",
+        "references/features-peer-deps.md": "8ad2c691f1e577ed0e4874786e2f64410c976a1a2f76759e5f4f80d97fae83cb",
+        "references/features-supply-chain-security.md": "d4150af2f526319349a7d18ccdd4fcb712e5ef30b7e98e6f8ff0a3e33819bf54"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/frontend/pnpm",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "GENERATION.md": "ea0b4108d31f967be39e42282d9cd97d55f3a3e4900bd0be5834f90ef6005266",
+        "LICENSE.md": "2a596f697b619094b6f4067936e0f385027a393bce32211383db0478774c1cb2",
+        "SKILL.md": "e7f6c224184cb125e7dce8f1562c3c76a4cd6afd6326958ea1c75f92eca413dc",
+        "references/best-practices-ci.md": "51105aafda72159c7130bb3af1cc5cd8f79b95ba6b8c2b653550348f2424fdca",
+        "references/best-practices-migration.md": "d4fdee694fd80c2db2a53a08fbbab2c4d556b30db6e67369fa397e1073f12668",
+        "references/best-practices-performance.md": "25ef647e5cc8df5432a86f69502a3a4101b022208ea5392a6d25475ecc60ff69",
+        "references/core-cli.md": "b315a23c83606baf70814f7fb021a7cbc000a5f2106833ae7899d40277d83a73",
+        "references/core-config.md": "fde08642de233986b5700fae436ba4d9a12d80daa488da0c3b193d8719f9baba",
+        "references/core-store.md": "9348b4c72945a1f97b2b49e0017336bc8497b2e2f2092d9d53c6f842a9ac5225",
+        "references/core-workspaces.md": "42d28109235b03bfc9a5c74e89ab83779086b3d19c1e8c78af58c37a4e15357a",
+        "references/features-aliases.md": "39a967a7c65f2287f5aea1166f900a000fd31431ff799f23c86553b062c79058",
+        "references/features-catalogs.md": "45496d9e236a0cb59f97be228378353f92369ae574c756ba9f27dc9b88ac9d0a",
+        "references/features-config-dependencies.md": "52baeb9628523a9acda1a93c8adfbbdfa1e9bf900011ed07d3640826c3e7d813",
+        "references/features-global-virtual-store.md": "697bb5bde881252d5f3d252e02e25799cbb985da70435564349bea52c61fb662",
+        "references/features-hooks.md": "3d6e2e3410aecd16bbe01be8bbbdbd84b700aa74094b402bbcb1ebb984318a6f",
+        "references/features-overrides.md": "a375afb519c967fbb83be1d85091048e7c5b3d0ed6bb4da0d726b582276cd5df",
+        "references/features-patches.md": "2b1146c3f1e33abb7e18bdaa413753719e96dd47a564f4a922468a0f85e98cca",
+        "references/features-peer-deps.md": "8ad2c691f1e577ed0e4874786e2f64410c976a1a2f76759e5f4f80d97fae83cb",
+        "references/features-supply-chain-security.md": "d4150af2f526319349a7d18ccdd4fcb712e5ef30b7e98e6f8ff0a3e33819bf54"
+      },
+      "path": "skills/pnpm",
+      "status": "available",
+      "supplements": {},
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "repository LICENSE.md",
+        "revision": "a74f281a27dadc02397bc1a174b0f2c97531b6ae",
+        "source": "https://github.com/antfu/skills",
+        "sourceType": "external",
+        "upstreamPath": "skills/pnpm"
+      }
+    },
+    "python-code-style": {
+      "files": {
+        "LICENSE": "f89abb55d9f073f38f1703e4518f0613c788c6174be7f13b8dfe48a1c076c746",
+        "SKILL.md": "82699eefa7996bf06bbf85219f547eae0140a181ee3699444e2cbd665b7caba7"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [
+        "The 120-column, Google-docstring, absolute-import and strict-checker preferences are upstream conventions, not universal Python requirements. Select only for compatible work; do not migrate an existing toolchain or format unrelated files by loading this Skill.",
+        "The Quick Start bash fence mixes a pip command with TOML configuration and is not one executable shell script. Other examples omit application types/imports. Ruff/mypy/pyright execution was NOT RUN during intake; tool installs and --fix examples require separate task scope.",
+        "The illustrative error message includes response.text[:100]; response bodies may contain sensitive data. This is not a safe default logging policy for private payloads."
+      ],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/python/python-code-style",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "LICENSE": "f89abb55d9f073f38f1703e4518f0613c788c6174be7f13b8dfe48a1c076c746",
+        "SKILL.md": "82699eefa7996bf06bbf85219f547eae0140a181ee3699444e2cbd665b7caba7"
+      },
+      "path": "skills/python-code-style",
+      "status": "available",
+      "supplements": {},
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "upstream root LICENSE retained in the complete snapshot and catalog/LICENSES/wshobson-agents-MIT.txt",
+        "revision": "156b7a5e7a8b93642628a339ee4039c925b34c7f",
+        "source": "https://github.com/wshobson/agents",
+        "sourceType": "external",
+        "upstreamPath": "plugins/python-development/skills/python-code-style"
+      }
+    },
+    "python-testing-patterns": {
+      "files": {
+        "LICENSE": "f89abb55d9f073f38f1703e4518f0613c788c6174be7f13b8dfe48a1c076c746",
+        "SKILL.md": "a1020718f31629c2a5b20731cad1804dbb81b18800495c5cebdf16e6cac9c175",
+        "references/advanced-patterns.md": "f560ee8b3cffc0fe971e78269bed21dc74f541c2056eae58d34259d9e537176a",
+        "references/details.md": "baaa88e2997d960c19f981248b9e3e850e36e2cdf4d97b50297f5d9764826349"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [
+        "ACTUAL FAIL in preserved references/details.md: is_valid_email(\"@example.com\") returns True while its own parametrized test expects False. The toy validator is not production validation. The unmodified selected Python examples produced 42 passed and 1 failed; repository regression tests record this defect rather than repairing or relabeling it.",
+        "ACTUAL ERROR under pytest-asyncio 1.3.0 strict mode: the async_client async fixture uses @pytest.fixture, so the example is not handled as an asyncio fixture. The selected test file had 2 passed and 1 error in strict mode; the positive fixture run explicitly selected auto mode. Do not silently change a consumer asyncio policy.",
+        "Examples use toy in-memory data, optional Hypothesis/freezegun, external requests mocks, legacy SQLAlchemy declarative_base and example coverage/CI configuration. They do not validate a real application, and CI uploads, dependency installs, database writes and coverage thresholds are not authorized by catalog selection. Hypothesis/freezegun examples were NOT RUN."
+      ],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/python/python-testing-patterns",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "LICENSE": "f89abb55d9f073f38f1703e4518f0613c788c6174be7f13b8dfe48a1c076c746",
+        "SKILL.md": "a1020718f31629c2a5b20731cad1804dbb81b18800495c5cebdf16e6cac9c175",
+        "references/advanced-patterns.md": "f560ee8b3cffc0fe971e78269bed21dc74f541c2056eae58d34259d9e537176a",
+        "references/details.md": "baaa88e2997d960c19f981248b9e3e850e36e2cdf4d97b50297f5d9764826349"
+      },
+      "path": "skills/python-testing-patterns",
+      "status": "conditional",
+      "supplements": {},
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "upstream root LICENSE retained in the complete snapshot and catalog/LICENSES/wshobson-agents-MIT.txt",
+        "revision": "156b7a5e7a8b93642628a339ee4039c925b34c7f",
+        "source": "https://github.com/wshobson/agents",
+        "sourceType": "external",
+        "upstreamPath": "plugins/python-development/skills/python-testing-patterns"
+      }
+    },
+    "python-type-safety": {
+      "files": {
+        "LICENSE": "f89abb55d9f073f38f1703e4518f0613c788c6174be7f13b8dfe48a1c076c746",
+        "SKILL.md": "7798dd109350b73c80bb4642f6e5a0ebaa2ae392484a213d4b44b35e9b4dad66",
+        "references/details.md": "c31ae289ec8de07220ddac57434fb0b764216af8a435dcc078c446d82e6862b5"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [
+        "The Result example uses None as its unset sentinel, rejects a successful None value, and uses type: ignore in unwrap methods. It is a non-null example, not a fully general or independently type-checked Result implementation.",
+        "references/details.md distinguishes Python 3.12 type statements from older TypeAlias syntax, but its later Handler[Response] usage belongs to the generic 3.12 example, not the concrete older alias. Examples need their missing imports/domain types; check the project language and checker versions before reuse.",
+        "Type annotations need an actual checker for static enforcement and do not provide runtime validation. The suggested inline mypy strict configuration was not executed in this intake; preserve the existing checker configuration unless a change is requested."
+      ],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/python/python-type-safety",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "LICENSE": "f89abb55d9f073f38f1703e4518f0613c788c6174be7f13b8dfe48a1c076c746",
+        "SKILL.md": "7798dd109350b73c80bb4642f6e5a0ebaa2ae392484a213d4b44b35e9b4dad66",
+        "references/details.md": "c31ae289ec8de07220ddac57434fb0b764216af8a435dcc078c446d82e6862b5"
+      },
+      "path": "skills/python-type-safety",
+      "status": "available",
+      "supplements": {},
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "upstream root LICENSE retained in the complete snapshot and catalog/LICENSES/wshobson-agents-MIT.txt",
+        "revision": "156b7a5e7a8b93642628a339ee4039c925b34c7f",
+        "source": "https://github.com/wshobson/agents",
+        "sourceType": "external",
+        "upstreamPath": "plugins/python-development/skills/python-type-safety"
+      }
+    },
+    "react-testing": {
+      "files": {
+        "LICENSE": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
+        "SKILL.md": "51c18b4e28285bb876ef469e47c6f53108b5a9f900950a60e897c3c24826a65e"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [
+        "The color-contrast claim in the jest-axe example is not supported in JSDOM: jest-axe disables that check. A passing JSDOM axe assertion is not a color-contrast or complete-accessibility PASS. Confirm contrast with an appropriate browser/manual check; React/RTL/MSW/axe execution was NOT RUN in this intake.",
+        "The original includes TDD and coverage targets for new components. Select for an explicitly accepted testing task/methodology, not every React edit. Keep existing runners, thresholds and app contracts; examples need application components/imports and test-runner setup.",
+        "Sibling accessibility, e2e-testing, react-patterns, tdd-workflow, rules/react/testing.md, react-reviewer/tdd-guide agents and /react-test or /react-review commands are NOT supplied. They are unavailable handoffs, not authorization to install ECC, create agents, or replace OMO orchestration.",
+        {
+          "file": "SKILL.md",
+          "kind": "missing-resource",
+          "reason": "Optional ECC sibling material is outside this complete selected Skill directory and is not bundled; this handoff is unavailable, not silently replaced or installed.",
+          "referenceType": "markdown-link",
+          "revision": "d3b8a3e908904e242ed2dbe66af62cca71131419",
+          "target": "../accessibility/SKILL.md"
+        },
+        {
+          "file": "SKILL.md",
+          "kind": "missing-resource",
+          "reason": "Optional ECC sibling material is outside this complete selected Skill directory and is not bundled; this handoff is unavailable, not silently replaced or installed.",
+          "referenceType": "markdown-link",
+          "revision": "d3b8a3e908904e242ed2dbe66af62cca71131419",
+          "target": "../e2e-testing/SKILL.md"
+        },
+        {
+          "file": "SKILL.md",
+          "kind": "missing-resource",
+          "reason": "Optional ECC sibling material is outside this complete selected Skill directory and is not bundled; this handoff is unavailable, not silently replaced or installed.",
+          "referenceType": "markdown-link",
+          "revision": "d3b8a3e908904e242ed2dbe66af62cca71131419",
+          "target": "../../rules/react/testing.md"
+        },
+        {
+          "file": "SKILL.md",
+          "kind": "missing-resource",
+          "reason": "Optional ECC sibling material is outside this complete selected Skill directory and is not bundled; this handoff is unavailable, not silently replaced or installed.",
+          "referenceType": "markdown-link",
+          "revision": "d3b8a3e908904e242ed2dbe66af62cca71131419",
+          "target": "../react-patterns/SKILL.md"
+        },
+        {
+          "file": "SKILL.md",
+          "kind": "missing-resource",
+          "reason": "Optional ECC sibling material is outside this complete selected Skill directory and is not bundled; this handoff is unavailable, not silently replaced or installed.",
+          "referenceType": "markdown-link",
+          "revision": "d3b8a3e908904e242ed2dbe66af62cca71131419",
+          "target": "../tdd-workflow/SKILL.md"
+        }
+      ],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/react/react-testing",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "LICENSE": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
+        "SKILL.md": "51c18b4e28285bb876ef469e47c6f53108b5a9f900950a60e897c3c24826a65e"
+      },
+      "path": "skills/react-testing",
+      "status": "conditional",
+      "supplements": {},
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "upstream root LICENSE retained in the complete snapshot and catalog/LICENSES/affaan-m-ecc-MIT.txt",
+        "revision": "d3b8a3e908904e242ed2dbe66af62cca71131419",
+        "source": "https://github.com/affaan-m/ECC",
+        "sourceType": "external",
+        "upstreamPath": "skills/react-testing"
+      }
+    },
+    "redesign-existing-projects": {
+      "files": {
+        "LICENSE": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df",
+        "SKILL.md": "98ad3e5b051bfb71b2795f7e8a6aa0d32b51ee095606c098a4b2822ac07926c9"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [
+        "redesign-scope: This is a source-modifying redesign workflow, not a read-only audit. Select only for an approved UI improvement scope and preserve functionality, stack, real copy and existing user work.",
+        "redesign-truth: Upstream suggestions for realistic names, metrics and randomized dates are not permission to fabricate real business facts, testimonials or history. Clearly separate mock data from production content.",
+        "redesign-motion: Broad transition/smooth-scroll suggestions can conflict with accessibility or high-frequency interactions. Existing accessibility requirements and the authorized design brief win; do not concurrently load competing primary design methods."
+      ],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/frontend/redesign-existing-projects",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "LICENSE": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df",
+        "SKILL.md": "98ad3e5b051bfb71b2795f7e8a6aa0d32b51ee095606c098a4b2822ac07926c9"
+      },
+      "path": "skills/redesign-existing-projects",
+      "status": "available",
+      "supplements": {},
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "upstream root LICENSE preserved in the Skill and catalog/LICENSES/Leonxlnx-taste-skill-MIT.txt",
+        "revision": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+        "source": "https://github.com/Leonxlnx/taste-skill",
+        "sourceType": "external",
+        "upstreamPath": "skills/redesign-skill"
+      }
+    },
+    "redis-connections": {
+      "files": {
+        ".cursor-plugin/plugin.json": "000711b8e2e591334d9590723696d234a08d084957aad9193933826583ef5bad",
+        "LICENSE": "77f38ee68488a9cdb7261e89e8cb2f22e074bb6d802727e5f3a685b9478a4da2",
+        "SKILL.md": "ee6caf1b8c97884599d7e95a66b970b0417a7c18274cb627ef05077acaa1a7f5",
+        "references/blocking.md": "7238bac4df596ad5de41e92e3487a22206a4cfcea5b5a56a3548c346095cc141",
+        "references/client-cache.md": "d63bb83f79e88f4fa0ae6decdad2623eb0aa70d52d070f1e4f5213478453ca02",
+        "references/pipelining.md": "3d248ffc53bea0b7841f01f204450006f0deab6527e2390236ee15e024428b7a",
+        "references/pooling.md": "7e3332bca8cfb1f778fa8accd2e429bd8af97dbc4811a99ba5b23b7b2c62f7a4",
+        "references/timeouts.md": "8edd9334a419aba290c1aa1eab097e21496f260916313e497e95c681d5fde310"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/database/redis-connections",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        ".cursor-plugin/plugin.json": "000711b8e2e591334d9590723696d234a08d084957aad9193933826583ef5bad",
+        "LICENSE": "77f38ee68488a9cdb7261e89e8cb2f22e074bb6d802727e5f3a685b9478a4da2",
+        "SKILL.md": "ee6caf1b8c97884599d7e95a66b970b0417a7c18274cb627ef05077acaa1a7f5",
+        "references/blocking.md": "7238bac4df596ad5de41e92e3487a22206a4cfcea5b5a56a3548c346095cc141",
+        "references/client-cache.md": "d63bb83f79e88f4fa0ae6decdad2623eb0aa70d52d070f1e4f5213478453ca02",
+        "references/pipelining.md": "3d248ffc53bea0b7841f01f204450006f0deab6527e2390236ee15e024428b7a",
+        "references/pooling.md": "7e3332bca8cfb1f778fa8accd2e429bd8af97dbc4811a99ba5b23b7b2c62f7a4",
+        "references/timeouts.md": "8edd9334a419aba290c1aa1eab097e21496f260916313e497e95c681d5fde310"
+      },
+      "path": "skills/redis-connections",
+      "status": "available",
+      "supplements": {},
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "repository LICENSE",
+        "revision": "fa7948e8ac364c440464a29cbe67d7620584a8d9",
+        "source": "https://github.com/redis/agent-skills",
+        "sourceType": "external",
+        "upstreamPath": "skills/redis-connections"
+      }
+    },
+    "redis-core": {
+      "files": {
+        ".cursor-plugin/plugin.json": "e4d53c2a9397929e789de5fde54bdce159ba121c677fe2624a482b742d8b972f",
+        "LICENSE": "77f38ee68488a9cdb7261e89e8cb2f22e074bb6d802727e5f3a685b9478a4da2",
+        "SKILL.md": "7ab1000e7a1548c4f82179ea1d5a57ced43851e6a924ac647cecd822015b81a7",
+        "references/choose-data-structure.md": "6fc700db240d40cf07412c6a1915a144792b58ab606b2737877066ad0e015b9e",
+        "references/key-naming.md": "17d96bbb0892be65a2fe658db7e8d1038c08a7f1d75c06c169d8e7d847c93ac6"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/database/redis-core",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        ".cursor-plugin/plugin.json": "e4d53c2a9397929e789de5fde54bdce159ba121c677fe2624a482b742d8b972f",
+        "LICENSE": "77f38ee68488a9cdb7261e89e8cb2f22e074bb6d802727e5f3a685b9478a4da2",
+        "SKILL.md": "7ab1000e7a1548c4f82179ea1d5a57ced43851e6a924ac647cecd822015b81a7",
+        "references/choose-data-structure.md": "6fc700db240d40cf07412c6a1915a144792b58ab606b2737877066ad0e015b9e",
+        "references/key-naming.md": "17d96bbb0892be65a2fe658db7e8d1038c08a7f1d75c06c169d8e7d847c93ac6"
+      },
+      "path": "skills/redis-core",
+      "status": "available",
+      "supplements": {},
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "repository LICENSE",
+        "revision": "fa7948e8ac364c440464a29cbe67d7620584a8d9",
+        "source": "https://github.com/redis/agent-skills",
+        "sourceType": "external",
+        "upstreamPath": "skills/redis-core"
+      }
+    },
+    "review-animations": {
+      "files": {
+        "LICENSE": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+        "SKILL.md": "e86984eb410e74f0c9adfa1a75c226d036dc297b8ddaeb32d4ed02564afc9e64",
+        "STANDARDS.md": "e7d3605034acda54ca13e43aec9e64d65b53de20f75b11b8d694e373012fbe07"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [
+        "opencode-invocation: Only the unsupported disable-model-invocation frontmatter line is removed; the body and STANDARDS.md remain byte-preserved. OpenCode does not enforce that Claude flag. Explicit selection guidance is not a permission gate; use native permission.skill ask/deny when a hard load gate is required.",
+        "motion-evidence: Opinionated craft thresholds and browser/Motion performance claims are not universal measured facts. Distinguish static findings, version-specific evidence and unobserved feel/device behavior. Review only; no automatic repair."
+      ],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/frontend/review-animations",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "LICENSE": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+        "SKILL.md": "e86984eb410e74f0c9adfa1a75c226d036dc297b8ddaeb32d4ed02564afc9e64",
+        "STANDARDS.md": "e7d3605034acda54ca13e43aec9e64d65b53de20f75b11b8d694e373012fbe07"
+      },
+      "path": "skills/review-animations",
+      "status": "available",
+      "supplements": {},
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "upstream root LICENSE preserved in the Skill and catalog/LICENSES/emilkowalski-skills-MIT.txt",
+        "revision": "d16ebe60d09a5ba2afcb7054ede9d0a10c9f6128",
+        "source": "https://github.com/emilkowalski/skills",
+        "sourceType": "external-adapted",
+        "upstreamPath": "skills/review-animations"
+      }
+    },
+    "source-driven-development": {
+      "files": {
+        "LICENSE.source.txt": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
+        "SKILL.md": "c59faf851377f0eeda45306398d16eb96d77ab1c2fd3e1a7fb58e9a0af33c1e9"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [
+        "The upstream Skill names security-and-hardening for the broader prompt-injection threat model. That companion is now operational catalog-only, is not automatically APM-deployed, and itself needs a same-pin shared checklist for full sign-off. The local retrieval-safety section remains available; do not invent or auto-install missing companions.",
+        "Full execution requires an authorized current-documentation retrieval capability. Without one, version-sensitive claims remain UNVERIFIED rather than falling back silently to model memory."
+      ],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/engineering/source-driven-development",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "SKILL.md": "c59faf851377f0eeda45306398d16eb96d77ab1c2fd3e1a7fb58e9a0af33c1e9"
+      },
+      "path": "skills/source-driven-development",
+      "status": "available",
+      "supplements": {
+        "LICENSE.source.txt": {
+          "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+          "path": "catalog/LICENSES/addyosmani-agent-skills-MIT.txt",
+          "repository": "unofficialmmon/agent-reference",
+          "sha256": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7"
+        }
+      },
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "repository LICENSE and catalog/LICENSES/addyosmani-agent-skills-MIT.txt",
+        "revision": "2686b620fc1fed2e8f60c704839c766b8594c6b6",
+        "source": "https://github.com/addyosmani/agent-skills",
+        "sourceType": "external",
+        "upstreamPath": "skills/source-driven-development"
+      }
+    },
+    "spring-boot": {
+      "files": {
+        "LICENSE": "c0e3867aa53647e810c6776e1c5a89b616be99c0aebec142a4bc981a8a6e7305",
+        "SKILL.md": "831246d10360e194dfe8b3420bc42c8b222e3034c0eb70bff12f09d97c9335ec"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/java-spring/spring-boot",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "LICENSE": "c0e3867aa53647e810c6776e1c5a89b616be99c0aebec142a4bc981a8a6e7305",
+        "SKILL.md": "831246d10360e194dfe8b3420bc42c8b222e3034c0eb70bff12f09d97c9335ec"
+      },
+      "path": "skills/spring-boot",
+      "status": "available",
+      "supplements": {},
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "snapshot LICENSE; original pi-dev-kit summary",
+        "revision": "curated-2026-08-21",
+        "source": "pi-dev-kit:official-doc-derived",
+        "sourceType": "official-doc-derived",
+        "upstreamPath": null
+      }
+    },
+    "spring-security": {
+      "files": {
+        "LICENSE": "c0e3867aa53647e810c6776e1c5a89b616be99c0aebec142a4bc981a8a6e7305",
+        "SKILL.md": "3d2a499753b09728aa7f127fc1a1fc25522e51e03a5c5c54145f59d5aba1b60a"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/java-spring/spring-security",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "LICENSE": "c0e3867aa53647e810c6776e1c5a89b616be99c0aebec142a4bc981a8a6e7305",
+        "SKILL.md": "3d2a499753b09728aa7f127fc1a1fc25522e51e03a5c5c54145f59d5aba1b60a"
+      },
+      "path": "skills/spring-security",
+      "status": "available",
+      "supplements": {},
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "snapshot LICENSE; original pi-dev-kit summary",
+        "revision": "curated-2026-08-21",
+        "source": "pi-dev-kit:official-doc-derived",
+        "sourceType": "official-doc-derived",
+        "upstreamPath": null
+      }
+    },
+    "swift-testing-expert": {
+      "files": {
+        "LICENSE": "8f5fd8e5cddb015b5627e45e68b256356586144288a4a0a3db87e38bcb0c9155",
+        "SKILL.md": "d039eb55cfbaa379d308ff42c1e459dea355edb869ec0a4d6f488759d2156aec",
+        "references/_index.md": "623f23b0e14d363928bfc6b8ed54c89c6d420fde809ee79c0f6e37ed2c4aa965",
+        "references/async-testing-and-waiting.md": "e5f7d016a95d976774d7f26a80be07acf204306aa874f60d6f501aec141c6ceb",
+        "references/expectations.md": "e3d4a57b5d162f49e8f7135e2a020eb1c2af0301782d31c1e4ac3d51a9a0dac5",
+        "references/fundamentals.md": "ad3af7d6ce9a31c2f8222a88baf9a5631de6443d2ad671764e2d183bba7019f3",
+        "references/migration-from-xctest.md": "f94a3bc08fb59358689a84d9d6a2838154dc96904e53457e068d00df5b0671ef",
+        "references/parallelization-and-isolation.md": "209cd458d3fbc8a2830265252714f5ac09abe93100b3b2582034fa7ea1a0568c",
+        "references/parameterized-testing.md": "852ea45d5cae37f3e687050be2cb728370a635129786928cadef4a9dcc8d2c09",
+        "references/performance-and-best-practices.md": "3ecd3da92d2676935863942894e5e9ef649a24b5e56f20f65fc81899297b49c2",
+        "references/traits-and-tags.md": "17dd0b7182f0abdf51f538a6bcc139ef6d501325575476c63a6d5f933312b49e",
+        "references/xcode-workflows.md": "f43407527c30bc1e346d32e4f54a5105a9c61bd071abfbfaa7b91107b4451c94"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [
+        "ACTUAL FAIL with Swift 6.2.1: references/traits-and-tags.md uses .timeLimit(.seconds(10)); type checking rejects seconds as unavailable because test time limits must be specified in minutes. The rest of the selected snippets passing does not validate this example.",
+        "The intake ran 20 selected self-contained Swift fences (24 tests, 3 suites) on Linux only. Xcode test plans, Apple-device/UI behavior, XCTest performance/UI automation, all concurrency/migration examples and model/host behavior remain NOT RUN.",
+        "Some snippets rely on surrounding application types or Foundation imports; InlineArray examples require the supporting Swift version. references/_index.md points to the upstream root README, which is not a bundled runtime dependency. No sibling Skill or plugin is installed."
+      ],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/mobile/swift-testing-expert",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "LICENSE": "8f5fd8e5cddb015b5627e45e68b256356586144288a4a0a3db87e38bcb0c9155",
+        "SKILL.md": "d039eb55cfbaa379d308ff42c1e459dea355edb869ec0a4d6f488759d2156aec",
+        "references/_index.md": "623f23b0e14d363928bfc6b8ed54c89c6d420fde809ee79c0f6e37ed2c4aa965",
+        "references/async-testing-and-waiting.md": "e5f7d016a95d976774d7f26a80be07acf204306aa874f60d6f501aec141c6ceb",
+        "references/expectations.md": "e3d4a57b5d162f49e8f7135e2a020eb1c2af0301782d31c1e4ac3d51a9a0dac5",
+        "references/fundamentals.md": "ad3af7d6ce9a31c2f8222a88baf9a5631de6443d2ad671764e2d183bba7019f3",
+        "references/migration-from-xctest.md": "f94a3bc08fb59358689a84d9d6a2838154dc96904e53457e068d00df5b0671ef",
+        "references/parallelization-and-isolation.md": "209cd458d3fbc8a2830265252714f5ac09abe93100b3b2582034fa7ea1a0568c",
+        "references/parameterized-testing.md": "852ea45d5cae37f3e687050be2cb728370a635129786928cadef4a9dcc8d2c09",
+        "references/performance-and-best-practices.md": "3ecd3da92d2676935863942894e5e9ef649a24b5e56f20f65fc81899297b49c2",
+        "references/traits-and-tags.md": "17dd0b7182f0abdf51f538a6bcc139ef6d501325575476c63a6d5f933312b49e",
+        "references/xcode-workflows.md": "f43407527c30bc1e346d32e4f54a5105a9c61bd071abfbfaa7b91107b4451c94"
+      },
+      "path": "skills/swift-testing-expert",
+      "status": "conditional",
+      "supplements": {},
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "upstream root LICENSE retained in the complete snapshot and catalog/LICENSES/avdlee-swift-testing-MIT.txt",
+        "revision": "798e9b1a2bcac164d4f0c781908199e754f0bab6",
+        "source": "https://github.com/AvdLee/Swift-Testing-Agent-Skill",
+        "sourceType": "external",
+        "upstreamPath": "swift-testing-expert"
+      }
+    },
+    "vercel-composition-patterns": {
+      "files": {
+        "AGENTS.md": "89e3ddd58fcf99a53a50e25dfd21b8cde1be5f10b7df6bacd3dfa6796932f516",
+        "LICENSE.source.txt": "b9b2ba5e3474ea6aef2a06cb6a013163272e1c4ee3c612ee057d0c365fa0c51b",
+        "README.md": "85915a43a6f0b4efe525e3cf6398dd866166da2025837c4460468a24a940da94",
+        "SKILL.md": "e38e0eaa609316b10423a9a138ed95e35099accd3f735585295c8a8f165c28a3",
+        "metadata.json": "49262ed5cb4186f31ee980cf8d990be0170c51efed4908d0464a1cff9905bd05",
+        "rules/_sections.md": "a174213b87e6911e2b766995a2cbaf8d1534057076e82fb79fe3f0ecb38047df",
+        "rules/_template.md": "587f7d16b0660eb61fee4a4d3d7df2b3077d6835de170602c7d6e60bee559131",
+        "rules/architecture-avoid-boolean-props.md": "007555ebb020f4d552582a2c4db194db71a1fd33094012e5187bcfa4f8c392d5",
+        "rules/architecture-compound-components.md": "f246af13dc269b521cf20eb8ad99a0cb645beac381c8c9b117262c34612c8457",
+        "rules/patterns-children-over-render-props.md": "7c45a0d21b3c4126a32cba916ee31adeae195386ad1dbbe6634aedb7457aa0ad",
+        "rules/patterns-explicit-variants.md": "8c19e596e61807549d01ce8c6954c6358199f97a8511c0c02c625ec0efda8c0e",
+        "rules/react19-no-forwardref.md": "881830adb7534c4b2d70db426556646ad9837f5478f744f35641f635ada22227",
+        "rules/state-context-interface.md": "09e73afbf9285fa416679cc864a287b9e8b821d0969272ab784295386d8c9bc3",
+        "rules/state-decouple-implementation.md": "76a8c1eb29a70d8996ab3f71260345af2f7bc89deab815a421d6c87c6591a9c3",
+        "rules/state-lift-state.md": "74c54038a6c554c748fe31cec673b80861b5d920b7553cf78cdf10d18b4b759b"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [
+        "Standalone upstream LICENSE file was not preserved in the vendored Skill directory; repository-level MIT license evidence is recorded under catalog/LICENSES/."
+      ],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/react/vercel-composition-patterns",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "AGENTS.md": "89e3ddd58fcf99a53a50e25dfd21b8cde1be5f10b7df6bacd3dfa6796932f516",
+        "README.md": "85915a43a6f0b4efe525e3cf6398dd866166da2025837c4460468a24a940da94",
+        "SKILL.md": "e38e0eaa609316b10423a9a138ed95e35099accd3f735585295c8a8f165c28a3",
+        "metadata.json": "49262ed5cb4186f31ee980cf8d990be0170c51efed4908d0464a1cff9905bd05",
+        "rules/_sections.md": "a174213b87e6911e2b766995a2cbaf8d1534057076e82fb79fe3f0ecb38047df",
+        "rules/_template.md": "587f7d16b0660eb61fee4a4d3d7df2b3077d6835de170602c7d6e60bee559131",
+        "rules/architecture-avoid-boolean-props.md": "007555ebb020f4d552582a2c4db194db71a1fd33094012e5187bcfa4f8c392d5",
+        "rules/architecture-compound-components.md": "f246af13dc269b521cf20eb8ad99a0cb645beac381c8c9b117262c34612c8457",
+        "rules/patterns-children-over-render-props.md": "7c45a0d21b3c4126a32cba916ee31adeae195386ad1dbbe6634aedb7457aa0ad",
+        "rules/patterns-explicit-variants.md": "8c19e596e61807549d01ce8c6954c6358199f97a8511c0c02c625ec0efda8c0e",
+        "rules/react19-no-forwardref.md": "881830adb7534c4b2d70db426556646ad9837f5478f744f35641f635ada22227",
+        "rules/state-context-interface.md": "09e73afbf9285fa416679cc864a287b9e8b821d0969272ab784295386d8c9bc3",
+        "rules/state-decouple-implementation.md": "76a8c1eb29a70d8996ab3f71260345af2f7bc89deab815a421d6c87c6591a9c3",
+        "rules/state-lift-state.md": "74c54038a6c554c748fe31cec673b80861b5d920b7553cf78cdf10d18b4b759b"
+      },
+      "path": "skills/vercel-composition-patterns",
+      "status": "available",
+      "supplements": {
+        "LICENSE.source.txt": {
+          "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+          "path": "catalog/LICENSES/vercel-labs-agent-skills-LICENSE-EVIDENCE.md",
+          "repository": "unofficialmmon/agent-reference",
+          "sha256": "b9b2ba5e3474ea6aef2a06cb6a013163272e1c4ee3c612ee057d0c365fa0c51b"
+        }
+      },
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "SKILL.md frontmatter",
+        "revision": "b8caa260a420a73042e35521de4b5c8baf6446cc",
+        "source": "https://github.com/vercel-labs/agent-skills",
+        "sourceType": "external",
+        "upstreamPath": "skills/composition-patterns"
+      }
+    },
+    "vercel-react-best-practices": {
+      "files": {
+        "AGENTS.md": "fc93e7421177bbf869cce892bc60a6c83a4517d974bc3bf65c4e2c1e58a6ccf6",
+        "LICENSE.source.txt": "b9b2ba5e3474ea6aef2a06cb6a013163272e1c4ee3c612ee057d0c365fa0c51b",
+        "README.md": "9eafb2123d3b8b2aef41fba0db2648a3f4f49996f8c7c8bb2c86263befd8b48a",
+        "SKILL.md": "71ed7794962fa6e803ee83030517b5b93a9f70fbfeb431ec4535c5480a8d8355",
+        "metadata.json": "c4e18bac3290fbe1b471a605867d4df68b03144ea26b8befdbe8f9d8fd124354",
+        "rules/_sections.md": "01c59969e4e867f0708c8f8ef9c6d87fab9a07d0586244f429ff84013db8a115",
+        "rules/_template.md": "99df2a3ea088c6c22de2484ddc7e964d0e9923846f44c63380343ecc64455442",
+        "rules/advanced-effect-event-deps.md": "55ed8f9f27a1bff803d6fa55828176207714b02123cbb97ddb8a90d88024a723",
+        "rules/advanced-event-handler-refs.md": "a3097edeecfb2ff6851cd66ed8cdf0617c3c88180504bee824aa6e75a215bbbc",
+        "rules/advanced-init-once.md": "3e4dc22173eb0e2b6dcf583e3babd862b8696328f8f59aee7c4d746c5bc05f6c",
+        "rules/advanced-use-latest.md": "8a3f64dfe5a77d1564248faf17fe662ae75b55d497a243cb30b38eb07ccbbf9a",
+        "rules/async-api-routes.md": "523338540d73427dc14c0cbb19f2741ebccdf8b105a7b2c1b33d2905cf237a42",
+        "rules/async-cheap-condition-before-await.md": "03107c1f70a293cd58a8abc5474c5548e20ea4efdf01b6d45aae7ad0ac1cb32c",
+        "rules/async-defer-await.md": "f3c142d090615abdcc99d31c123be37b31f0f1ed8d9ec9f7789a3bc6883ae0fb",
+        "rules/async-dependencies.md": "16ef469f877e30c6b8e1e1b4bc3e527312fa3c6318cb785a4eca186ea236131a",
+        "rules/async-parallel.md": "6d2f841896279e976dfcdc1ac89e70771ac188baadfd43c096b5706cb838b961",
+        "rules/async-suspense-boundaries.md": "de05fedac2eb7ae563b887b5a424464ec3dfaf84e5b7797467ebe2a796ac8afc",
+        "rules/bundle-analyzable-paths.md": "62090b5c815fd71bf1133dce754f51abc16a9456d0ccd025fd627de27726e92a",
+        "rules/bundle-barrel-imports.md": "e648f6d54525f07a691357040ca5bff6ea3424788a91ff63812adb29622a671b",
+        "rules/bundle-conditional.md": "09c8259c3efb04fc0abb8e412ccbda217c222ae8118516283e571c995fe3a7d4",
+        "rules/bundle-defer-third-party.md": "3719fb47b191e8db4fe22686ec88448ad5af9e6838585425abbe103d0b642e37",
+        "rules/bundle-dynamic-imports.md": "401817a7369f315fc5a68a1095742ff7d53d0461906880dc9d64a41495ee1986",
+        "rules/bundle-preload.md": "d1f7cc28da7cd5ab249acd287edc5b761afcfb194e9cb62cd44c5f3543db2de2",
+        "rules/client-event-listeners.md": "242a873349febc1ce685e85617994784dbab92c2eaa68aed7fed5a83e7680e93",
+        "rules/client-localstorage-schema.md": "0fb7cdf9dc93fdf22f87e3669f953fb9d4ac9b0be42eec4a29fe9a2560610b88",
+        "rules/client-passive-event-listeners.md": "1f35016f9053de69e884ee9be00654e37979c2ca85f5e57764dc2626ff7acb4b",
+        "rules/client-swr-dedup.md": "644652c39c6cc00de8d1c77a7273612e868dc3f7edda30764164c12ec0f764a3",
+        "rules/js-batch-dom-css.md": "480b891b9eaf96e929dc1e964274a4828e3a78009b7d00ccd965a0d425215959",
+        "rules/js-cache-function-results.md": "3daaa11d24f4295cb6be8bc6f407f2ce83cc7b5bd1f0e68891ea8ab835721dc7",
+        "rules/js-cache-property-access.md": "73e47431e74878a927061bf0ddc7cd91a7556cb35d2573f3421e82300d9ae311",
+        "rules/js-cache-storage.md": "11b826b0433898c1ece2d3547010d8e77db9fb240185748c45db91493de9b6cc",
+        "rules/js-combine-iterations.md": "71add08aeeb43091d4ff4c0b2842cce8b4bdef8ad3e732cc034bb5a84827e746",
+        "rules/js-early-exit.md": "925ce5ce87f3347186ca62212f29cc6baa2b8c85a96d2720ad07c3d0abf781c0",
+        "rules/js-flatmap-filter.md": "9e5b166a41914d975bef7635467f8fb32cd98b5c3126c0bc6f163490812fb5f0",
+        "rules/js-hoist-regexp.md": "f9e9aef2f7c2307dd7310f283df85dcada45fc43e9bb941b0c3aa414dec21ec4",
+        "rules/js-index-maps.md": "5df1bdc2cfabb2c98abd55d26762e5c18189535c2e686184f426082e62920391",
+        "rules/js-length-check-first.md": "8b54a311c826b299272f29187fc58bc55772a04c4a72eeb29456ee96dc9fc624",
+        "rules/js-min-max-loop.md": "87dfb67e2f39df6ad8bcfb5b78c5fb364d3c07554ad188a202408d99f3763421",
+        "rules/js-request-idle-callback.md": "ee08f83905b4011abbc33d594033157d77561b5bbd9b36b04f0f409581ffec32",
+        "rules/js-set-map-lookups.md": "a7fd781a6ba9ad49065961b6f9a90ef486bf6b648390e1a08704025f98e1642b",
+        "rules/js-tosorted-immutable.md": "d0a5e1b0fec48a0a81397957e2f068e224329f7c42cb5feeed8aae6fa64025e8",
+        "rules/rendering-activity.md": "1e5e7eaf3555e61d6a2e900089c676527d26259501db5594f59544b6c664f85a",
+        "rules/rendering-animate-svg-wrapper.md": "9c6ae0ca7a51434e803887c64cded760956579a1452ccb80a461a03f9c937c77",
+        "rules/rendering-conditional-render.md": "2ec2fa23c4148285144687050c52369adba3da2fbe3d486f8d3e0aad8f06f2bc",
+        "rules/rendering-content-visibility.md": "64eee6d5b916fe74df33363994b27fc7f71bea3bcedc7ee04bda23107ca3e6e4",
+        "rules/rendering-hoist-jsx.md": "93b229560fae92005ed9a2a829064607b39b2e984e92d221d05b2d41df2b7c0e",
+        "rules/rendering-hydration-no-flicker.md": "dc7ab358c67c177bca6e6f360fbc935ebe4efa928c0ba3ebd3f9f3d9e2000ca3",
+        "rules/rendering-hydration-suppress-warning.md": "915bacb934e2927d84b37a3f3d225a47b309ac8f9e494ed2bcb66ce07c5676a2",
+        "rules/rendering-resource-hints.md": "351b1095d641717b930f1b2253282b7120af3023bc74e06c17675168d4286864",
+        "rules/rendering-script-defer-async.md": "4cea07b7875ba7fc2c7465ff23b63a2bb334f90aaf2d9293d38d67b05fdb32ab",
+        "rules/rendering-svg-precision.md": "ed468533f6e95f622859c884b122cf21f9f593ed6bb3d500a54de4b9f9bcb9fb",
+        "rules/rendering-usetransition-loading.md": "3a1249c3f13026b6f54ab5712c388df219d6af01b12aa542749acd99a46f4bc1",
+        "rules/rerender-defer-reads.md": "234050a77faf50cb306be10a9e15bd4421134ab5907e75f13e6d78e2bd262dc9",
+        "rules/rerender-dependencies.md": "17eb5830956fb56486fd3cfc7431f5849d39751730c05ad9e77dd4f0c27169c5",
+        "rules/rerender-derived-state-no-effect.md": "cb11ec76f50aa7b6847269f02d79b120c889a30d9ecd2c1d578f75144419c77a",
+        "rules/rerender-derived-state.md": "1c326bb67b01fb084eb00c8911b0a7cff54681c2315b629f88e49b64eaa6481d",
+        "rules/rerender-functional-setstate.md": "5e68df6b2ae8058e67f476ff1ac67bde159f5a9d18df439e46eabcdeb7b52e58",
+        "rules/rerender-lazy-state-init.md": "4ae844740f266fc8cbf050701230286624a2440ec5be67b9a63d9edc3c580573",
+        "rules/rerender-memo-with-default-value.md": "81c47476564ad8a79fc68fc442734255ca7d6829424359464503fda0a9f9a0dd",
+        "rules/rerender-memo.md": "1f258990c2f27ff6256b3cc5c43300631bb3f0d81f749aed08d07fcdcc131dd1",
+        "rules/rerender-move-effect-to-event.md": "abc2cbf167bee056743023351e96806a411d3398da8802093620aecf0721f029",
+        "rules/rerender-no-inline-components.md": "1cc32907a770272524ba682eef9e7efdd8ad4533b6f89b718a1fcd7d1d0eb6a3",
+        "rules/rerender-simple-expression-in-memo.md": "5bdcf2d1558ba5204e643c887b7b4060f89630969425651eb68e96427d97f800",
+        "rules/rerender-split-combined-hooks.md": "6f45d703343484ef9acef9388397f3642966ae6a5a258899a0cf1f9977cfbf6c",
+        "rules/rerender-transitions.md": "60f4033909a62df5e5b8c601494f9e50a562e2f8c1c2d81eac24f38142265f1c",
+        "rules/rerender-use-deferred-value.md": "8c3579576a61a949884167745dcfaf1d5426ba305cc61fd0a79602d70fda4909",
+        "rules/rerender-use-ref-transient-values.md": "f1a649af9d1d0b5c762f6c9c4c1c70c90d7df82aa10296ee87aadb78c1b76c54",
+        "rules/server-after-nonblocking.md": "d0b8d24a3db9f0f65f9e2bddbf230b0e03a5f60e1229d93a4a18f5e7a991c7c2",
+        "rules/server-auth-actions.md": "a2ca8aa102839251c7971ec784560fab943c20b36fe6f80365d4110c13260c23",
+        "rules/server-cache-lru.md": "1924b64561841923b88a657085097a0aeba3e0ba2d5470b9f5c15cc10d6ae70f",
+        "rules/server-cache-react.md": "fddeea6c870bb3da4134b61d54b7d09b83d2603f929b7547cd3dc1dc269edd5c",
+        "rules/server-dedup-props.md": "c2747424cdac46be62f835f245a0aa887b0090b416d28e2ac8676702645eeb37",
+        "rules/server-hoist-static-io.md": "5abea4dd882b13661bd5f7dfb93f9e547d5f08176c61c448ade91b210ed5d49f",
+        "rules/server-no-shared-module-state.md": "4d869bf1cd2f1632e5ca4c0e64b1cf0e71c5f5a0f940bc8a22174d205e735ed7",
+        "rules/server-parallel-fetching.md": "569a2e9fc04f9606686cd75c5894ef8781b502786a7fffe241396846c7733472",
+        "rules/server-parallel-nested-fetching.md": "ad5d9656984d4a959997a2367bf59cc6632297b4634a1dd13a087939d83f30b3",
+        "rules/server-serialization.md": "f4c7d68b29c82381baad059c4a7f09e868e71ec9c3115a26ad3ae7d24c0dfe1f"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [
+        "Vendored upstream AGENTS.md contains relative rule links whose targets are not present in the snapshot.",
+        "Standalone upstream LICENSE file was not preserved in the vendored Skill directory; repository-level MIT license evidence is recorded under catalog/LICENSES/.",
+        "Vendored upstream README.md contains a nested triple-backtick example whose Markdown fence structure may render incorrectly; the runtime SKILL.md is unaffected and the upstream snapshot remains unmodified.",
+        {
+          "file": "AGENTS.md",
+          "kind": "missing-resource",
+          "reason": "Referenced resource is absent from this preserved snapshot; do not invent its content or silently fetch a replacement.",
+          "referenceType": "markdown-link",
+          "revision": "b8caa260a420a73042e35521de4b5c8baf6446cc",
+          "target": "./async-defer-await.md"
+        },
+        {
+          "file": "AGENTS.md",
+          "kind": "missing-resource",
+          "reason": "Referenced resource is absent from this preserved snapshot; do not invent its content or silently fetch a replacement.",
+          "referenceType": "markdown-link",
+          "revision": "b8caa260a420a73042e35521de4b5c8baf6446cc",
+          "target": "./async-cheap-condition-before-await.md"
+        },
+        {
+          "file": "AGENTS.md",
+          "kind": "missing-resource",
+          "reason": "Referenced resource is absent from this preserved snapshot; do not invent its content or silently fetch a replacement.",
+          "referenceType": "markdown-link",
+          "revision": "b8caa260a420a73042e35521de4b5c8baf6446cc",
+          "target": "./server-hoist-static-io.md"
+        }
+      ],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/react/vercel-react-best-practices",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "AGENTS.md": "fc93e7421177bbf869cce892bc60a6c83a4517d974bc3bf65c4e2c1e58a6ccf6",
+        "README.md": "9eafb2123d3b8b2aef41fba0db2648a3f4f49996f8c7c8bb2c86263befd8b48a",
+        "SKILL.md": "71ed7794962fa6e803ee83030517b5b93a9f70fbfeb431ec4535c5480a8d8355",
+        "metadata.json": "c4e18bac3290fbe1b471a605867d4df68b03144ea26b8befdbe8f9d8fd124354",
+        "rules/_sections.md": "01c59969e4e867f0708c8f8ef9c6d87fab9a07d0586244f429ff84013db8a115",
+        "rules/_template.md": "99df2a3ea088c6c22de2484ddc7e964d0e9923846f44c63380343ecc64455442",
+        "rules/advanced-effect-event-deps.md": "55ed8f9f27a1bff803d6fa55828176207714b02123cbb97ddb8a90d88024a723",
+        "rules/advanced-event-handler-refs.md": "a3097edeecfb2ff6851cd66ed8cdf0617c3c88180504bee824aa6e75a215bbbc",
+        "rules/advanced-init-once.md": "3e4dc22173eb0e2b6dcf583e3babd862b8696328f8f59aee7c4d746c5bc05f6c",
+        "rules/advanced-use-latest.md": "8a3f64dfe5a77d1564248faf17fe662ae75b55d497a243cb30b38eb07ccbbf9a",
+        "rules/async-api-routes.md": "523338540d73427dc14c0cbb19f2741ebccdf8b105a7b2c1b33d2905cf237a42",
+        "rules/async-cheap-condition-before-await.md": "03107c1f70a293cd58a8abc5474c5548e20ea4efdf01b6d45aae7ad0ac1cb32c",
+        "rules/async-defer-await.md": "f3c142d090615abdcc99d31c123be37b31f0f1ed8d9ec9f7789a3bc6883ae0fb",
+        "rules/async-dependencies.md": "16ef469f877e30c6b8e1e1b4bc3e527312fa3c6318cb785a4eca186ea236131a",
+        "rules/async-parallel.md": "6d2f841896279e976dfcdc1ac89e70771ac188baadfd43c096b5706cb838b961",
+        "rules/async-suspense-boundaries.md": "de05fedac2eb7ae563b887b5a424464ec3dfaf84e5b7797467ebe2a796ac8afc",
+        "rules/bundle-analyzable-paths.md": "62090b5c815fd71bf1133dce754f51abc16a9456d0ccd025fd627de27726e92a",
+        "rules/bundle-barrel-imports.md": "e648f6d54525f07a691357040ca5bff6ea3424788a91ff63812adb29622a671b",
+        "rules/bundle-conditional.md": "09c8259c3efb04fc0abb8e412ccbda217c222ae8118516283e571c995fe3a7d4",
+        "rules/bundle-defer-third-party.md": "3719fb47b191e8db4fe22686ec88448ad5af9e6838585425abbe103d0b642e37",
+        "rules/bundle-dynamic-imports.md": "401817a7369f315fc5a68a1095742ff7d53d0461906880dc9d64a41495ee1986",
+        "rules/bundle-preload.md": "d1f7cc28da7cd5ab249acd287edc5b761afcfb194e9cb62cd44c5f3543db2de2",
+        "rules/client-event-listeners.md": "242a873349febc1ce685e85617994784dbab92c2eaa68aed7fed5a83e7680e93",
+        "rules/client-localstorage-schema.md": "0fb7cdf9dc93fdf22f87e3669f953fb9d4ac9b0be42eec4a29fe9a2560610b88",
+        "rules/client-passive-event-listeners.md": "1f35016f9053de69e884ee9be00654e37979c2ca85f5e57764dc2626ff7acb4b",
+        "rules/client-swr-dedup.md": "644652c39c6cc00de8d1c77a7273612e868dc3f7edda30764164c12ec0f764a3",
+        "rules/js-batch-dom-css.md": "480b891b9eaf96e929dc1e964274a4828e3a78009b7d00ccd965a0d425215959",
+        "rules/js-cache-function-results.md": "3daaa11d24f4295cb6be8bc6f407f2ce83cc7b5bd1f0e68891ea8ab835721dc7",
+        "rules/js-cache-property-access.md": "73e47431e74878a927061bf0ddc7cd91a7556cb35d2573f3421e82300d9ae311",
+        "rules/js-cache-storage.md": "11b826b0433898c1ece2d3547010d8e77db9fb240185748c45db91493de9b6cc",
+        "rules/js-combine-iterations.md": "71add08aeeb43091d4ff4c0b2842cce8b4bdef8ad3e732cc034bb5a84827e746",
+        "rules/js-early-exit.md": "925ce5ce87f3347186ca62212f29cc6baa2b8c85a96d2720ad07c3d0abf781c0",
+        "rules/js-flatmap-filter.md": "9e5b166a41914d975bef7635467f8fb32cd98b5c3126c0bc6f163490812fb5f0",
+        "rules/js-hoist-regexp.md": "f9e9aef2f7c2307dd7310f283df85dcada45fc43e9bb941b0c3aa414dec21ec4",
+        "rules/js-index-maps.md": "5df1bdc2cfabb2c98abd55d26762e5c18189535c2e686184f426082e62920391",
+        "rules/js-length-check-first.md": "8b54a311c826b299272f29187fc58bc55772a04c4a72eeb29456ee96dc9fc624",
+        "rules/js-min-max-loop.md": "87dfb67e2f39df6ad8bcfb5b78c5fb364d3c07554ad188a202408d99f3763421",
+        "rules/js-request-idle-callback.md": "ee08f83905b4011abbc33d594033157d77561b5bbd9b36b04f0f409581ffec32",
+        "rules/js-set-map-lookups.md": "a7fd781a6ba9ad49065961b6f9a90ef486bf6b648390e1a08704025f98e1642b",
+        "rules/js-tosorted-immutable.md": "d0a5e1b0fec48a0a81397957e2f068e224329f7c42cb5feeed8aae6fa64025e8",
+        "rules/rendering-activity.md": "1e5e7eaf3555e61d6a2e900089c676527d26259501db5594f59544b6c664f85a",
+        "rules/rendering-animate-svg-wrapper.md": "9c6ae0ca7a51434e803887c64cded760956579a1452ccb80a461a03f9c937c77",
+        "rules/rendering-conditional-render.md": "2ec2fa23c4148285144687050c52369adba3da2fbe3d486f8d3e0aad8f06f2bc",
+        "rules/rendering-content-visibility.md": "64eee6d5b916fe74df33363994b27fc7f71bea3bcedc7ee04bda23107ca3e6e4",
+        "rules/rendering-hoist-jsx.md": "93b229560fae92005ed9a2a829064607b39b2e984e92d221d05b2d41df2b7c0e",
+        "rules/rendering-hydration-no-flicker.md": "dc7ab358c67c177bca6e6f360fbc935ebe4efa928c0ba3ebd3f9f3d9e2000ca3",
+        "rules/rendering-hydration-suppress-warning.md": "915bacb934e2927d84b37a3f3d225a47b309ac8f9e494ed2bcb66ce07c5676a2",
+        "rules/rendering-resource-hints.md": "351b1095d641717b930f1b2253282b7120af3023bc74e06c17675168d4286864",
+        "rules/rendering-script-defer-async.md": "4cea07b7875ba7fc2c7465ff23b63a2bb334f90aaf2d9293d38d67b05fdb32ab",
+        "rules/rendering-svg-precision.md": "ed468533f6e95f622859c884b122cf21f9f593ed6bb3d500a54de4b9f9bcb9fb",
+        "rules/rendering-usetransition-loading.md": "3a1249c3f13026b6f54ab5712c388df219d6af01b12aa542749acd99a46f4bc1",
+        "rules/rerender-defer-reads.md": "234050a77faf50cb306be10a9e15bd4421134ab5907e75f13e6d78e2bd262dc9",
+        "rules/rerender-dependencies.md": "17eb5830956fb56486fd3cfc7431f5849d39751730c05ad9e77dd4f0c27169c5",
+        "rules/rerender-derived-state-no-effect.md": "cb11ec76f50aa7b6847269f02d79b120c889a30d9ecd2c1d578f75144419c77a",
+        "rules/rerender-derived-state.md": "1c326bb67b01fb084eb00c8911b0a7cff54681c2315b629f88e49b64eaa6481d",
+        "rules/rerender-functional-setstate.md": "5e68df6b2ae8058e67f476ff1ac67bde159f5a9d18df439e46eabcdeb7b52e58",
+        "rules/rerender-lazy-state-init.md": "4ae844740f266fc8cbf050701230286624a2440ec5be67b9a63d9edc3c580573",
+        "rules/rerender-memo-with-default-value.md": "81c47476564ad8a79fc68fc442734255ca7d6829424359464503fda0a9f9a0dd",
+        "rules/rerender-memo.md": "1f258990c2f27ff6256b3cc5c43300631bb3f0d81f749aed08d07fcdcc131dd1",
+        "rules/rerender-move-effect-to-event.md": "abc2cbf167bee056743023351e96806a411d3398da8802093620aecf0721f029",
+        "rules/rerender-no-inline-components.md": "1cc32907a770272524ba682eef9e7efdd8ad4533b6f89b718a1fcd7d1d0eb6a3",
+        "rules/rerender-simple-expression-in-memo.md": "5bdcf2d1558ba5204e643c887b7b4060f89630969425651eb68e96427d97f800",
+        "rules/rerender-split-combined-hooks.md": "6f45d703343484ef9acef9388397f3642966ae6a5a258899a0cf1f9977cfbf6c",
+        "rules/rerender-transitions.md": "60f4033909a62df5e5b8c601494f9e50a562e2f8c1c2d81eac24f38142265f1c",
+        "rules/rerender-use-deferred-value.md": "8c3579576a61a949884167745dcfaf1d5426ba305cc61fd0a79602d70fda4909",
+        "rules/rerender-use-ref-transient-values.md": "f1a649af9d1d0b5c762f6c9c4c1c70c90d7df82aa10296ee87aadb78c1b76c54",
+        "rules/server-after-nonblocking.md": "d0b8d24a3db9f0f65f9e2bddbf230b0e03a5f60e1229d93a4a18f5e7a991c7c2",
+        "rules/server-auth-actions.md": "a2ca8aa102839251c7971ec784560fab943c20b36fe6f80365d4110c13260c23",
+        "rules/server-cache-lru.md": "1924b64561841923b88a657085097a0aeba3e0ba2d5470b9f5c15cc10d6ae70f",
+        "rules/server-cache-react.md": "fddeea6c870bb3da4134b61d54b7d09b83d2603f929b7547cd3dc1dc269edd5c",
+        "rules/server-dedup-props.md": "c2747424cdac46be62f835f245a0aa887b0090b416d28e2ac8676702645eeb37",
+        "rules/server-hoist-static-io.md": "5abea4dd882b13661bd5f7dfb93f9e547d5f08176c61c448ade91b210ed5d49f",
+        "rules/server-no-shared-module-state.md": "4d869bf1cd2f1632e5ca4c0e64b1cf0e71c5f5a0f940bc8a22174d205e735ed7",
+        "rules/server-parallel-fetching.md": "569a2e9fc04f9606686cd75c5894ef8781b502786a7fffe241396846c7733472",
+        "rules/server-parallel-nested-fetching.md": "ad5d9656984d4a959997a2367bf59cc6632297b4634a1dd13a087939d83f30b3",
+        "rules/server-serialization.md": "f4c7d68b29c82381baad059c4a7f09e868e71ec9c3115a26ad3ae7d24c0dfe1f"
+      },
+      "path": "skills/vercel-react-best-practices",
+      "status": "available",
+      "supplements": {
+        "LICENSE.source.txt": {
+          "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+          "path": "catalog/LICENSES/vercel-labs-agent-skills-LICENSE-EVIDENCE.md",
+          "repository": "unofficialmmon/agent-reference",
+          "sha256": "b9b2ba5e3474ea6aef2a06cb6a013163272e1c4ee3c612ee057d0c365fa0c51b"
+        }
+      },
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "SKILL.md frontmatter",
+        "revision": "b8caa260a420a73042e35521de4b5c8baf6446cc",
+        "source": "https://github.com/vercel-labs/agent-skills",
+        "sourceType": "external",
+        "upstreamPath": "skills/react-best-practices"
+      }
+    },
+    "vite": {
+      "files": {
+        "GENERATION.md": "69dfd9d99eafc33f4580b902ad794166f4adcc76f80917f129613d6bbb60b93e",
+        "LICENSE.md": "2a596f697b619094b6f4067936e0f385027a393bce32211383db0478774c1cb2",
+        "SKILL.md": "3cb7a75336e338faa9be15dd8b97479721ac8ceac6f1ff4061c9b9eefccd9983",
+        "references/build-and-ssr.md": "69c262c9bbc78676c66018f33b82d66c85d94bbf5178b2d6968494aa7bed8fe2",
+        "references/core-config.md": "d207a85730c32eff47e343ea69644a6c7898af251098a60255efe8f1c922fb4b",
+        "references/core-features.md": "5e784faa5314592bdbc9e918813d76dec94391a777fe2f32cfa048d5c0fa70f4",
+        "references/core-plugin-api.md": "594520b9adcf610b4f3378d3ef6c68c10327c93c33a7b73b3103a5fcd58e8611",
+        "references/environment-api.md": "658e4597b9cfe21b22c1677025a7a30866933f586d86c434ec139cd5149afaa2",
+        "references/rolldown-migration.md": "ba9860f8960e9794c880454b238a3a3c1962c80f9b3860399938618730bf7f72"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/frontend/vite",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "GENERATION.md": "69dfd9d99eafc33f4580b902ad794166f4adcc76f80917f129613d6bbb60b93e",
+        "LICENSE.md": "2a596f697b619094b6f4067936e0f385027a393bce32211383db0478774c1cb2",
+        "SKILL.md": "3cb7a75336e338faa9be15dd8b97479721ac8ceac6f1ff4061c9b9eefccd9983",
+        "references/build-and-ssr.md": "69c262c9bbc78676c66018f33b82d66c85d94bbf5178b2d6968494aa7bed8fe2",
+        "references/core-config.md": "d207a85730c32eff47e343ea69644a6c7898af251098a60255efe8f1c922fb4b",
+        "references/core-features.md": "5e784faa5314592bdbc9e918813d76dec94391a777fe2f32cfa048d5c0fa70f4",
+        "references/core-plugin-api.md": "594520b9adcf610b4f3378d3ef6c68c10327c93c33a7b73b3103a5fcd58e8611",
+        "references/environment-api.md": "658e4597b9cfe21b22c1677025a7a30866933f586d86c434ec139cd5149afaa2",
+        "references/rolldown-migration.md": "ba9860f8960e9794c880454b238a3a3c1962c80f9b3860399938618730bf7f72"
+      },
+      "path": "skills/vite",
+      "status": "available",
+      "supplements": {},
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "repository LICENSE.md",
+        "revision": "a74f281a27dadc02397bc1a174b0f2c97531b6ae",
+        "source": "https://github.com/antfu/skills",
+        "sourceType": "external",
+        "upstreamPath": "skills/vite"
+      }
+    },
+    "vitest": {
+      "files": {
+        "GENERATION.md": "6b70dab147d6c64822596d0d652aaf9a391349db2c1fcf42b15bc5333cf9ccbc",
+        "LICENSE.md": "2a596f697b619094b6f4067936e0f385027a393bce32211383db0478774c1cb2",
+        "SKILL.md": "2da9b15c28b9be17d545751b0e0813de306331b3c4dccb748934f4fdd2298968",
+        "references/advanced-environments.md": "003d0e370404fede2836be3866cb59fef19c23717676c6d4cf29ddb188e1c2b9",
+        "references/advanced-projects.md": "95e10acf25259ce4bd02820a4d24418896e5b1c5cc115f192a552d6b6fd37f1f",
+        "references/advanced-type-testing.md": "88a5c36d3510200e1ebb5181520b4dcf87939d0d49ac58ead30588689340829c",
+        "references/advanced-vi.md": "7ae206ed071d257861ccbac8c784626f7f50d9f91b4bfa4845e4fc4f279259ab",
+        "references/core-cli.md": "89dfe61d15c6b0454e64063477a7ecdf0d3c72f8cec751deccde83d1dde148e6",
+        "references/core-config.md": "70b8c8315cc6ab6d4efac65c4168b49d94c02abd71df20a08e65c42043580de1",
+        "references/core-describe.md": "0c99cd75e7808b0abaaf06eb9ad3ba6046fff0054d1624c8983dfae87d1e0827",
+        "references/core-expect.md": "747d56075a84148cfac7e2c37a9e2e7aa33df4f3e84bba3432b86bfcb89a11e4",
+        "references/core-hooks.md": "2ff9b1700579a8e734ceb1ec783b01d0bd90837094f729bc65e63d5596a172d4",
+        "references/core-test-api.md": "e55dbe41e1cb79ff09a486a91aebb0534290946d8e619c056748ce59384f75c8",
+        "references/features-benchmarking.md": "2437b43b4bb84bfe698cc1d2cb81d7238a44a5759ecec218f00c6df70bda1f70",
+        "references/features-concurrency.md": "c4ee8b0994270ebd97fa903bb8430faea5a823896bbda1a965dbcf93fc48810a",
+        "references/features-context.md": "9cf4a1f51af7379055f30bc4b9dde72ce2d8d07037a24835d8803774bb456be8",
+        "references/features-coverage.md": "e4b4b5f563a07786e8553bfcbe638673a2107235bd36cfc476def356d4c0411e",
+        "references/features-filtering.md": "87cf40827574f359b140c18923d812232c77c54badf2f015a90fe626e685deaa",
+        "references/features-mocking.md": "cc30e6ff11301ff2c35e530a720a0e773d3b23ffa8d60c7c774ae51bb1bcbfe6",
+        "references/features-reporters.md": "7c4bfe49b25ad3410e7a4b007dc3943450d24d4f0a5f4af307a10b9201392bf7",
+        "references/features-snapshots.md": "906f5b111b747a7d1396eef82725c23a590e2ecd4c7d4889679a72f40adcc051",
+        "references/features-test-tags.md": "6e39db1a7b622b0f325a5cec0fca1e78aab4ed14b8e1a8dbe0eb396e7a0f642d"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/frontend/vitest",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "GENERATION.md": "6b70dab147d6c64822596d0d652aaf9a391349db2c1fcf42b15bc5333cf9ccbc",
+        "LICENSE.md": "2a596f697b619094b6f4067936e0f385027a393bce32211383db0478774c1cb2",
+        "SKILL.md": "2da9b15c28b9be17d545751b0e0813de306331b3c4dccb748934f4fdd2298968",
+        "references/advanced-environments.md": "003d0e370404fede2836be3866cb59fef19c23717676c6d4cf29ddb188e1c2b9",
+        "references/advanced-projects.md": "95e10acf25259ce4bd02820a4d24418896e5b1c5cc115f192a552d6b6fd37f1f",
+        "references/advanced-type-testing.md": "88a5c36d3510200e1ebb5181520b4dcf87939d0d49ac58ead30588689340829c",
+        "references/advanced-vi.md": "7ae206ed071d257861ccbac8c784626f7f50d9f91b4bfa4845e4fc4f279259ab",
+        "references/core-cli.md": "89dfe61d15c6b0454e64063477a7ecdf0d3c72f8cec751deccde83d1dde148e6",
+        "references/core-config.md": "70b8c8315cc6ab6d4efac65c4168b49d94c02abd71df20a08e65c42043580de1",
+        "references/core-describe.md": "0c99cd75e7808b0abaaf06eb9ad3ba6046fff0054d1624c8983dfae87d1e0827",
+        "references/core-expect.md": "747d56075a84148cfac7e2c37a9e2e7aa33df4f3e84bba3432b86bfcb89a11e4",
+        "references/core-hooks.md": "2ff9b1700579a8e734ceb1ec783b01d0bd90837094f729bc65e63d5596a172d4",
+        "references/core-test-api.md": "e55dbe41e1cb79ff09a486a91aebb0534290946d8e619c056748ce59384f75c8",
+        "references/features-benchmarking.md": "2437b43b4bb84bfe698cc1d2cb81d7238a44a5759ecec218f00c6df70bda1f70",
+        "references/features-concurrency.md": "c4ee8b0994270ebd97fa903bb8430faea5a823896bbda1a965dbcf93fc48810a",
+        "references/features-context.md": "9cf4a1f51af7379055f30bc4b9dde72ce2d8d07037a24835d8803774bb456be8",
+        "references/features-coverage.md": "e4b4b5f563a07786e8553bfcbe638673a2107235bd36cfc476def356d4c0411e",
+        "references/features-filtering.md": "87cf40827574f359b140c18923d812232c77c54badf2f015a90fe626e685deaa",
+        "references/features-mocking.md": "cc30e6ff11301ff2c35e530a720a0e773d3b23ffa8d60c7c774ae51bb1bcbfe6",
+        "references/features-reporters.md": "7c4bfe49b25ad3410e7a4b007dc3943450d24d4f0a5f4af307a10b9201392bf7",
+        "references/features-snapshots.md": "906f5b111b747a7d1396eef82725c23a590e2ecd4c7d4889679a72f40adcc051",
+        "references/features-test-tags.md": "6e39db1a7b622b0f325a5cec0fca1e78aab4ed14b8e1a8dbe0eb396e7a0f642d"
+      },
+      "path": "skills/vitest",
+      "status": "available",
+      "supplements": {},
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "repository LICENSE.md",
+        "revision": "a74f281a27dadc02397bc1a174b0f2c97531b6ae",
+        "source": "https://github.com/antfu/skills",
+        "sourceType": "external",
+        "upstreamPath": "skills/vitest"
+      }
+    },
+    "web-design-guidelines": {
+      "files": {
+        "SKILL.md": "29d1dcb0e4c8f09e867267d64b1dc8dadade9957881ff856a2e7ba6b6720e104",
+        "SOURCE.md": "2344bc19204b5af5d0618c1ae5c044152120728b49443f04b7ae63e2f4c13322",
+        "upstream/AGENTS.md": "c13c9261824b5804e77db287f0147a9cc381b278602e763a6dcae307fcf8b4f9",
+        "upstream/LICENSE": "6cd1609c9c12233507cdd2ce0d32e9a721e3c27494951be06b90090deeeb7af2",
+        "upstream/README.md": "2c34daeb1a9677804cec8182dd92c2780531f8d6e498aac9b0c37509ff05d8eb",
+        "upstream/command.md": "eea73cb6dd46fee9faec9973e8e7fe198b5f07ec326f14d276a56e50287e1cab"
+      },
+      "host_runtime": "NOT_RUN",
+      "limitations": [],
+      "origin": {
+        "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+        "path": "skills/frontend/web-design-guidelines",
+        "repository": "unofficialmmon/agent-reference"
+      },
+      "original_files": {
+        "SKILL.md": "29d1dcb0e4c8f09e867267d64b1dc8dadade9957881ff856a2e7ba6b6720e104",
+        "SOURCE.md": "2344bc19204b5af5d0618c1ae5c044152120728b49443f04b7ae63e2f4c13322",
+        "upstream/AGENTS.md": "c13c9261824b5804e77db287f0147a9cc381b278602e763a6dcae307fcf8b4f9",
+        "upstream/LICENSE": "6cd1609c9c12233507cdd2ce0d32e9a721e3c27494951be06b90090deeeb7af2",
+        "upstream/README.md": "2c34daeb1a9677804cec8182dd92c2780531f8d6e498aac9b0c37509ff05d8eb",
+        "upstream/command.md": "eea73cb6dd46fee9faec9973e8e7fe198b5f07ec326f14d276a56e50287e1cab"
+      },
+      "path": "skills/web-design-guidelines",
+      "status": "available",
+      "supplements": {},
+      "upstream": {
+        "license": "MIT",
+        "licenseEvidence": "skills/frontend/web-design-guidelines/upstream/LICENSE",
+        "revision": "4e799d45c17aec1498c269287a83b9dba22b966b",
+        "source": "https://github.com/vercel-labs/web-interface-guidelines",
+        "sourceType": "external-adapted",
+        "upstreamPath": null
+      }
+    }
+  }
+}

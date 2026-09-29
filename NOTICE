@@ -1,0 +1,19 @@
+Veyrix repository-authored CLI and documentation are MIT licensed.
+
+Skill content retains its original license and provenance; it is not relicensed
+by Veyrix. Each complete snapshot includes a preserved license or a separately
+recorded LICENSE.source.txt supplement. catalog/skills.json records original
+files, SHA-256, upstream source/revision/type, transfer commit and supplements.
+
+43 selected Skill directories were transferred without modifying original bytes
+from unofficialmmon/agent-reference at
+2053b47cd291db5d00d7c9df9932764aca7b3859.
+Emil Kowalski's emil-design-eng comes from emilkowalski/skills at
+d16ebe60d09a5ba2afcb7054ede9d0a10c9f6128.
+
+Included sources include Vercel/Vercel Labs, Anthony Fu, MariaDB, Redis, Android,
+Flutter, affaan-m/ECC, wshobson/agents, Leon Lin/Taste, Emil Kowalski, Addy Osmani,
+Antoine van der Lee, and prior agent-reference/pi-dev-kit references. Some are
+previously adapted or local-derived, explicitly labeled in the catalog. MIT and
+Apache-2.0 materials remain under their respective licenses; retained license
+notices and limitations take precedence over this summary.
