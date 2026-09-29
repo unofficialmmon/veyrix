@@ -5,8 +5,13 @@
 ```sh
 python3 tools/check_catalog.py
 python3 -m unittest discover -s tests -v
-python3 -m pip wheel --no-deps --no-build-isolation . -w dist
+python3 -m pip wheel --no-deps . -w dist
 ```
+
+Wheel builds use the declared isolated build backend. A pre-provisioned offline
+maintainer environment may use `--no-build-isolation` only after installing the
+`[build-system]` requirements itself; editable installation does not guarantee
+that the runtime environment contains setuptools.
 
 The source tree includes real CLI/local-Git tests, not just expected-output
 strings. The catalog verifier checks hashes, complete inventories, original versus
