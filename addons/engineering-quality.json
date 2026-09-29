@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "roles": {
+    "fixer": [
+      "engineering-quality",
+      "regression-proof",
+      "security-review"
+    ],
+    "oracle": [
+      "engineering-quality",
+      "regression-proof",
+      "security-review"
+    ]
+  }
+}

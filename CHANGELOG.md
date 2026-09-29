@@ -1,5 +1,17 @@
 # Changelog
 
+## Unreleased
+
+- Add the frozen essential UX only: installed-source init pinning, profile/add-on
+  discovery, cache-only doctor diagnostics, and actionable blocked responses.
+- Add opt-in `engineering-quality`, `regression-proof`, and `security-review`
+  Skills for fixer/oracle without changing OMO orchestration or base profiles.
+- Add user-owned global AGENTS guidance and a project AGENTS authoring prompt as
+  documentation only; Veyrix never manages those files.
+- Preserve the historical 95 migration decisions and track the three new Skills in
+  a separate additions catalog with exact Git blob identities.
+- Comparative model-output evaluation remains intentionally deferred.
+
 ## 0.1.0
 
 - Recover preserved catalog and add the first working repo-cache configurator.

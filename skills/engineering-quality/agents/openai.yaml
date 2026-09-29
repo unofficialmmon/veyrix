@@ -1,0 +1,3 @@
+interface:
+  display_name: "Engineering Quality"
+  short_description: "Scoped evidence and repository-aware quality guidance"

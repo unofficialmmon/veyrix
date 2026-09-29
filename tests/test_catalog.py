@@ -23,7 +23,7 @@ spec.loader.exec_module(checker)
 class CatalogTests(unittest.TestCase):
     def test_real_catalog_integrity_and_migration(self):
         out=checker.check(REPO)
-        self.assertEqual(out['skills'],44)
+        self.assertEqual(out['skills'],47)
         self.assertEqual(out['migration'],{'KEEP':43,'DEFER':3,'EXCLUDE':49})
         self.assertEqual(out['host_runtime'],'NOT_RUN')
 
