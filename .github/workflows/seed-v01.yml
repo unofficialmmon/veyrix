@@ -1,0 +1,98 @@
+name: temporary-v01-seed
+on:
+  push:
+    branches: [work/seed-v01-20260929]
+    paths: [.github/workflows/seed-v01.yml]
+permissions:
+  contents: write
+jobs:
+  seed:
+    if: github.repository == 'unofficialmmon/veyrix' && github.ref == 'refs/heads/work/seed-v01-20260929'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 0
+      - name: Read fixed Git objects only, never run upstream programs
+        shell: python
+        run: |
+          import hashlib,json,os,pathlib,subprocess,tempfile
+          BASE='ab7bc60394a6d9154bbb7770492f745095e97ed4'
+          REF='2053b47cd291db5d00d7c9df9932764aca7b3859'
+          EMIL='d16ebe60d09a5ba2afcb7054ede9d0a10c9f6128'
+          IDS='source-driven-development api-contract generated-code java-style maven-build spring-boot spring-security jpa-patterns mybatis mybatis-dynamic-sql mybatis-generator nodejs-backend-patterns nestjs-best-practices pnpm vitest vite vercel-react-best-practices vercel-composition-patterns react-testing design-taste-frontend redesign-existing-projects animate review-animations web-design-guidelines mobile-native find-animation-opportunities kotlin-patterns android-clean-architecture mobile-android-design compose-multiplatform-patterns edge-to-edge mobile-ios-design swift-testing-expert flutter-build-responsive-layout flutter-add-widget-test flutter-setup-declarative-routing mariadb-features mariadb-query-optimization redis-core redis-connections python-code-style python-type-safety python-testing-patterns'.split()
+          root=pathlib.Path.cwd()
+          def git(*a,cwd=None):
+              return subprocess.check_output(['git','-c','core.hooksPath=/dev/null',*a],cwd=cwd)
+          def fetch(repo,rev,target):
+              git('init','-q',target)
+              git('fetch','--no-tags','--depth=1','https://github.com/'+repo+'.git',rev,cwd=target)
+              assert git('rev-parse','FETCH_HEAD',cwd=target).decode().strip()==rev
+          def blob(repo,rev,path):
+              return git('cat-file','blob',rev+':'+path,cwd=repo)
+          def entries(repo,rev,prefix):
+              out={}
+              for row in git('ls-tree','-rz',rev,'--',prefix+'/',cwd=repo).split(b'\0'):
+                  if not row: continue
+                  info,p=row.split(b'\t',1); mode,kind,sha=info.decode().split(); p=p.decode()
+                  assert mode=='100644' and kind=='blob'
+                  rel=pathlib.PurePosixPath(p).relative_to(prefix).as_posix()
+                  assert '..' not in pathlib.PurePosixPath(rel).parts
+                  data=blob(repo,rev,p); data.decode('utf-8')
+                  assert not data.startswith(b'version https://git-lfs.github.com/spec/')
+                  out[rel]=data
+              return out
+          def write(path,data):
+              p=root/path; p.parent.mkdir(parents=True,exist_ok=True); p.write_bytes(data)
+          def sha(data): return hashlib.sha256(data).hexdigest()
+          catalog={'schema':1,'origin':{'repository':'unofficialmmon/agent-reference','commit':REF},'skills':{}}
+          with tempfile.TemporaryDirectory() as tmp:
+              ref=pathlib.Path(tmp)/'ref'; emil=pathlib.Path(tmp)/'emil'
+              fetch('unofficialmmon/agent-reference',REF,str(ref)); fetch('emilkowalski/skills',EMIL,str(emil))
+              old=json.loads(blob(ref,REF,'catalog/skills.lock.json'))['skills']
+              tree=git('ls-tree','-r','--name-only',REF,'skills/',cwd=ref).decode().splitlines()
+              for sid in IDS:
+                  src=next(p[:-9] for p in tree if p.endswith('/'+sid+'/SKILL.md'))
+                  src=src.rstrip('/')
+                  e=old[sid]; files=entries(ref,REF,src)
+                  assert {p:'sha256:'+sha(b) for p,b in files.items()}==e['files']
+                  original={p:sha(b) for p,b in files.items()}
+                  supplements={}
+                  if not any(pathlib.PurePosixPath(p).name.lower().startswith('license') for p in files):
+                      choices=[f'catalog/LICENSES/{sid}-UPSTREAM-LICENSE.txt',f'catalog/LICENSES/{sid}-LICENSE-NOTICE.md']
+                      sources={'https://github.com/addyosmani/agent-skills':'addyosmani-agent-skills-MIT.txt','https://github.com/emilkowalski/skills':'emilkowalski-skills-MIT.txt','https://github.com/affaan-m/ECC':'affaan-m-ecc-MIT.txt','https://github.com/antfu/skills':'antfu-skills-MIT.txt','https://github.com/vercel-labs/agent-skills':'vercel-labs-agent-skills-LICENSE-EVIDENCE.md','https://github.com/wshobson/agents':'wshobson-agents-MIT.txt','https://github.com/MariaDB/skills':'mariadb-skills-MIT.txt','https://github.com/redis/agent-skills':'redis-agent-skills-MIT.txt'}
+                      if e['source'] in sources: choices.append('catalog/LICENSES/'+sources[e['source']])
+                      if e['sourceType']=='local-derived': choices.append('LICENSE')
+                      license_data=None
+                      for lp in choices:
+                          try: license_data=blob(ref,REF,lp); break
+                          except subprocess.CalledProcessError: pass
+                      assert license_data is not None,sid
+                      files['LICENSE.source.txt']=license_data
+                      supplements['LICENSE.source.txt']={'repository':'unofficialmmon/agent-reference','commit':REF,'path':lp,'sha256':sha(license_data)}
+                  for p,b in files.items(): write(pathlib.Path('skills')/sid/p,b)
+                  catalog['skills'][sid]={'path':'skills/'+sid,'status':'conditional' if sid in ('python-testing-patterns','swift-testing-expert','react-testing','nestjs-best-practices') else 'available','origin':{'repository':'unofficialmmon/agent-reference','commit':REF,'path':src},'upstream':{k:e.get(k) for k in ('source','sourceType','upstreamPath','revision','license','licenseEvidence')},'files':{p:sha(b) for p,b in files.items()},'original_files':original,'supplements':supplements,'limitations':e.get('knownIssues',[]),'host_runtime':'NOT_RUN'}
+              data=blob(emil,EMIL,'skills/emil-design-eng/SKILL.md')
+              assert hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()=='62ce902af8dd32c590ea7203e9ab2edb1d6ef81a'
+              license_data=blob(emil,EMIL,'LICENSE')
+              write(pathlib.Path('skills/emil-design-eng/SKILL.md'),data); write(pathlib.Path('skills/emil-design-eng/LICENSE'),license_data)
+              catalog['skills']['emil-design-eng']={'path':'skills/emil-design-eng','status':'available','origin':{'repository':'emilkowalski/skills','commit':EMIL,'path':'skills/emil-design-eng'},'upstream':{'source':'https://github.com/emilkowalski/skills','sourceType':'external','upstreamPath':'skills/emil-design-eng','revision':EMIL,'license':'MIT','licenseEvidence':'Original root LICENSE included'},'files':{'SKILL.md':sha(data),'LICENSE':sha(license_data)},'original_files':{'SKILL.md':sha(data)},'supplements':{'LICENSE':{'repository':'emilkowalski/skills','commit':EMIL,'path':'LICENSE','sha256':sha(license_data)}},'limitations':['Opinionated interaction and motion guidance, not a complete dashboard information architecture. Library performance claims and examples require version-specific verification. Bare invocation can stop at an acknowledgement; provide the concrete task. No measured OpenCode/OMO quality improvement is claimed.'],'host_runtime':'NOT_RUN'}
+              write(pathlib.Path('LICENSE'),blob(ref,REF,'LICENSE'))
+              decisions={sid:{'decision':'KEEP' if sid in IDS else 'DEFER' if sid in ('kotlin-coroutines-flows','swift-concurrency','flutter-apply-architecture-best-practices') else 'EXCLUDE','old_path':next(p[:-9].rstrip('/') for p in tree if p.endswith('/'+sid+'/SKILL.md'))} for sid in old}
+              write(pathlib.Path('catalog/migration.json'),(json.dumps({'schema':1,'source_commit':REF,'decisions':decisions},indent=2,sort_keys=True)+'\n').encode())
+          write(pathlib.Path('catalog/skills.json'),(json.dumps(catalog,indent=2,sort_keys=True)+'\n').encode())
+          git('rm','--','.github/workflows/seed-v01.yml')
+          git('add','skills','catalog','LICENSE')
+          git('config','user.name','github-actions[bot]'); git('config','user.email','41898282+github-actions[bot]@users.noreply.github.com')
+          tree=git('write-tree').decode().strip()
+          candidate=git('commit-tree',tree,'-p',BASE,'-m','feat(catalog): seed 44 curated snapshots with pinned provenance').decode().strip()
+          git('push','origin',candidate+':refs/heads/feat/v0.1.0')
+          evidence=pathlib.Path(os.environ['RUNNER_TEMP'])/'seed'; evidence.mkdir()
+          (evidence/'source.tar.gz').write_bytes(git('archive','--format=tar.gz',candidate))
+          (evidence/'identity.json').write_text(json.dumps({'base':BASE,'candidate':candidate,'tree':tree,'skills':len(catalog['skills'])},indent=2))
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: veyrix-pinned-seed
+          path: ${{ runner.temp }}/seed/
+          retention-days: 7
