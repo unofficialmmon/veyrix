@@ -18,6 +18,11 @@ Before making a success claim:
 5. Reuse evidence only while its target, inputs and relevant state remain applicable.
    After a relevant edit, rerun the affected check or disclose stale evidence. A new
    chat message alone does not invalidate an otherwise unchanged verified state.
+6. When a completion claim includes compliance with a loaded Skill or project
+   convention, perform that Skill's required final/closure review against the final
+   integrated change. Delegated implementation does not transfer this evidence:
+   the final integrator must inspect or rerun the applicable closure before claiming
+   compliance, or report that it was not completed.
 
 Report each material claim using:
 
