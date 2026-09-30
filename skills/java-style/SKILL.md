@@ -4,8 +4,8 @@ description: Java/Spring handwritten-code conventions covering formatting, namin
 license: MIT
 compatibility: opencode
 metadata:
-  source: "user Development Formatting and Linting Guide"
-  ownership: "agent-reference"
+  source: "agent-reference java-style + selected java-coding-standards conventions"
+  ownership: "veyrix-adapted"
 ---
 
 # Java Style
