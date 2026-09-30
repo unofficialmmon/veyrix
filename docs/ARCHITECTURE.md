@@ -73,9 +73,11 @@ as a valid registration. Symlink subtrees requiring traversal block rather than
 being guessed. Supported v0.1 targets are explicit Git roots (including worktree
 .git files); no automatic nested-monorepo or sibling workspace traversal.
 
-Complete relative inventories/hashes are verified before deployment. A changed
-owned file blocks; a missing owned file can be restored. Removal is limited to
-unchanged paths recorded by Veyrix. Unknown extra files in an owned Skill directory
+Complete relative inventories/hashes are verified before deployment. Project-local
+ownership state is stored at `.agents/veyrix/managed.json`; the transient apply
+mutex is `.agents/veyrix/write.lock`. Veyrix does not create a separate `.veyrix/`
+project directory. A changed owned file blocks; a missing owned file can be
+restored. Removal is limited to unchanged paths recorded by Veyrix. Unknown extra files in an owned Skill directory
 block. Shared parent directories are never recursively deleted. Application,
 AGENTS, global config and Git index/history are not written.
 
