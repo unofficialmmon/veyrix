@@ -1,6 +1,6 @@
 ---
 name: java-style
-description: Java/Spring formatting, linting, import ordering, member ordering, DTO/record style, Lombok constructor safety, conditions, streams, logging, and MyBatis Generator formatting boundaries. Use when creating or cleaning up handwritten Java/Spring source, reviewing Java style consistency, fixing formatter/linter findings, or deciding how to format a changed Java file without broad refactoring.
+description: Java/Spring handwritten-code conventions covering formatting, naming, immutability, Optional, generics/type safety, null handling, imports/member ordering, DTO/record and Lombok safety, conditions, streams, logging, and MyBatis Generator boundaries. Use when creating, reviewing, or cleaning up Java/Spring source without broad refactoring.
 license: MIT
 compatibility: opencode
 metadata:
@@ -30,6 +30,55 @@ Unless explicitly in scope, do not:
 - modify generated source.
 
 Keep the diff local and reviewable.
+
+## Core Java conventions
+
+Apply these only when the repository has no more specific rule. They guide handwritten
+Java; they do not authorize unrelated renames, architecture changes, or broad cleanup.
+
+### Naming
+
+- Use PascalCase for classes, records, interfaces, and enums.
+- Use camelCase for methods, fields, parameters, and local variables.
+- Use UPPER_SNAKE_CASE for constants.
+- Keep established domain terminology and public names stable unless renaming is in scope.
+
+### Immutability
+
+- Prefer immutable state and minimize shared mutable state.
+- Prefer `final` fields for required dependencies and state that should not be reassigned.
+- Do not introduce setters or other mutability merely for convenience.
+- Apply the DTO/record guidance below before converting or introducing records.
+
+### Optional
+
+- Use `Optional` for return values that are intentionally absent/present according to
+  the repository contract.
+- Prefer `map`, `flatMap`, or `orElseThrow` over unchecked `Optional.get()`.
+- Do not rewrite established APIs to `Optional` merely for style.
+
+### Generics and type safety
+
+- Do not introduce raw generic types.
+- Declare meaningful generic parameters and preserve useful generic constraints.
+- Prefer a bounded generic when the reusable operation genuinely requires that bound;
+  do not cast around the type system to avoid expressing it.
+
+### Null handling and validation
+
+- Keep nullability intentional and consistent with repository annotations and contracts.
+- Prefer the project's nullability annotations over inventing a parallel convention.
+- Apply Bean Validation such as `@NotNull` or `@NotBlank` at input boundaries when
+  the project already uses that validation model.
+- Do not change an existing nullable/non-null wire or persistence contract as style cleanup.
+
+### Common smells
+
+When the project has no stronger rule, avoid deep nesting, magic literals that encode
+business meaning, static mutable state, silent catch blocks, and needlessly long
+parameter lists. Prefer early returns, named constants, explicit state ownership, and a
+DTO/builder only when those choices improve the actual local design. Do not perform
+these transformations outside the requested scope.
 
 ## JavaDoc for handwritten source
 
