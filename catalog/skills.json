@@ -420,8 +420,19 @@
     "java-style": {
       "files": {
         "LICENSE.source.txt": "03e02ff3327fa7008197e846bb2c61165bdb33caab49f6648885cad2da3a8f58",
-        "SKILL.md": "fee8b6662c2e983c7b88d8072b5b07e0b65f6946bd585c4ad76fb7701a3a51e9"
+        "SKILL.md": "eed70c6511874850c4c5b672d450f447b657391432e57973f9007151236571c3"
       },
+      "adapted_files": {
+        "SKILL.md": "eed70c6511874850c4c5b672d450f447b657391432e57973f9007151236571c3"
+      },
+      "adaptation_sources": [
+        {
+          "commit": "2053b47cd291db5d00d7c9df9932764aca7b3859",
+          "path": "skills/java-spring/java-coding-standards/SKILL.md",
+          "repository": "unofficialmmon/agent-reference",
+          "scope": "naming, immutability, Optional, generics/type safety, null handling, code smells"
+        }
+      ],
       "host_runtime": "NOT_RUN",
       "limitations": [
         "Runtime discovery was observed once in OpenCode 1.18.24 with OMO Slim 2.2.17; this is a discovery/non-interference smoke, not comprehensive style-behavior certification."
@@ -448,7 +459,7 @@
         "license": "MIT",
         "licenseEvidence": "local authored content derived from user-owned project materials",
         "revision": "agent-reference-2026-08-31",
-        "source": "user Development Formatting and Linting Guide",
+        "source": "agent-reference java-style plus selected java-coding-standards conventions",
         "sourceType": "local-derived",
         "upstreamPath": null
       }
