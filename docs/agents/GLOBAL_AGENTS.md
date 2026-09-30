@@ -48,6 +48,27 @@ requires another language for a specific project.
 - Keep technology-specific HOW guidance and detailed quality criteria in Skills.
   Keep durable project facts and contracts in project documentation.
 
+## Tool routing
+
+- Use the cheapest precise available tool and avoid redundant calls.
+- Use native `grep` for exact/ordinary text search, `glob` for path discovery, and
+  native read/edit/patch for localized inspection or edits.
+- Prefer LSP for symbol semantics: definitions, references, implementations, types,
+  workspace symbols, and call hierarchy.
+- Use Serena when symbol-aware retrieval or editing is materially better than file
+  editing. Before any Serena symbol operation, determine the actual target repository,
+  verify the active Serena project matches it, and explicitly activate the target when
+  no project or a different project is active. Never assume the MCP startup directory
+  is the target project.
+- Use ast-grep for syntax-aware structural search and repeated structural rewrites.
+- Editing preference: localized change -> native edit/patch; whole-symbol semantic
+  change -> Serena; repeated structural transformation -> ast-grep; large framework
+  migration -> specialized migration tooling when available.
+- Let configured RTK optimize supported shell output. Bypass it only when it causes
+  incompatibility, hides required output, or changes command behavior.
+- Tool availability does not imply authorization. Use only tools that are present and
+  allowed for the current task.
+
 ## Verification and reporting
 
 - Follow project-required verification and add checks in proportion to change risk.
