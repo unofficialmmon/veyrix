@@ -95,7 +95,7 @@ configuration/disk results, not runtime or security certification.
 | --- | --- |
 | `veyrix.yml` | User's explicit desired profile/add-ons/source |
 | `veyrix.lock.json` | Veyrix's resolved commit, IDs, source hashes and limitations |
-| `.veyrix/managed.json` | Veyrix's deployed file hashes and only its OMO additions |
+| `.agents/veyrix/managed.json` | Veyrix's deployed file hashes and only its OMO additions |
 | `.agents/skills/<id>/` | Complete selected Skill copies managed per Veyrix receipt |
 | `.opencode/oh-my-opencode-slim.jsonc` | Shared file; Veyrix changes only owned `skills_add` values |
 | `.opencode/commands/veyrix-{setup,sync,audit}.md` | Three thin prompts calling the installed CLI |
