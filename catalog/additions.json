@@ -13,7 +13,7 @@
         "references/change-review.md": "d9a42a53ac98533e2b16994c5cd6367c9a895e2a",
         "references/change-impact.md": "943735c62434343771589e95a820fa320c9cba03",
         "references/architecture-consistency.md": "16ba9e6405b94382f1049b18d03d587a2c7fbd85",
-        "references/completion-verification.md": "52fc70b686ad118aab5c30ec7de4a2553c96b7ad"
+        "references/completion-verification.md": "c7d67d575596e7adac058b0f4065869ac8512bf6"
       },
       "limitations": [
         "Locally authored opt-in review/evidence guidance; not a workflow engine or runtime certification. Actual OpenCode/OMO activation and model-output evaluation are NOT_RUN."
