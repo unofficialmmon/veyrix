@@ -23,7 +23,8 @@ CLI tests cover fresh apply, warm offline cache, frozen sync, update preview ver
 apply, same-pin selection changes, repeat NOOP/mtime preservation, missing-file
 restoration, modified/unowned-file blocking, identical/divergent duplicate roots,
 legacy JSON ambiguity, additive JSONC preservation, conditional acceptance,
-locks, concurrent changes and rollback. All 11 real profiles are installed into
+`.agents/veyrix/managed.json` receipt placement, `.agents/veyrix/write.lock`,
+concurrent changes and rollback. All 11 real profiles are installed into
 disposable Git projects and re-synced offline with before/after byte equality.
 
 The frozen UX tests additionally cover installed-source provenance pinning,
