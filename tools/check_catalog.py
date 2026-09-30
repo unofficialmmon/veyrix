@@ -65,9 +65,8 @@ def check(root: Path) -> dict:
         require(any(Path(p).name.lower().startswith("license") for p in actual),"LICENSE",name)
         require(SHA.fullmatch(entry["origin"]["commit"]) is not None,"ORIGIN",name)
         for rel,expected in entry["files"].items():
-            safe_rel(rel); data=(folder/rel).read_bytes(); actual_digest=digest(data)
-            require(HASH.fullmatch(expected) is not None and actual_digest==expected,
-                    "HASH",name+"/"+rel+" expected="+str(expected)+" actual="+actual_digest)
+            safe_rel(rel); data=(folder/rel).read_bytes()
+            require(HASH.fullmatch(expected) is not None and digest(data)==expected,"HASH",name+"/"+rel)
             source_expected=adapted.get(rel,entry["original_files"].get(rel,entry["supplements"].get(rel,{}).get("sha256")))
             require(expected==source_expected,"ORIGIN",name+"/"+rel)
             count+=1; size+=len(data)
