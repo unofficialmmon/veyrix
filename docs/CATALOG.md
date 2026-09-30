@@ -13,14 +13,17 @@ upstream files. The origin of those supplements is recorded.
 
 The three existing local-derived references are api-contract, generated-code and
 java-style. They were explicitly retained from the previous selection plan.
-`java-style` now has a recorded Veyrix-local adaptation: its preserved transferred
+`java-style` has a recorded Veyrix-local adaptation: its preserved transferred
 `original_files` hash remains tied to agent-reference, while `adapted_files`
 records the deployed bytes after selectively folding in framework-neutral naming,
 immutability, Optional, generics/type-safety, null-handling and code-smell guidance
 from the excluded `java-coding-standards` source at the same reviewed
-agent-reference commit. Spring/Quarkus architecture examples, project-layout
-templates and mandatory TDD/coverage guidance remain excluded. Framework-specific
-guidance must respect the actual project version, formatter and maintained contracts.
+agent-reference commit. Veyrix-local runtime refinements additionally require
+established helper/library reuse, bounded constant extraction, and a final integrated
+changed-code style closure before claiming Java-style completion. Spring/Quarkus
+architecture examples, project-layout templates and mandatory TDD/coverage guidance
+remain excluded. Framework-specific guidance must respect the actual project version,
+formatter and maintained contracts.
 
 ## Known limits and conditional acceptance
 
