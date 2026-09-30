@@ -174,6 +174,11 @@ class IntegrationTests(unittest.TestCase):
     def inventory(self):
         return {p.relative_to(self.project).as_posix():p.read_bytes() for p in self.project.rglob('*') if p.is_file() and '.git' not in p.relative_to(self.project).parts}
 
+    def test_init_uses_agents_veyrix_state(self):
+        self.init()
+        self.assertTrue((self.project/'.agents/veyrix/managed.json').is_file())
+        self.assertFalse((self.project/'.veyrix').exists())
+
     def test_init_and_sync_noop(self):
         self.init(); before=self.inventory()
         code,out=self.cli('sync')
@@ -331,7 +336,7 @@ class IntegrationTests(unittest.TestCase):
         code,out=self.cli('audit');self.assertEqual((code,out['result']),(1,'DRIFT'));self.assertEqual(before,self.inventory())
 
     def test_busy_project_lock(self):
-        self.init();(self.project/'.agents/skills/java-style/SKILL.md').unlink();(self.project/'.veyrix/write.lock').mkdir()
+        self.init();(self.project/'.agents/skills/java-style/SKILL.md').unlink();(self.project/'.agents/veyrix/write.lock').mkdir()
         code,out=self.cli('sync');self.assertEqual((code,out['code']),(2,'BUSY'))
 
     def test_apply_rejects_floating_ref(self):
