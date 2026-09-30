@@ -37,6 +37,17 @@ class CatalogTests(unittest.TestCase):
         for name in ('api-contract','generated-code','java-style'):
             self.assertEqual(catalog[name]['upstream']['sourceType'],'local-derived')
 
+    def test_java_style_adaptation_preserves_source_provenance(self):
+        entry=json.loads((REPO/'catalog/skills.json').read_bytes())['skills']['java-style']
+        original=entry['original_files']['SKILL.md']
+        adapted=entry['adapted_files']['SKILL.md']
+        self.assertNotEqual(original,adapted)
+        self.assertEqual(entry['files']['SKILL.md'],adapted)
+        self.assertEqual(entry['adaptation_sources'][0]['path'],
+                         'skills/java-spring/java-coding-standards/SKILL.md')
+        self.assertEqual(entry['adaptation_sources'][0]['commit'],
+                         '2053b47cd291db5d00d7c9df9932764aca7b3859')
+
     def test_every_conditional_has_limitations(self):
         catalog=json.loads((REPO/'catalog/skills.json').read_bytes())['skills']
         for name,entry in catalog.items():
