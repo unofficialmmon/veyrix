@@ -45,12 +45,30 @@ def check(root: Path) -> dict:
         actual={p.relative_to(folder).as_posix() for p in paths if p.is_file()}
         require(actual==set(entry["files"]),"INVENTORY",name)
         require(set(entry["files"])==set(entry["original_files"])|set(entry["supplements"]),"ORIGIN",name)
+        adapted=entry.get("adapted_files",{})
+        require(isinstance(adapted,dict) and set(adapted)<=set(entry["original_files"]),"ORIGIN",name)
+        for rel,expected in entry["original_files"].items():
+            require(HASH.fullmatch(expected) is not None,"ORIGIN",name+"/"+rel)
+        if adapted:
+            sources=entry.get("adaptation_sources")
+            require(isinstance(sources,list) and bool(sources),"ORIGIN",name)
+            for source in sources:
+                require(isinstance(source,dict) and SHA.fullmatch(source.get("commit","")) is not None and
+                        isinstance(source.get("repository"),str) and bool(source["repository"]) and
+                        isinstance(source.get("path"),str) and bool(safe_rel(source["path"])) and
+                        isinstance(source.get("scope"),str) and bool(source["scope"].strip()),"ORIGIN",name)
+            for rel,expected in adapted.items():
+                require(HASH.fullmatch(expected) is not None and expected!=entry["original_files"][rel],
+                        "ORIGIN",name+"/"+rel)
+        else:
+            require("adaptation_sources" not in entry,"ORIGIN",name)
         require(any(Path(p).name.lower().startswith("license") for p in actual),"LICENSE",name)
         require(SHA.fullmatch(entry["origin"]["commit"]) is not None,"ORIGIN",name)
         for rel,expected in entry["files"].items():
             safe_rel(rel); data=(folder/rel).read_bytes()
             require(HASH.fullmatch(expected) is not None and digest(data)==expected,"HASH",name+"/"+rel)
-            require(expected==entry["original_files"].get(rel,entry["supplements"].get(rel,{}).get("sha256")),"ORIGIN",name+"/"+rel)
+            source_expected=adapted.get(rel,entry["original_files"].get(rel,entry["supplements"].get(rel,{}).get("sha256")))
+            require(expected==source_expected,"ORIGIN",name+"/"+rel)
             count+=1; size+=len(data)
         front=load_yaml((folder/"SKILL.md").read_text().split("---",2)[1])
         require(front["name"]==name and isinstance(front["description"],str),"FRONTMATTER",name)
