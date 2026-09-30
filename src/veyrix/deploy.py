@@ -13,7 +13,8 @@ from .source import mutex
 
 OMO = ".opencode/oh-my-opencode-slim.jsonc"
 LEGACY_OMO = ".opencode/oh-my-opencode-slim.json"
-STATE_DIR = ".agents/veyrix"\nRECEIPT = STATE_DIR + "/managed.json"
+STATE_DIR = ".agents/veyrix"
+RECEIPT = STATE_DIR + "/managed.json"
 LOCK = "veyrix.lock.json"
 MANIFEST = "veyrix.yml"
 
