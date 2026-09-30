@@ -19,8 +19,19 @@ state.
 
 - Prefer the project boundary explicitly given by the user. Otherwise, determine the
   current worktree/repository root.
-- Check existing root, parent, and nested `AGENTS.md` files, README/CONTRIBUTING,
-  maintained design documents, and current working-tree changes.
+- Read the user-owned global OpenCode instructions separately before authoring project
+  guidance. Use `$OPENCODE_CONFIG_DIR/AGENTS.md` when `OPENCODE_CONFIG_DIR` is set;
+  otherwise use `$XDG_CONFIG_HOME/opencode/AGENTS.md`, normally
+  `~/.config/opencode/AGENTS.md`, when that file exists.
+- Treat global AGENTS as read-only cross-project guidance. Do not copy its generic
+  rules into the project `AGENTS.md`; add only project-specific durable facts,
+  contracts, commands, ownership, and exceptions.
+- For project-scoped AGENTS discovery, inspect the root and relevant nested
+  `AGENTS.md` files within the determined project boundary. Do not keep walking
+  above the project/repository root toward the filesystem root unless the user
+  explicitly identifies an external instruction source.
+- Check README/CONTRIBUTING, maintained design documents, and current working-tree
+  changes that are relevant to the authoring task.
 - If root `AGENTS.md` already exists, preserve user-owned rules, managed sections,
   and established project meaning. Write the maintained document in English unless
   the user explicitly requires another language.
@@ -90,9 +101,21 @@ If the existing document is already correct, return `NOOP`. Updating or deleting
 stale content requires evidence. Re-read the target immediately before writing; if a
 concurrent user change occurred, recompute against the current contents.
 
-After writing, inspect the diff and confirm that the only persistent file changed by
-this authoring task is the authorized root `AGENTS.md`. Do not commit, push, open a
-PR, or merge unless separately requested.
+After writing, verify only the authorized target and do not re-audit unrelated dirty
+or untracked files that were already present.
+
+- If `AGENTS.md` was newly created, read it once and run
+  `git status --short -- AGENTS.md`. An untracked `?? AGENTS.md` is sufficient
+  target-state evidence. Do not use or retry `git diff --no-index` variants merely
+  to manufacture a diff for the new file.
+- If an existing tracked `AGENTS.md` was modified, inspect
+  `git diff -- AGENTS.md` once.
+- Run each final verification check at most once unless the target changes again or
+  the first check returns an actual error that requires a different check.
+- Existing unrelated working-tree changes are baseline state: preserve them, but do
+  not repeatedly re-scan them to prove they remained untouched.
+
+Do not commit, push, open a PR, or merge unless separately requested.
 
 ### 6. Result report
 
