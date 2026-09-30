@@ -10,6 +10,8 @@
   documentation only; Veyrix never manages those files.
 - Preserve the historical 95 migration decisions and track the three new Skills in
   a separate additions catalog with exact Git blob identities.
+- Move the project-local ownership receipt and transient apply lock under
+  `.agents/veyrix/`; fresh projects no longer create a separate `.veyrix/` directory.
 - Comparative model-output evaluation remains intentionally deferred.
 
 ## 0.1.0
