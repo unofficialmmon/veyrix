@@ -420,10 +420,10 @@
     "java-style": {
       "files": {
         "LICENSE.source.txt": "03e02ff3327fa7008197e846bb2c61165bdb33caab49f6648885cad2da3a8f58",
-        "SKILL.md": "b731435c5594262a8b942c59ca0eb54c396d3f807b6230536f68013ec2a3d6d6"
+        "SKILL.md": "6cf9956cb35540daa5f87e75c8fffc7a054931f6cc4ec2cde0e685e9e50a2520"
       },
       "adapted_files": {
-        "SKILL.md": "b731435c5594262a8b942c59ca0eb54c396d3f807b6230536f68013ec2a3d6d6"
+        "SKILL.md": "6cf9956cb35540daa5f87e75c8fffc7a054931f6cc4ec2cde0e685e9e50a2520"
       },
       "adaptation_sources": [
         {

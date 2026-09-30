@@ -48,6 +48,19 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(entry['adaptation_sources'][0]['commit'],
                          '2053b47cd291db5d00d7c9df9932764aca7b3859')
 
+    def test_java_style_requires_helper_reuse_and_final_closure(self):
+        text=(REPO/'skills/java-style/SKILL.md').read_text()
+        self.assertIn('### Helper reuse and local idioms',text)
+        self.assertIn('## Changed-code style closure',text)
+        self.assertIn('final integrator must perform this closure',text)
+        self.assertIn('Formatter, compile, and tests do not substitute',text)
+
+    def test_completion_verification_requires_loaded_skill_closure(self):
+        text=(REPO/'skills/engineering-quality/references/completion-verification.md').read_text()
+        self.assertIn('compliance with a loaded Skill or project',text)
+        self.assertIn('final integrated change',text)
+        self.assertIn('Delegated implementation does not transfer this evidence',text)
+
     def test_every_conditional_has_limitations(self):
         catalog=json.loads((REPO/'catalog/skills.json').read_bytes())['skills']
         for name,entry in catalog.items():

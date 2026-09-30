@@ -15,6 +15,10 @@
 - Enrich `java-style` with a bounded set of framework-neutral Java conventions
   from the reviewed agent-reference `java-coding-standards` source while preserving
   original source hashes separately from locally adapted deployed bytes.
+- Strengthen `java-style` after real OpenCode usage: prefer established helper/library
+  primitives, clarify constant/protocol-literal extraction, and require a final
+  integrated changed-code style closure; completion verification now requires loaded
+  Skill closure evidence before claiming compliance.
 - Comparative model-output evaluation remains intentionally deferred.
 
 ## 0.1.0
