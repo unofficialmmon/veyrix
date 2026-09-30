@@ -13,7 +13,7 @@ from .source import mutex
 
 OMO = ".opencode/oh-my-opencode-slim.jsonc"
 LEGACY_OMO = ".opencode/oh-my-opencode-slim.json"
-RECEIPT = ".veyrix/managed.json"
+STATE_DIR = ".agents/veyrix"\nRECEIPT = STATE_DIR + "/managed.json"
 LOCK = "veyrix.lock.json"
 MANIFEST = "veyrix.yml"
 
@@ -195,8 +195,8 @@ def apply(change: Plan, cache_root: Path) -> dict:
     if not change.after:
         return change.summary()
     root = change.root
-    state = guarded(root, ".veyrix")
-    state.mkdir(exist_ok=True, mode=0o700)
+    state = guarded(root, STATE_DIR)
+    state.mkdir(parents=True, exist_ok=True, mode=0o700)
     with mutex(state / "write.lock"):
         for path, before in change.before.items():
             require(read_regular(guarded(root, path)) == before, "CONCURRENT_CHANGE", f"Target changed after planning: {path}")
