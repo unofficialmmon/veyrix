@@ -1,6 +1,6 @@
 ---
 name: java-style
-description: Java/Spring handwritten-code conventions covering formatting, naming, immutability, Optional, generics/type safety, null handling, imports/member ordering, DTO/record and Lombok safety, conditions, streams, logging, and MyBatis Generator boundaries. Use when creating, reviewing, or cleaning up Java/Spring source without broad refactoring.
+description: Java/Spring handwritten-code conventions covering formatting, naming, helper/library reuse, constants and protocol literals, immutability, Optional, generics/type safety, null handling, imports/member ordering, DTO/record and Lombok safety, conditions, streams, logging, and final changed-code style closure. Use when creating, reviewing, or cleaning up Java/Spring source without broad refactoring.
 license: MIT
 compatibility: opencode
 metadata:
@@ -43,6 +43,17 @@ Java; they do not authorize unrelated renames, architecture changes, or broad cl
 - Use UPPER_SNAKE_CASE for constants.
 - Keep established domain terminology and public names stable unless renaming is in scope.
 
+### Constants and protocol literals
+
+- Use UPPER_SNAKE_CASE for constants.
+- Extract a repeated or business/protocol-semantic value when naming it improves clarity
+  or centralizes a value that must stay consistent.
+- Do not introduce a constant solely to replace a single-use obvious wire key, JSON
+  field name, form field name, or other contract literal at its point of use.
+- Keep external contract keys literal when that makes the request shape easier to read;
+  centralize them only when reuse or drift risk justifies it.
+- Do not create a shared constants class merely to move literals out of a local class.
+
 ### Immutability
 
 - Prefer immutable state and minimize shared mutable state.
@@ -79,6 +90,22 @@ business meaning, static mutable state, silent catch blocks, and needlessly long
 parameter lists. Prefer early returns, named constants, explicit state ownership, and a
 DTO/builder only when those choices improve the actual local design. Do not perform
 these transformations outside the requested scope.
+
+### Helper reuse and local idioms
+
+Before adding or retaining a small helper in changed handwritten Java:
+
+- Search the repository for an established project idiom, and check the standard or
+  already-used library primitive when the helper expresses generic utility behavior.
+- Prefer the established primitive when its behavior is equivalent.
+- Do not keep a wrapper that merely renames one library call unless it expresses real
+  domain semantics, centralizes policy that may change independently, or materially
+  simplifies repeated non-trivial logic.
+- Prefer inlining a single-use helper when the resulting expression remains clear.
+- Preserve trimming, case folding, null handling, normalization, and exception
+  semantics when replacing or inlining a helper.
+- Do not search broadly for every helper; perform the repository/library comparison
+  when the changed helper is generic enough that a shared primitive is plausible.
 
 ## JavaDoc for handwritten source
 
@@ -234,6 +261,25 @@ Do not manually modify MyBatis Generator output unless explicitly requested with
 Typical generated areas include generated `model`, `mapper`, `support`, and files marked `@Generated`. Apply handwritten formatting rules to domain/service/controller/adapter/DTO code instead.
 
 Use the `generated-code` Skill when generation ownership or regeneration is part of the task.
+
+## Changed-code style closure
+
+When this Skill is used for a code-modifying task, perform this closure on the final
+integrated handwritten-Java change before claiming Java style is complete:
+
+1. Re-read every changed handwritten Java hunk after implementation is integrated.
+2. Check newly added or retained private helpers for duplicate project/library
+   utilities, single-use wrappers, unnecessary abstraction, and local-idiom mismatch.
+3. Check relevant naming, constants/literals, imports, nullability, Optional usage,
+   logging/exceptions, DTO/record/Lombok safety, and generated-code ownership.
+4. Search the repository when local convention is material to one of those decisions.
+5. If implementation was delegated, the final integrator must perform this closure on
+   the integrated diff; a subagent's earlier review is not final evidence.
+6. Do not claim Java style completion while a known changed-code convention issue
+   remains unresolved or unreported.
+
+Formatter, compile, and tests do not substitute for this closure review. They provide
+different evidence and should still run when required by the change.
 
 ## Validation
 
